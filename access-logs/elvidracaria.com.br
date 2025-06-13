@@ -1,0 +1,7 @@
+3.94.152.151 - - [13/Jun/2025:00:54:32 -0300] "GET / HTTP/1.1" 301 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+3.94.152.151 - - [13/Jun/2025:00:54:35 -0300] "GET /favicon.ico HTTP/1.1" 404 1251 "-" "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0"
+45.148.96.51 - - [13/Jun/2025:00:54:33 -0300] "POST /wp-cron.php?doing_wp_cron=1749786873.6369268894195556640625 HTTP/1.1" 200 0 "-" "WordPress/6.8.1; https://elvidracaria.com.br"
+45.148.96.51 - - [13/Jun/2025:14:40:15 -0300] "POST /wp-cron.php?doing_wp_cron=1749836415.0698299407958984375000 HTTP/1.1" 200 0 "-" "WordPress/6.8.1; https://elvidracaria.com.br"
+205.210.31.159 - - [13/Jun/2025:14:40:13 -0300] "GET / HTTP/1.1" 301 0 "-" "-"
+45.148.96.51 - - [13/Jun/2025:17:01:55 -0300] "POST /wp-cron.php?doing_wp_cron=1749844915.4981780052185058593750 HTTP/1.1" 200 0 "-" "WordPress/6.8.1; https://elvidracaria.com.br"
+45.144.39.9 - - [13/Jun/2025:17:01:52 -0300] "GET / HTTP/1.1" 301 0 "-" "Mozilla/5.0 (iPhone14,3; U; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Mobile/19A346 Safari/602.1"

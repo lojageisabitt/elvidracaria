@@ -1,0 +1,377 @@
+# Webalizer V2.23-08 Incremental Data - 06/12/2025 16:28:46
+2025 6 12 16 28 46
+108 51 51 13 4 32 309552 46 42 0
+4 3 31 4 12
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+31 22 1108 13 9 6
+3 1 0 3 2 2
+33 12 98136 19 18 17
+5 2 0 3 3 3
+3 1 1251 2 1 1
+6 2 0 5 4 4
+5 2 1251 3 2 2
+17 7 207806 7 4 4
+5 2 0 4 3 3
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+6 2 0 4
+0 0 0 0
+18 4 0 14
+0 0 0 0
+0 0 0 0
+8 3 1251 3
+8 3 14264 3
+0 0 0 0
+6 3 114 2
+0 0 0 0
+2 1 0 1
+0 0 0 0
+3 1 0 2
+0 0 0 0
+0 0 0 0
+6 2 1251 2
+3 1 0 2
+0 0 0 0
+3 2 96771 0
+5 2 1251 2
+0 0 0 0
+28 20 1011 8
+10 6 193639 2
+2 1 0 1
+0
+0
+0
+51
+0
+0
+0
+0
+0
+0
+0
+49
+0
+0
+0
+0
+0
+0
+0
+0
+0
+8
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/.well-known/acme-challenge/9HEY8ZPH_4J7GNNRD1_JVVQQF2QJC7EX
+0 1 94177464114528 64 0 0
+/.well-known/acme-challenge/axfjmxY-zFiHoYPc1gbDgi3gczHMmAZIWUCKOMNKsI4
+0 5 0 435 0 0
+/.well-known/acme-challenge/DMPOK_8ENP-BHS0TTU-983F1TS2DT65F
+0 1 0 64 0 0
+/.well-known/acme-challenge/WCBMVW9KQL6GX0HTA1C0DWNMDZ2GIWHL
+0 1 0 64 0 0
+/wp-includes/js/jquery/jquery.js
+0 3 0 251277 0 0
+/.well-known/acme-challenge/ZTE1LRXEEL9GETGIV_TODT9_HDS1JP5S
+0 1 0 64 0 0
+/.well-known/acme-challenge/81-51AOGFXNOTAAI1KZVWD9ZP6R-E52U
+0 1 0 64 0 0
+/.well-known/acme-challenge/-SF7JSXG1EHWW_CCF8ZD6Q6XBGRT0ZS1
+0 1 0 64 0 0
+/.well-known/acme-challenge/J-B6DT6N21HM2ALPQ-RV7B5FDQU26ZYG
+0 1 0 64 0 0
+/.well-known/acme-challenge/AFE7-SVV19K2BH4X2VNBL41THIGNAX5E
+0 1 0 64 0 0
+/robots.txt
+0 2 0 211 0 0
+/.well-known/acme-challenge/E4NP5H0R_S4KLPMMVEUEAR5_JKJY6XHZ
+0 1 0 64 0 0
+/wp-cron.php
+0 32 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+80.118.75.34.bc.googleusercontent.com
+0 2 1 96771 0 0
+-
+crawl-149-56-150-161.dataproviderbot.com
+0 1 0 0 1 1749428322
+-
+64.225.5.121
+0 1 0 0 1 1749168220
+-
+ns3141298.ip-51-77-128.eu
+0 1 0 0 1 1749428361
+-
+229.147.122.34.bc.googleusercontent.com
+0 1 0 0 1 1749073139
+-
+ec2-16-171-67-63.eu-north-1.compute.amazonaws.com
+0 1 1 87 0 0
+-
+pool-92-118-134-172.multi-net.su
+0 1 0 0 1 1749536053
+-
+ec2-52-13-72-73.us-west-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+17-241-219-93.applebot.apple.com
+0 2 0 0 1 1749200256
+-
+ec2-54-213-224-129.us-west-2.compute.amazonaws.com
+0 2 0 0 1 1749214074
+-
+165.154.206.222
+0 1 0 0 1 1749745726
+-
+ec2-3-231-94-20.compute-1.amazonaws.com
+0 1 0 0 1 1749178003
+-
+ec2-54-221-57-209.compute-1.amazonaws.com
+0 2 0 1251 1 1749583728
+-
+crawl-66-249-66-194.googlebot.com
+0 1 0 0 1 1749074779
+-
+ec2-44-211-184-125.compute-1.amazonaws.com
+0 1 0 0 1 1749178012
+-
+159.203.167.133
+0 1 0 0 1 1749506128
+-
+129.153.223.252
+0 1 0 0 1 1749670224
+-
+unn-89-222-100-27.datapacket.com
+0 1 0 0 1 1749743101
+-
+205.169.39.187
+0 2 0 0 1 1749073049
+-
+br.brasil114-2040.com.br
+0 41 41 576 0 0
+-
+164.90.186.102
+0 3 0 1251 1 1749655058
+-
+ip87-106-67-223.pbiaas.com
+0 2 0 13013 1 1749623292
+-
+179-48-84-177.brasilfibrainternet.com.br
+0 2 0 0 1 1749072875
+-
+ec2-34-228-61-168.compute-1.amazonaws.com
+0 2 0 1251 1 1749364525
+-
+ec2-3-137-148-105.us-east-2.compute.amazonaws.com
+0 1 1 87 0 0
+-
+165.154.173.35
+0 1 0 0 1 1749745680
+-
+186.233.182.215-rev.raimax.com.br
+0 1 0 0 1 1749076140
+-
+201.213.243.35.bc.googleusercontent.com
+0 2 1 96771 0 0
+-
+147.182.204.11
+0 2 0 0 1 1749619030
+-
+64.43.109.175
+0 1 0 0 1 1749090372
+-
+ec2-13-221-75-40.compute-1.amazonaws.com
+0 2 0 1251 1 1749188886
+-
+139.59.134.44
+0 1 0 0 1 1749340724
+-
+176.103.242.136
+0 1 0 0 1 1749090370
+-
+205.169.39.57
+0 2 0 0 1 1749073043
+-
+ec2-98-82-33-50.compute-1.amazonaws.com
+0 1 0 0 1 1749178034
+-
+ec2-54-89-238-88.compute-1.amazonaws.com
+0 1 0 0 1 1749178000
+-
+ec2-54-251-138-24.ap-southeast-1.compute.amazonaws.com
+0 1 1 87 0 0
+-
+ec2-54-196-219-43.compute-1.amazonaws.com
+0 1 0 0 1 1749188773
+-
+193.144.237.35.bc.googleusercontent.com
+0 2 1 96771 0 0
+-
+crawl-66-249-66-67.googlebot.com
+0 1 1 97 0 0
+-
+ec2-3-236-191-6.compute-1.amazonaws.com
+0 2 0 0 2 1749262626
+-
+crawl-149-56-160-133.dataproviderbot.com
+0 1 0 0 1 1749428356
+-
+ec2-98-83-138-4.compute-1.amazonaws.com
+0 1 0 0 1 1749178001
+-
+outbound1f.letsencrypt.org
+0 1 1 87 0 0
+-
+ec2-54-227-121-65.compute-1.amazonaws.com
+0 1 0 0 1 1749178011
+-
+ec2-54-162-72-28.compute-1.amazonaws.com
+0 1 0 0 1 1749178017
+-
+ec2-54-175-5-46.compute-1.amazonaws.com
+0 1 0 0 1 1749178010
+-
+17-241-219-88.applebot.apple.com
+0 2 1 114 1 1749199206
+-
+643e1389-3c0c-440d-a119-9d72e5e3f7fe.fr-par-2.baremetal.scw.cloud
+0 1 0 0 1 1749205368
+-
+ec2-3-91-193-8.compute-1.amazonaws.com
+0 1 0 0 1 1749178003
+-
+ec2-44-195-129-46.compute-1.amazonaws.com
+0 1 0 0 1 1749178004
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+165.154.206.222
+0 1 0 0 1 1749745726
+-
+unn-89-222-100-27.datapacket.com
+0 1 0 0 1 1749743101
+-
+br.brasil114-2040.com.br
+0 2 2 0 0 0
+-
+165.154.173.35
+0 1 0 0 1 1749745680
+-
+# End Of Table - sites (daily)
+# -referrers- 
+http://elvidracaria.com.br/
+0 2
+- (Direct Request)
+0 104
+https://br.brasil114-2040.com.br:2087/
+0 1
+http://www.elvidracaria.com.br/
+0 1
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Sa
+0 1
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36
+0 1
+python-httpx/0.27.0
+0 1
+Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+0 5
+Mozilla/5.0 (compatible; Dataprovider.com)
+0 3
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+0 2
+Mozilla/5.0 (Linux; U; Android 4.0.3; de-de; Galaxy S II Build/GRJ22) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobi
+0 1
+Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36
+0 2
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 2
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0
+0 4
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+0 2
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/584.43 (KHTML, like Gecko) Chrome/77.0.2018 Safari/537.36
+0 1
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.60 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:22.0) Gecko/20100101 Firefox/22.0
+0 3
+Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+0 3
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Appleb
+0 4
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+0 4
+Cpanel-HTTP-Client/1.0
+0 9
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+0 2
+WordPress/6.8.1; https://elvidracaria.com.br
+0 32
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36
+0 2
+curl/7.81.0
+0 1
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; SMJB; rv:11.0) like Gecko
+0 1
+curl/7.29.0
+0 1
+Mozilla/5.0 (X11; Linux x86_64; rv:137.0) Gecko/20100101 Firefox/137.0
+0 3
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

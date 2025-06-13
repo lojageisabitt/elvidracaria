@@ -1,0 +1,706 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202504 will be lost/reset.
+# Last config file used to build this data file was /home7/elvidracaria/tmp/awstats/ssl/awstats.elvidracaria.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2025                
+POS_TIME 2702                
+POS_VISITOR 10968               
+POS_DAY 17642               
+POS_DOMAIN 3596                
+POS_LOGIN 4087                
+POS_ROBOT 4242                
+POS_WORMS 4878                
+POS_EMAILSENDER 5009                
+POS_EMAILRECEIVER 5152                
+POS_SESSION 18451               
+POS_SIDER 18660               
+POS_FILETYPES 5287                
+POS_DOWNLOADS 5648                
+POS_OS 5696                
+POS_BROWSER 6057                
+POS_SCREENSIZE 7272                
+POS_UNKNOWNREFERER 7346                
+POS_UNKNOWNREFERERBROWSER 8275                
+POS_ORIGIN 8886                
+POS_SEREFERRALS 9028                
+POS_PAGEREFS 9172                
+POS_SEARCHWORDS 9348                
+POS_KEYWORDS 9500                
+POS_MISC 2366                
+POS_ERRORS 9559                
+POS_CLUSTER 3943                
+POS_SIDER_404 9725                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20250501001543 18 2972 7452721402735
+FirstTime 20250401065023
+LastTime 20250430210525
+LastUpdate 20250501164409 18 0 17 0 0
+TotalVisits 282                 
+TotalUnique 139                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 184                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+FlashSupport 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 0 0
+JavaEnabled 0 0 0
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+TotalMisc 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 149 149 152222 1 9 2842565
+1 136 136 275603 9 22 7640062
+2 49 49 195085 0 4 5355581
+3 579 973 108999451 9 127 8907240
+4 143 280 42561747 10 66 3750217
+5 28 28 386340 4 17 6090185
+6 21 21 186314 4 18 15965352
+7 22 22 21157 5 60 5027984
+8 26 92 21109543 10 104 1587889
+9 23 89 21262272 4 59 5192283
+10 134 467 393060359 5 18 7531561
+11 17 17 42958 4 19 14920234
+12 304 601 73546815 7 35 12021085
+13 783 906 44851995 13 93 14285474
+14 806 966 44910055 15 90 16846255
+15 506 523 2584377 5 11 5979242
+16 1046 1887 112307130 7 56 11531613
+17 1426 1526 24818752 9 56 20421553
+18 658 671 732912 7 52 12453594
+19 427 427 221292 3 33 8270621
+20 753 1256 28116671 14 33 20547100
+21 238 238 88201 3 30 22841272
+22 314 382 21256514 4 28 26365481
+23 177 177 151925 5 21 12184257
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 20
+pa 4709 6569 561071762
+br 3832 4040 63910455
+us 164 903 229311662
+ie 25 302 86806145
+in 6 6 1160
+ca 5 5 245068
+de 4 38 94723
+ru 4 4 64034
+be 3 3 66551
+ir 2 2 189
+eu 2 2 224576
+ua 1 1 21405
+se 1 1 20611
+sg 1 1 189
+es 1 1 215
+my 1 1 189
+fr 1 1 189
+nl 1 1 189
+gb 1 1 189
+af 1 1 189
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 12
+Googlebot/ 400 1635566 20250430224431 18
+Googlebot\-Image/ 213 248177092 20250430175551 0
+facebookexternalhit/ 74 7864423 20250428125208 8
+spider 65 359442 20250420031344 1
+bot[\s_+:,\.\;\/\\-] 54 1149218 20250430071204 3
+no_user_agent 8 958925 20250429014053 0
+unknown 5 600 20250424025455 5
+[\s_+:,\.\;\/\\-]bot 4 39223 20250428235202 2
+nutch 2 21340 20250414093934 1
+scrapy 2 41220 20250404173850 0
+(firefox/)([0-9]\.|[0-1][0]\.) 1 21407 20250424213408 0
+Apache\-HttpClient/ 1 21406 20250428055628 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 15
+jpg 30 1117519 0 0
+css 1373 2009615 0 0
+js 980 11470145 0 0
+jpeg 23 6901603 0 0
+php 7076 26243088 0 0
+gif 11 35242 0 0
+html 296 8510223 0 0
+Unknown 1257 3092212 0 0
+svg 23 114382 0 0
+png 678 514774383 0 0
+woff2 129 3643488 0 0
+woff 2 26936 0 0
+wpress 1 363896617 0 0
+ttf 3 3680 0 0
+xml 1 557 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 21
+macosx6 2 2
+androidkitkat 1 1
+win10 7125 4806
+android 148 16
+macosx 7 7
+macosx5 1 1
+unix 2 0
+macosx15 26 20
+android10 1 1
+winnt 4 4
+Unknown 3909 3837
+macosx12 1 1
+macosx13 1 1
+macosx9 1 1
+androidmarshmallow 291 25
+androidnougat 1 1
+win8 1 1
+linuxubuntu 1 1
+win7 2 2
+ios_iphone 75 7
+linux 283 30
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 59
+firefox120.0 1 0
+chrome 1 1
+chrome134.0.0.0 4711 3507
+safari16.1 1 0
+firefox58.0 1 1
+chrome116.0.5845.96 4 4
+chrome66.0.3359.181 12 12
+iphone 75 7
+mozilla 80 16
+edge16 1 1
+chrome135.0.7049.100 73 7
+chrome103.0.0.0 1 0
+firefox24.0 1 1
+firefox136.0 1 1
+Unknown 3825 3817
+safari17.0.96 2 2
+safari5.0.5 1 1
+msie8.0 1 1
+safari5.0.4 1 1
+chrome135.0.7049.52 2 2
+chrome119.0.0.0 2 0
+chrome128.0.0.0 11 11
+chrome114.0.5735.134 3 3
+netscape5.0 5 5
+firefox19.0 1 1
+chrome135.0.7049.89 73 7
+chrome106.0.0.0 1 1
+firefox127.0 4 4
+chrome119.0.6045.199 1 0
+chrome110.0.0.0 2 2
+chrome105.0.0.0 2 2
+safari17.5 1 1
+safari17.3.1 1 1
+android 1 1
+firefox129.0 3 3
+chrome85.0.4182.0 280 28
+chrome112.0.5615.138 2 2
+safari17.1.2 1 1
+firefox126.0 8 8
+chrome126.0.0.0 29 9
+chrome115.0.5790.171 1 1
+safari11.0.3 1 1
+chrome135.0.0.0 2014 1220
+chrome125.0.0.0 84 8
+chrome24.0.1295.0 1 1
+chrome91.0.4472.124 8 8
+chrome104.0.0.0 5 5
+chrome80.0.3987.162 1 1
+opera11.52 1 1
+chrome60.0.3112.107 1 1
+chrome113.0.5672.126 1 1
+chrome134.0.6998.165 288 22
+chrome107.0.0.0 1 1
+chrome130.0.0.0 76 8
+chrome120.0.0.0 29 1
+chrome115.0.5790.102 1 1
+chrome131.0.0.0 64 1
+firefox128.0 3 3
+chrome133.0.0.0 77 8
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 11
+Mozilla/5.0 20250414040615
+WordPress/6.8.1;_https://elvidracaria.com.br 20250430210525
+WordPress/6.8;_https://elvidracaria.com.br 20250430210519
+Mozilla/5.0_(compatible;_InternetMeasurement/1.0;__https://internet-measurement.com/) 20250413002040
+Mozilla/5.0_(compatible) 20250420014751
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20250414190909
+Mozilla/5.0_(compatible;_Dataprovider.com) 20250403123854
+WordPress/6.7.2;_https://elvidracaria.com.br 20250416132706
+okhttp/4.9.2 20250429060718
+python-requests/2.27.1 20250421173421
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20250425014038
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 6
+WordPress/6.8;_https://elvidracaria.com.br 20250430210519
+python-requests/2.27.1 20250421173421
+okhttp/4.9.2 20250429060718
+WordPress/6.8.1;_https://elvidracaria.com.br 20250430210525
+WordPress/6.7.2;_https://elvidracaria.com.br 20250416132706
+Expanse,_a_Palo_Alto_Networks_company,_searches_across_the_global_IPv4_space_multiple_times_per_day_to_identify_customers&#39;_presences_on_the_Internet._If_you_would_like_to_be_excluded_from_our_scans,_please_send_IP_addresses/domains_to:_scaninfo@paloaltonetworks.com 20250425014038
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 3933 3990
+From1 1 1
+From2 0 0
+From3 3 3
+From4 4828 7889
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 1
+https://l.instagram.com 3 3
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 8
+403 1 1242
+400 1 21
+201 3 2054
+404 102 1999327
+500 1 244
+301 24 0
+206 34 6265950
+302 33 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 19
+/wp-content/uploads/2024/09/placeholder-2.png 2 https://elvidracaria.com.br/sobre-a-empresa/
+/caminho-da-imagem/balcao-pia-vidro-jateado.jpg 34 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/elementor/css/post-5.css 1 https://elvidracaria.com.br/
+/uploaded_script.php 3 www.google.com
+/2024/09/02/ 1 https://elvidracaria.com.br/
+/wp-includes/style-engine/wp-conflg.php 1 www.google.com
+/_wp_link_placeholder 2 https://elvidracaria.com.br/
+/favicon.png 5 -
+/caminho-da-imagem/porta-estrutura-preta.jpg 34 https://elvidracaria.com.br/wp-admin/post.php
+/security.txt 1 -
+/.well-known/assetlinks.json 1 -
+/wp-content/plugins/HelloDollyV2/hello_dolly_v2.php 1 www.google.com
+/ads.txt 3 -
+/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper-bundle.min.js.map 7 -
+/2025/04/04/ 1 https://elvidracaria.com.br/
+/ 1 -
+/humans.txt 1 -
+/wp-content/themes/hello_dolly_v2.php 1 www.google.com
+/.well-known/security.txt 2 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 184
+187.108.200.229 3811 3819 457372 20250430210525
+179.48.85.243 3417 4618 502925857 20250411224403
+179.48.84.239 464 965 27912047 20250405015355
+179.48.84.140 460 592 29586278 20250405135319
+179.48.84.255 360 386 646964 20250406013045
+66.102.6.98 12 81 26868523 20250408040741
+66.102.6.96 8 83 13673031 20250408040741
+3.80.99.77 7 75 21167269 20250422035257
+191.201.53.37 7 73 21108903 20250429085629
+52.201.246.101 7 75 21167269 20250422035259
+149.56.150.235 7 7 602464 20250403123737
+179.48.85.232 7 7 539 20250405142024
+34.207.79.191 7 75 21167269 20250422035256
+187.62.242.237 7 75 21235491 20250419224033
+54.226.181.34 7 75 21167269 20250422035258
+179.248.162.123 7 73 21108689 20250414091932
+31.13.115.10 6 32 5282691 20250408175450
+173.252.127.2 5 7 3440115 20250414160844
+69.171.251.112 4 10 4184296 20250419132750
+31.13.127.1 3 29 2978946 20250424125712
+99.81.216.206 3 3 63438 20250409090959
+173.212.223.204 3 3 593 20250402024258
+3.238.147.168 3 3 62868 20250414202332
+69.171.251.113 3 9 7275484 20250419132750
+3.129.187.83 3 3 65114 20250411232510
+134.209.144.179 1 1 21401 20250420014751
+173.252.127.17 1 22 2208059 20250414160830
+31.13.115.113 0 7 211697 
+31.13.127.8 0 10 2156523 
+31.13.115.17 0 4 1406129 
+158.69.25.207 1 1 189 20250401220605
+34.213.190.13 2 2 42454 20250412133801
+173.252.127.112 1 1 19793 20250405160505
+31.13.115.14 0 5 282856 
+23.111.188.34 1 1 189 20250402061050
+54.172.156.144 1 1 122345 20250417034758
+34.56.250.150 1 1 21406 20250420111027
+54.164.157.105 1 1 21406 20250428062055
+31.13.115.3 2 6 3831625 20250408175450
+3.145.200.147 1 1 21406 20250421173421
+199.188.207.168 1 1 189 20250401225552
+162.213.255.8 1 1 189 20250401160237
+5.9.94.125 1 35 73708 20250405161545
+3.91.10.96 1 1 20610 20250403025430
+69.171.251.19 0 15 342360 
+212.227.72.139 1 1 189 20250401165115
+98.84.101.93 1 1 112672 20250403124102
+31.13.127.116 0 9 7772 
+31.13.115.2 2 6 54277 20250428125136
+31.13.127.112 1 4 313013 20250424125712
+54.82.4.171 1 1 122345 20250426042328
+31.13.115.7 0 2 365 
+35.90.161.199 2 2 42452 20250415001938
+13.38.62.252 1 1 21226 20250414024859
+173.252.127.115 0 20 1199120 
+104.43.93.163 1 1 189 20250402063943
+35.94.239.174 2 2 42814 20250423233521
+31.13.127.12 0 11 18677 
+69.171.251.10 0 8 3684019 
+35.187.250.253 1 1 189 20250401182629
+31.13.115.115 0 8 7243749 
+198.54.114.56 1 1 215 20250401151151
+87.236.176.196 1 1 22662 20250409164828
+52.54.71.95 2 2 41912 20250415195047
+54.173.29.52 1 1 130370 20250409095924
+205.169.39.7 1 1 20611 20250401073342
+203.115.100.94 1 1 189 20250401185033
+31.13.127.11 0 1 316 
+66.249.66.7 2 2 27014 20250411041632
+179.48.84.157 1 1 77 20250405135612
+198.54.121.141 1 1 189 20250401193905
+54.83.74.185 1 1 130370 20250411051120
+31.13.115.1 0 5 2867 
+31.13.115.13 0 6 7927 
+66.249.92.8 1 10 4925345 20250408142128
+23.251.154.195 1 1 21227 20250415033747
+31.13.127.4 0 4 3168687 
+31.13.127.5 0 9 3822562 
+173.252.127.48 0 1 810440 
+31.13.115.9 0 7 12651 
+31.13.115.18 0 2 2710 
+35.87.152.46 2 2 42452 20250415002248
+198.13.55.25 1 1 2831 20250414040615
+198.54.114.91 1 1 189 20250401211629
+95.188.65.216 1 1 189 20250401232138
+66.102.6.97 2 63 22863710 20250408040741
+31.13.127.21 0 1 901249 
+118.139.180.100 1 1 189 20250402090813
+108.61.187.233 1 1 9119 20250410022707
+162.213.255.38 2 2 215 20250402051429
+31.13.127.22 0 11 2328745 
+69.171.251.114 0 11 140328 
+31.13.115.114 1 1 21171 20250428125110
+54.234.7.117 1 1 112288 20250407051225
+162.0.232.248 2 2 189 20250402035742
+31.13.127.32 0 1 37704 
+34.42.72.177 1 1 21219 20250413131954
+195.26.245.159 1 1 189 20250401180224
+206.168.34.192 1 1 21226 20250414190909
+199.188.200.139 2 2 378 20250402044703
+205.210.31.180 1 1 122345 20250425014038
+173.252.127.8 0 1 2303646 
+103.213.38.226 1 1 189 20250402070918
+69.171.251.5 1 8 26057 20250419132732
+69.4.89.106 2 2 260740 20250411100334
+31.13.115.6 0 1 313099 
+31.13.127.25 0 4 2252 
+13.59.124.19 1 1 21401 20250419001753
+31.13.127.29 2 6 42855 20250424125710
+31.13.115.5 1 11 69314 20250428125134
+31.13.115.4 0 16 3376569 
+54.175.198.90 1 1 21407 20250424100316
+69.171.251.116 0 13 3647344 
+66.102.128.22 2 2 404 20250402093818
+159.203.35.156 1 1 20384 20250406014653
+93.119.227.19 2 2 224576 20250407184549
+18.209.70.147 1 1 122345 20250419041501
+62.60.160.33 1 1 0 20250401223102
+50.19.29.8 1 1 121856 20250415050021
+83.149.93.194 1 1 189 20250402054223
+87.106.67.223 1 1 20611 20250405022450
+198.54.120.17 1 1 0 20250401153739
+209.97.152.253 1 1 22660 20250408211326
+31.13.115.21 1 6 7275984 20250428125137
+31.13.127.18 0 4 4959366 
+94.247.172.129 1 1 20611 20250401065023
+66.249.92.7 0 49 6311973 
+199.244.88.225 1 1 22662 20250409191843
+93.159.230.28 1 1 21219 20250413231249
+31.13.127.114 0 1 29371 
+31.13.127.27 0 3 18269 
+198.54.114.126 1 1 189 20250401234735
+66.249.92.10 0 2 3436623 
+3.220.101.67 1 1 21406 20250429060718
+31.13.127.24 2 5 2361467 20250424125711
+3.91.9.108 1 1 121856 20250415034257
+31.13.127.6 0 5 816488 
+103.132.20.2 1 1 215 20250402080845
+69.171.251.7 0 3 2198611 
+104.155.139.200 1 1 21226 20250414031107
+103.8.25.98 1 1 189 20250401132218
+100.27.230.1 1 1 122345 20250427065455
+31.13.127.30 0 2 30302 
+103.90.232.143 1 1 189 20250401191450
+37.27.60.109 1 1 189 20250401135042
+173.252.127.7 2 10 6815359 20250414160845
+66.249.92.9 0 1 1739 
+192.64.117.93 1 1 215 20250401205159
+185.36.145.205 1 1 215 20250402033334
+68.183.89.103 1 1 20398 20250406233403
+45.40.61.195 2 2 2824 20250409155636
+117.55.203.84 1 1 189 20250402015216
+37.187.26.72 1 1 189 20250402021730
+198.235.24.185 1 1 122345 20250418204807
+91.200.15.4 1 1 21405 20250425114232
+173.252.127.114 0 13 599061 
+194.163.180.153 1 1 215 20250402083816
+52.208.151.205 1 1 20610 20250403232016
+31.13.127.3 1 2 22757 20250424125648
+209.172.2.50 1 1 189 20250402030841
+87.236.176.56 1 1 21227 20250413002040
+199.244.88.221 1 1 21407 20250424172313
+31.13.115.112 2 23 556912 20250428125135
+31.13.127.2 0 3 2881 
+103.148.164.166 1 1 189 20250402042154
+31.13.115.116 0 2 1935188 
+93.159.230.84 1 1 21399 20250427231858
+185.247.137.245 1 1 21227 20250413001254
+34.213.233.212 2 2 42800 20250426180158
+34.223.40.137 1 1 122345 20250418022449
+31.13.127.10 0 3 6057390 
+54.217.83.13 2 2 42011 20250426214806
+34.220.227.207 2 2 42454 20250412134104
+161.77.134.191 1 1 21406 20250428055635
+31.13.127.28 0 5 4684493 
+173.252.127.15 0 2 2989405 
+31.13.127.26 0 3 3195053 
+3.88.47.142 1 1 130370 20250411034852
+87.236.176.129 1 1 22662 20250409102416
+31.13.127.115 0 5 4850896 
+115.245.68.141 1 1 189 20250402073908
+38.242.195.184 1 1 215 20250401162720
+144.217.135.239 1 65 21320236 20250403123851
+31.13.115.12 1 11 12110330 20250428125137
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20250401 80 143 21458436 30
+20250402 64 64 3989 22
+20250403 18 82 22076697 7
+20250404 628 1131 27910383 7
+20250405 1799 1991 30380530 12
+20250406 25 25 41253 7
+20250407 130 130 393901 11
+20250408 3100 3922 511947998 14
+20250409 474 476 356687 11
+20250410 7 7 31865 4
+20250411 2094 2819 92106539 11
+20250412 25 25 85097 8
+20250413 24 24 85081 11
+20250414 48 182 41603544 18
+20250415 31 31 476852 13
+20250416 5 5 63 2
+20250417 9 9 122429 4
+20250418 13 13 244837 6
+20250419 31 168 42877883 12
+20250420 6 6 42870 5
+20250421 5 5 21469 3
+20250422 44 316 84755184 10
+20250423 13 13 42940 6
+20250424 19 88 21541418 11
+20250425 8 8 143813 5
+20250426 9 9 186629 6
+20250427 7 7 143807 5
+20250428 20 89 21541395 12
+20250429 10 76 21130330 3
+20250430 19 19 85771 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 17
+1h+ 20
+2mn-5mn 4
+30mn-1h 8
+0s-30s 224
+30s-2mn 2
+15mn-30mn 7
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 96
+/wp-admin/admin-ajax.php 4672 12994700 84 123
+/wp-cron.php 2148 0 47 11
+/wp-json/image-optimizer/v1/stats 942 323106 0 1
+/ 209 6664553 86 76
+/wp-json/image-optimizer/v1/optimize/status 53 3634 0 0
+/xmlrpc.php 43 7605 43 43
+/wp-admin/edit.php 38 893481 0 0
+/wp-admin/post.php 34 6316039 0 0
+/wp-json/wp/v2/users/me 22 61446 0 0
+/wp-admin/load-scripts.php 20 915037 0 0
+/wp-admin/load-styles.php 20 2014331 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459wlhyw.woff2 18 680904 1 12
+/wp-content/uploads/elementor/google-fonts/fonts/russoone-z9xudmzrwg6m1lvryshoz8mj.woff2 18 132624 2 2
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2 18 144000 4 1
+/wp-json/wp/v2/posts/422/autosaves 18 69456 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4asluuypg.woff2 18 320832 2 2
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2 18 722304 4 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnyc0itw.woff2 18 870048 2 6
+/wp-json/elementor/v1/global-widget/templates 17 34 0 0
+/wp-json/elementor/v1/globals 17 17799 0 0
+/wp-json/elementor/v1/site-navigation/recent-posts 17 25733 0 0
+/wp-json/elementor/v1/kit-elements-defaults 17 34 0 0
+/wp-admin/admin.php 14 726906 0 0
+/wp-json/wp/v2/types 12 74034 0 0
+/wp-json/wp/v2/block-patterns/categories 12 27768 0 0
+/wp-json/wp/v2/users/1 6 168 0 0
+/wp-admin/options-general.php 8 224501 0 0
+/wp-json/wp/v2/posts/438 2 20051 0 0
+/wp-admin/async-upload.php 11 8640 0 0
+/wp-login.php 10 29882 5 2
+/wp-admin/upgrade.php 2 42 0 0
+/2025/04/08/transformando-ambientes-com-vidrotransformando-ambientes-com-vidro-e-estrutura-metalica-preta-um-toque-moderno-e-sofisticadotransformando-ambientes-com-vidro/ 4 86694 0 0
+/wp-content/ai1wm-backups/elvidracaria-com-br-20250408-134222-7frc8jc5lgtm.wpress 1 363896617 0 0
+/wp-admin/themes.php 1 26454 0 0
+/localizacao/ 10 238591 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2 2 26552 0 0
+/wp-json/wp/v2/taxonomies/category 4 9084 0 0
+/wp-json/wp/v2/pages/415 7 15087 0 0
+/wp-json/wp/v2/templates/lookup 4 8 0 0
+/wp-content/plugins/litespeed-cache/assets/css/fonts/litespeedfont.ttf 3 3680 0 0
+/wp-json/wp/v2/posts/422 2 15272 0 0
+/wp-admin/update.php 2 27663 0 0
+/wp-json/wp/v2/block-renderer/core/rss 1 1005 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2 1 81612 0 0
+/wp-admin/plugins.php 11 253476 0 0
+/category/box-de-banheiro/ 4 78966 0 0
+/projetos-realizados/ 10 325437 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/nunito-xrxv3i6li01bkofineab.woff2 1 39124 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo5cnqeu92fr1mu53zec9_vu3r1gihoszmkbnka.woff2 2 88384 0 0
+/wp-json/wp/v2/templates 2 4 0 0
+/2025/04/08/vidro-jateado-estrutura-preta/ 3 66526 0 0
+/wp-json/wp/v2/posts 6 84046 0 0
+/2025/04/08/ 1 19779 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2 8 61984 1 2
+/wp-json/wp/v2/posts/405 1 2876 0 0
+/wp-json/wp/v2/taxonomies/post_tag 2 4406 0 0
+/wp-admin/index.php 7 204230 0 0
+/category/portas/ 2 39737 0 0
+/wp-admin/options-reading.php 4 74207 0 0
+/wp-admin/upload.php 6 239745 0 0
+/wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.woff 1 18824 0 0
+/wp-json/wp/v2/taxonomies 7 67144 0 0
+/blog/ 2 37478 0 1
+/wp-json/wp/v2/posts/438/autosaves 10 44642 0 0
+/wp-content/plugins/all-in-one-wp-migration/lib/view/assets/font/servmask.woff 1 8112 0 0
+/wp-admin/about.php 2 42255 0 0
+/wp-json/wp/v2/block-patterns/patterns 7 1236228 0 0
+/wp-json/wp/v2/categories 9 3610 0 0
+/wp-sitemap.xml 1 557 0 0
+/wp-admin/profile.php 1 26788 0 0
+/2025/04/05/box-de-vidro-temperado-banheiro/ 8 169080 0 0
+/wp-admin/plugin-install.php 3 78688 0 0
+/wp-json/image-optimizer/v1/whats-new 2 4090 0 0
+/category/balcao/ 5 91699 1 0
+/author/geisislane/ 1 18270 0 0
+/wp-json/wp/v2/media/426 2 8363 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluamaxkubgee.woff2 1 20408 0 0
+/wp-admin/ 11 297990 0 0
+/wp-json/wp/v2/blocks 11 22 0 0
+/wp-json/elementor/v1/template-library/templates 9 859020 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2 2 156392 0 0
+/wp-admin/edit-comments.php 1 23610 0 0
+/sobre-a-empresa/ 9 271586 0 0
+/wp-json/wp/v2/wp_pattern_category 12 24 0 0
+/wp-json/wp/v2/settings 12 103836 0 0
+/wp-json/wp/v2/tags 2 4 0 0
+/wp-json/ 12 7416 0 0
+/wp-json/wp/v2/categories/1 2 1368 0 0
+/wp-json/wp/v2/posts/ 3 62454 0 0
+/wp-admin/post-new.php 7 879343 0 0
+/wp-admin/options-writing.php 1 18651 0 0
+/projetos-residenciais/ 2 33967 0 0
+/wp-admin/update-core.php 10 216814 0 0
+/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2 4 298320 0 0
+/wp-json/wp/v2/media/442 2 8630 0 0
+/wp-json/wp/v2/users 6 180 0 0
+END_SIDER

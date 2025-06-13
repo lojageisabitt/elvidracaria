@@ -1,0 +1,6 @@
+[/home7/elvidracaria/public_html]
+htaccess_list = /home7/elvidracaria/public_html/wp-content/plugins/webp-express/web-service/.htaccess,/home7/elvidracaria/public_html/wp-content/plugins/webp-express/wod/.htaccess,/home7/elvidracaria/public_html/.htaccess
+
+[/home/elvidracaria/public_html]
+htaccess_list = /home/elvidracaria/public_html/.htaccess,/home/elvidracaria/public_html/wp-content/plugins/akismet/.htaccess,/home/elvidracaria/public_html/wp-content/plugins/litespeed-cache/data/.htaccess,/home/elvidracaria/public_html/wp-content/ai1wm-backups/.htaccess
+

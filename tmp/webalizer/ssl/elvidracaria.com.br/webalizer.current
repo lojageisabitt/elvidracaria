@@ -1,0 +1,1227 @@
+# Webalizer V2.23-08 Incremental Data - 06/13/2025 00:12:16
+2025 6 13 0 12 16
+3300 3165 192 186 21 60 640348277 162 127 0
+1 2 1068 4 13
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+795 745 180283355 21 27 15
+437 422 73864625 41 19 19
+1403 1385 286414458 74 27 25
+74 71 9057991 15 15 5
+22 14 734421 11 6 6
+311 295 65652591 22 27 19
+156 149 23177259 38 15 12
+45 34 630142 19 16 16
+55 48 508667 24 9 9
+2 2 24768 1 1 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+118 109 26641900 20
+21 18 3294368 8
+1176 1151 240005574 17
+9 8 1930036 3
+3 2 63858 1
+18 11 2812153 6
+69 67 3009150 7
+29 26 2413141 5
+134 131 21589150 3
+7 7 15698 1
+228 226 29240978 4
+30 30 1842092 2
+7 6 43342 3
+29 27 249757 5
+101 99 22778842 2
+26 18 186987 6
+15 13 779318 2
+177 174 42675423 9
+60 59 4441705 11
+11 10 3312148 2
+21 17 1652840 2
+789 739 176750318 26
+49 47 4831404 8
+173 170 49788095 9
+0
+0
+0
+3165
+0
+0
+0
+0
+0
+0
+0
+33
+0
+0
+44
+0
+0
+0
+0
+0
+6
+52
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/wp-content/uploads/elementor/google-fonts/css/nunito.css
+0 2 94869536997056 1464 0 0
+/wp-content/uploads/elementor/google-fonts/css/montserrat.css
+0 36 8174877748607582208 31070 0 0
+/wp-content/uploads/2024/09/cresci-perdi-wide.png
+0 32 94869537038336 939872 0 0
+/wp-content/uploads/2024/09/2-4.png
+0 1 0 1432329 0 0
+/wp-content/plugins/elementor/assets/js/text-editor.c084ef86600b6f11690d.bundle.min.js
+0 3 0 1863 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459wlhyw.woff2
+0 29 0 1097012 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4aslu-ypnll.woff2
+0 8 0 82016 0 0
+/wp-content/plugins/elementor/assets/css/widget-google_maps.min.css
+0 2 0 234 0 0
+/wp-content/uploads/2024/09/5-3.png
+0 1 0 831941 0 0
+/wp-content/plugins/elementor/assets/css/widget-image.min.css
+0 35 0 4564 0 0
+/wp-content/plugins/elementor-pro/assets/js/nav-menu.a23fbd67486c5bedf26c.bundle.min.js
+0 22 0 36660 0 0
+/wp-content/uploads/2024/09/11-1.png
+0 31 0 66449348 0 0
+/wp-content/uploads/elementor/google-fonts/css/didactgothic.css
+0 35 0 18481 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-slides.min.css
+0 34 0 19063 0 0
+/wp-content/uploads/2024/09/3.png
+0 1 0 708454 0 0
+/wp-content/uploads/2024/09/logocacaushow-1.png
+0 7 0 664048 0 0
+/wp-content/uploads/2024/09/logocacaushow-1-1024x372.png
+0 6 0 447144 0 0
+/ads.txt
+0 1 94869537092128 12385 0 0
+/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css
+0 2 0 326 0 0
+/wp-content/uploads/2024/09/Porta-Fume.png
+0 28 0 12223035 0 0
+/wp-content/plugins/elementor-pro/assets/js/frontend.min.js
+0 36 0 239100 0 0
+/wp-content/uploads/2024/09/Porta-de-vidro-1.png
+0 1 0 1682662 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnycait5lu.woff2
+0 8 7092729803768885106 215904 0 0
+/wp-content/uploads/elementor/css/post-37.css
+0 35 1952804398 135914 0 0
+/wp-content/uploads/2024/09/Porta-Jateada.png
+0 28 3543825160843703095 20236117 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1xlfq.woff2
+0 8 8026309974050238561 62720 0 0
+/wp-content/uploads/2024/09/logocacaushow-1-1536x559.png
+0 6 3330184329828499456 731196 0 0
+/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js
+0 37 7483565494905287217 85057 0 0
+/wp-content/uploads/elementor/google-fonts/css/raleway.css
+0 35 3329625989133252397 30116 0 0
+/wp-content/uploads/2024/09/3-4.png
+0 1 0 1165656 0 0
+/wp-includes/js/dist/i18n.min.js
+0 37 0 134336 0 0
+/wp-content/plugins/elementor-pro/assets/js/load-more.8b46f464e573feab5dd7.bundle.min.js
+0 1 0 1483 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3gubgee.woff2
+0 8 0 284544 0 0
+/wp-content/uploads/2024/09/9-1.png
+0 1 0 1273417 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3yuba.woff2
+0 29 0 1123584 0 0
+/wp-content/uploads/2024/09/4-1.png
+0 31 0 72955070 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css
+0 36 0 42798 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3iubgee.woff2
+0 8 0 182368 0 0
+/wp-content/uploads/elementor/google-fonts/css/roboto.css
+0 36 0 76592 0 0
+/wp-content/uploads/2024/09/11-2.png
+0 1 0 1268750 0 0
+/wp-content/plugins/elementor/assets/css/widget-divider.min.css
+0 3 0 2091 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4asluiypnll.woff2
+0 8 0 68928 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4asluuypg.woff2
+0 29 0 516896 0 0
+/wp-content/plugins/elementor/assets/css/widget-spacer.min.css
+0 35 0 11599 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnyc0itw.woff2
+0 29 0 1401744 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjnecmne.woff2
+0 8 0 45152 0 0
+/wp-content/uploads/2024/09/Escada-em-aluminio-Preto.png
+0 27 0 25199580 0 0
+/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js
+0 1 0 1072 0 0
+/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js
+0 37 0 264709 0 0
+/wp-content/uploads/2024/09/Porta-Fume-1.png
+0 1 7171939 452714 0 0
+/wp-content/uploads/2024/09/Design-Web-2-768x768.png
+0 8 3531103582835179520 1315312 0 0
+/wp-content/uploads/2024/09/Design-Web-2-1024x1024.png
+0 24 3615886049121546802 5870980 0 0
+/wp-content/plugins/elementor/assets/js/nested-accordion.c546968f7aebebc356f2.bundle.min.js
+0 2 1836016430 5414 0 0
+/wp-content/uploads/2024/09/Design-Web-2.png
+0 19 7311435047661482290 4970538 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluamaxkubgee.woff2
+0 8 3761119436278476342 163264 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/russoone-z9xudmzrwg6m1lvryshoz8mj.woff2
+0 29 7955890216726691840 206304 0 0
+/wp-content/plugins/elementor/assets/css/widget-image-box.min.css
+0 35 0 10894 0 0
+/wp-content/uploads/2024/09/Box-Blindex.png
+0 28 0 21530022 0 0
+/wp-content/uploads/2024/09/Fachada-de-loja-1.png
+0 1 0 1102599 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4asluaypnll.woff2
+0 8 0 71904 0 0
+/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css
+0 35 0 25348 0 0
+/wp-includes/js/imagesloaded.min.js
+0 36 0 63792 0 0
+/wp-content/uploads/2024/09/14.png
+0 1 0 1953251 0 0
+/wp-content/uploads/2024/09/4-3.png
+0 1 0 891045 0 0
+/wp-content/uploads/2024/09/4-4.png
+0 1 0 1169500 0 0
+/wp-content/plugins/elementor-pro/assets/js/gallery.1628df47530ab42dafba.bundle.min.js
+0 1 0 1666 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlbt5z1jlfc-k.woff2
+0 8 0 43040 0 0
+/wp-content/uploads/2024/09/7-2.png
+0 1 0 1760308 0 0
+/wp-content/plugins/elementor/assets/css/widget-menu-anchor.min.css
+0 36 0 3816 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldd4z1jlfc-k.woff2
+0 8 0 43936 0 0
+/wp-content/uploads/2024/09/6-1.png
+0 30 0 25714414 0 0
+/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css
+0 36 0 4550 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459w1hyzbi.woff2
+0 8 0 190688 0 0
+/wp-content/themes/hello-elementor/header-footer.min.css
+0 37 0 48202 0 0
+/wp-content/plugins/elementor-pro/assets/css/conditionals/transitions.min.css
+0 2 0 1170 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css
+0 35 0 108593 0 0
+/wp-content/uploads/2024/09/6-3.png
+0 1 3761118353876320256 1451954 0 0
+/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css
+0 2 28015 1448 0 0
+/wp-content/uploads/trustindex-google-widget.css
+0 2 0 14088 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlbt5z1xlfq.woff2
+0 8 3343197528570015348 61056 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1xlfq.woff2
+0 29 7162130782402641920 224000 0 0
+/wp-content/uploads/elementor/google-fonts/css/russoone.css
+0 36 0 14694 0 0
+/2025/04/08/vidro-jateado-estrutura-preta-rj/
+0 1 0 15459 1 0
+/wp-content/uploads/elementor/google-fonts/css/barlow.css
+0 38 0 30761 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlfj_z1jlfc-k.woff2
+0 8 0 44064 0 0
+/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js
+0 38 0 22154 0 0
+/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js
+0 36 0 97891 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3-ubgee.woff2
+0 8 0 141024 0 0
+/wp-content/uploads/elementor/css/post-89.css
+0 2 0 5432 0 0
+/wp-content/plugins/elementor/assets/js/frontend-modules.min.js
+0 37 0 555138 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3kubgee.woff2
+0 8 0 211424 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-post-info.min.css
+0 1 0 166 0 0
+/wp-content/plugins/elementor/assets/js/image-carousel.6167d20b95b33386757b.bundle.min.js
+0 2 0 512 0 0
+/wp-includes/js/comment-reply.min.js
+0 1 0 1248 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnyciit5lu.woff2
+0 8 0 91072 0 0
+/wp-includes/js/jquery/jquery-migrate.min.js
+0 37 0 179002 0 0
+/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css
+0 35 0 151450 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlcz7z1xlfq.woff2
+0 8 0 62528 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnycmit5lu.woff2
+0 8 0 246880 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1jlfc-k.woff2
+0 8 0 43872 0 0
+/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js
+0 36 0 395896 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/russoone-z9xudmzrwg6m1lvryshoy8mjrrg.woff2
+0 8 3347990239454836273 35936 0 0
+/wp-content/uploads/2024/09/4-2.png
+0 1 3347990239454834737 702476 0 0
+/wp-includes/js/jquery/ui/core.min.js
+0 36 7939413431044943409 255290 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluamawcubgee.woff2
+0 8 7090192418542267956 324576 0 0
+/wp-content/uploads/2024/09/Guarda-Corpo.png
+0 28 7146761175100842286 29889855 0 0
+/wp-content/uploads/elementor/css/post-468.css
+0 1 3329911840866381110 1355 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3oubgee.woff2
+0 8 0 104032 0 0
+/wp-includes/js/dist/hooks.min.js
+0 37 0 60491 0 0
+/wp-content/plugins/elementor-pro/assets/js/posts.aec59265318492b89cb5.bundle.min.js
+0 1 0 1179 0 0
+/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css
+0 36 0 23414 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4aslueypnll.woff2
+0 8 0 89568 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/didactgothic-ahcfv8qz1zt6hcc5g4f_p4asluwypnll.woff2
+0 8 0 210528 0 0
+/wp-content/uploads/elementor/css/post-5.css
+0 36 0 15693 0 0
+/wp-content/plugins/elementor/assets/css/frontend.min.css
+0 36 0 230671 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlej6z1jlfc-k.woff2
+0 8 0 44192 0 0
+/localizacao-rj/
+0 5 0 114496 3 2
+/wp-content/uploads/2024/09/faxada-smart-fit-scaled-1.jpeg
+0 30 0 9392970 0 0
+/wp-includes/js/wp-emoji-release.min.js
+0 31 0 145368 0 0
+/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css
+0 35 0 6732 0 0
+/wp-content/uploads/2024/09/3-5.png
+0 1 0 953858 0 0
+/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css
+0 36 0 2772 0 0
+/wp-content/themes/hello-elementor/style.min.css
+0 36 0 57820 0 0
+/wp-content/plugins/elementor/assets/css/widget-heading.min.css
+0 35 0 5610 0 0
+/wp-content/uploads/2024/09/9-2.png
+0 30 0 88864165 0 0
+/wp-content/uploads/elementor/css/post-80.css
+0 35 0 69785 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/roboto-kfo7cnqeu92fr1me7ksn66agldtyluama3cubgee.woff2
+0 8 0 34720 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlcz7z1jlfc-k.woff2
+0 8 3256441395677180160 43456 0 0
+/wp-content/uploads/2024/09/logocacaushow-1-768x279.png
+0 6 3617003140084280631 316704 0 0
+/wp-content/uploads/elementor/css/post-290.css
+0 1 4121130303701135917 491 0 0
+/wp-content/plugins/elementor/assets/js/frontend.min.js
+0 36 7090192418542267953 491633 0 0
+/wp-content/uploads/2024/09/smart-fit-wide.png
+0 32 3347422891442204784 459808 0 0
+/wp-content/uploads/elementor/css/post-191.css
+0 3 3328782658678292480 3717 0 0
+/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min.css
+0 2 0 1492 0 0
+/wp-includes/js/jquery/jquery.min.js
+0 38 0 1158999 0 0
+/wp-content/uploads/2024/09/6-4.png
+0 1 0 988029 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-gallery.min.css
+0 1 0 968 0 0
+/wp-content/uploads/elementor/google-fonts/css/poppins.css
+0 36 0 23098 0 0
+/
+0 119 0 4004422 113 18
+/sobre-a-empresa-rj/
+0 4 0 148441 2 0
+/wp-content/uploads/2024/09/8-1.png
+0 1 0 603387 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlfj_z1xlfq.woff2
+0 8 0 63456 0 0
+/wp-content/plugins/elementor/assets/js/lightbox.f3fa607b705962362647.bundle.min.js
+0 1 0 9013 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/raleway-1ptug8zys_skggpnyckit5lu.woff2
+0 8 0 206368 0 0
+/author/geisislane/feed/
+0 1 0 3551 1 1
+/wp-content/uploads/elementor/google-fonts/css/robotoslab.css
+0 35 0 27096 0 0
+/comments/feed/
+0 1 0 663 0 0
+/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInDown.min.css
+0 37 0 4932 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxigyp8kv8jhgfvrlptuchta.woff2
+0 8 0 59872 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459wrhyzbi.woff2
+0 8 0 211808 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459wdhyzbi.woff2
+0 8 0 566144 0 0
+/wp-content/plugins/elementor-pro/assets/js/slides.c0029640cbdb48199471.bundle.min.js
+0 20 0 27340 0 0
+/wp-content/uploads/2024/09/Porta-de-vidro.png
+0 1 0 1682653 0 0
+/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js
+0 1 0 3475 0 0
+/category/balcao/feed/
+0 1 0 2498 1 0
+/wp-content/uploads/2024/09/5-1.png
+0 31 0 46149037 0 0
+/wp-content/uploads/2024/09/6-2.png
+0 1 8603564138137911296 353723 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrlgt9z1xlfq.woff2
+0 23 7349874591868649472 170456 0 0
+/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css
+0 1 30803244232305776 1745 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/russoone-z9xudmzrwg6m1lvryshowcmjrrg.woff2
+0 8 4121130303701135917 34688 0 0
+/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js
+0 38 3976170725004424497 1558667 0 0
+/wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.min.js
+0 2 0 8806 0 0
+/wp-content/uploads/elementor/css/post-85.css
+0 34 0 48015 0 0
+/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css
+0 1 0 2282 0 0
+/wp-content/uploads/2024/09/2-2.png
+0 1 0 842530 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldd4z1xlfq.woff2
+0 8 0 62592 0 0
+/robots.txt
+0 36 0 4089 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxieyp8kv8jhgfvrjjfecg.woff2
+0 8 0 63072 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/montserrat-jtusjig1_i6t8kchkm459wzhyzbi.woff2
+0 8 0 104160 0 0
+/wp-cron.php
+0 40 0 0 0 0
+/wp-json/wp/v2/pages/37
+0 1 0 69708 0 0
+/wp-content/uploads/2024/09/1-1.png
+0 30 0 60642925 0 0
+/projetos-realizados/
+0 3 0 150583 1 1
+/wp-content/uploads/2024/09/3-1.png
+0 31 0 40795015 0 0
+/wp-content/uploads/2024/09/8-2.png
+0 1 0 2236356 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxigyp8kv8jhgfvrlptufntakpy.woff2
+0 8 0 42912 0 0
+/wp-content/uploads/2024/09/10-2.png
+0 31 0 56051764 0 0
+/wp-admin/admin-ajax.php
+0 99 0 1407 0 0
+/wp-content/themes/hello-elementor/theme.min.css
+0 35 0 40250 0 0
+/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css
+0 35 0 33612 0 0
+/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css
+0 1 0 1349 0 0
+/wp-content/uploads/elementor/google-fonts/fonts/poppins-pxibyp8kv8jhgfvrldz8z1jlfc-k.woff2
+0 8 0 44192 0 0
+/wp-sitemap.xml
+0 2 0 786 0 0
+/wp-content/uploads/2024/09/4.png
+0 1 127978989057651 758188 0 0
+/wp-includes/css/dist/block-library/style.min.css
+0 1 3543825160843703095 14084 0 0
+/wp-includes/ID3/license.txt
+0 1 94869537072464 1396 0 0
+# End Of Table - urls
+# -sites- (monthly)
+57.141.0.2
+0 2 0 127674 2 1749362022
+/
+17-241-219-40.applebot.apple.com
+0 2 2 1150 0 0
+-
+104.210.140.139
+0 1 1 97 0 0
+-
+17-241-219-17.applebot.apple.com
+0 1 1 1462 0 0
+-
+planetlab7.gino-research.net.in.tum.de
+0 1 0 0 1 1749207373
+/
+crawl-66-249-66-168.googlebot.com
+0 28 28 1415368 1 1749576164
+/sobre-a-empresa-rj/
+ec2-18-212-137-229.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+ec2-44-211-232-5.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+fwdproxy-ldc-112.fbsv.net
+0 2 1 120 0 0
+-
+fwdproxy-rva-005.fbsv.net
+0 3 3 20289 0 0
+-
+146.70.185.32
+0 1 1 0 1 1749086952
+/
+crawl-66-249-66-160.googlebot.com
+0 6 4 4589740 2 1749542015
+-
+fwdproxy-cln-113.fbsv.net
+0 16 15 8672409 0 0
+-
+crawl-149-56-150-161.dataproviderbot.com
+0 13 8 960335 1 1749428331
+/
+ec2-3-84-43-159.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+23.27.145.110
+0 1 1 21650 1 1749256235
+/
+64.225.5.121
+0 2 1 22901 1 1749168222
+/
+ns3141298.ip-51-77-128.eu
+0 6 4 43135 2 1749428362
+/
+fwdproxy-ldc-004.fbsv.net
+0 2 1 120 0 0
+-
+57.141.0.3
+0 1 0 63837 1 1749537515
+/
+rate-limited-proxy-66-249-92-193.google.com
+0 1 1 94864 0 0
+-
+rate-limited-proxy-66-249-92-142.google.com
+0 1 1 21519 1 1749164288
+/
+pool-92-118-134-172.multi-net.su
+0 1 1 21650 1 1749536058
+/
+23.27.145.142
+0 1 1 21628 1 1749689107
+/
+23.27.145.243
+0 1 1 21650 1 1749167337
+/
+crawl-66-249-66-35.googlebot.com
+0 9 9 2415994 0 0
+-
+17-241-227-146.applebot.apple.com
+0 2 2 6031 0 0
+-
+57.141.0.23
+0 1 1 123561 1 1749438776
+/
+rate-limited-proxy-66-249-92-128.google.com
+0 1 1 21519 1 1749164262
+/
+ec2-3-83-25-103.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+146.70.117.85
+0 76 75 21373559 1 1749113121
+/
+191.102.157.37
+0 3 1 35917 1 1749090373
+/
+crawl-66-249-66-195.googlebot.com
+0 3 3 2716842 0 0
+-
+rate-limited-proxy-66-249-92-168.google.com
+0 4 4 302809 1 1749164293
+/
+fwdproxy-eag-114.fbsv.net
+0 2 1 120 0 0
+-
+ec2-54-213-224-129.us-west-2.compute.amazonaws.com
+0 2 2 43300 1 1749214078
+/
+165.154.206.222
+0 4 2 1594 0 0
+-
+156.248.90.170
+0 1 1 21650 1 1749090369
+/
+ec2-3-231-94-20.compute-1.amazonaws.com
+0 113 113 21659874 1 1749178003
+/
+ec2-54-221-57-209.compute-1.amazonaws.com
+0 1 1 123561 1 1749583729
+/
+crawl-66-249-66-36.googlebot.com
+0 7 7 5078019 1 1749542017
+/localizacao-rj/
+fwdproxy-rva-113.fbsv.net
+0 1 1 5520 0 0
+-
+23.27.145.91
+0 1 1 21650 1 1749081867
+/
+crawl-66-249-66-194.googlebot.com
+0 10 10 6929 0 0
+-
+crawl-66-249-66-14.googlebot.com
+0 57 56 1081428 2 1749541193
+-
+ec2-44-211-184-125.compute-1.amazonaws.com
+0 113 113 21659874 1 1749178013
+/
+crawl-66-249-66-64.googlebot.com
+0 7 7 3249365 0 0
+-
+159.203.167.133
+0 2 1 22901 1 1749506130
+/
+57.141.0.26
+0 1 1 123561 1 1749502316
+/
+crawl-66-249-66-78.googlebot.com
+0 7 7 2965206 1 1749162599
+/
+129.153.223.252
+0 1 1 123561 1 1749670226
+/
+104.210.140.129
+0 1 1 97 0 0
+-
+fwdproxy-cln-035.fbsv.net
+0 23 23 6308265 0 0
+-
+unn-89-222-100-27.datapacket.com
+0 1 1 1396 0 0
+-
+ec2-35-87-236-109.us-west-2.compute.amazonaws.com
+0 154 152 42529475 1 1749490487
+/
+fwdproxy-rva-114.fbsv.net
+0 1 1 143709 0 0
+-
+17-241-219-79.applebot.apple.com
+0 5 5 20624 0 0
+-
+57.141.0.18
+0 1 1 123561 1 1749649029
+/
+205.169.39.187
+0 91 91 21330649 1 1749073056
+/
+fwdproxy-cln-003.fbsv.net
+0 13 13 6164041 0 0
+-
+fwdproxy-eag-004.fbsv.net
+0 2 1 120 0 0
+-
+17-241-75-118.applebot.apple.com
+0 1 1 13455 0 0
+-
+245.232.162.34.bc.googleusercontent.com
+0 2 0 2484 0 0
+-
+57.141.0.9
+0 1 0 63837 1 1749690925
+/
+fwdproxy-cco-009.fbsv.net
+0 1 1 120 0 0
+-
+138.68.160.178
+0 2 2 24768 1 1749773536
+/
+br.brasil114-2040.com.br
+0 147 147 174607 2 1749576148
+/
+164.90.186.102
+0 3 0 1251 1 1749655061
+/
+17-241-219-238.applebot.apple.com
+0 1 1 597 0 0
+-
+149.57.180.131
+0 1 1 21628 1 1749685953
+/
+57.141.0.16
+0 1 0 0 1 1749361944
+/
+fwdproxy-ldc-006.fbsv.net
+0 1 1 120 0 0
+-
+crawl-66-249-66-1.googlebot.com
+0 10 10 5406810 1 1749474545
+/2025/04/08/vidro-jateado-estrutura-preta-rj/
+fwdproxy-ftw-008.fbsv.net
+0 1 1 14369 0 0
+-
+ecs-49-0-237-195.compute.hwclouds-dns.com
+0 1 1 21650 1 1749383208
+/
+fwdproxy-rva-115.fbsv.net
+0 3 3 138109 1 1749566260
+/
+ip87-106-67-223.pbiaas.com
+0 1 1 21650 1 1749623294
+/
+60.53.128.108
+0 1 1 21650 1 1749449188
+/
+fwdproxy-cco-001.fbsv.net
+0 2 1 120 0 0
+-
+57.141.0.11
+0 2 0 127674 2 1749654654
+/
+fwdproxy-eag-007.fbsv.net
+0 1 1 120 0 0
+-
+17-241-219-32.applebot.apple.com
+0 3 3 7130 0 0
+-
+179-48-84-177.brasilfibrainternet.com.br
+0 456 408 115790248 3 1749077066
+/
+149.57.180.24
+0 1 1 21650 1 1749254239
+/
+17-241-75-207.applebot.apple.com
+0 2 2 1994 0 0
+-
+fwdproxy-rva-112.fbsv.net
+0 2 2 45674 0 0
+-
+57.141.0.5
+0 3 2 247122 3 1749691749
+/
+ec2-34-228-61-168.compute-1.amazonaws.com
+0 1 1 123561 1 1749364527
+/
+103.196.9.77
+0 73 73 16904930 1 1749119889
+/
+fwdproxy-rva-008.fbsv.net
+0 2 2 135946 0 0
+-
+fwdproxy-cln-006.fbsv.net
+0 3 3 29491 1 1749566325
+/
+57.141.0.13
+0 2 1 3551 2 1749654528
+/
+17-241-219-39.applebot.apple.com
+0 2 2 1674 0 0
+-
+17-241-75-29.applebot.apple.com
+0 1 1 2179 0 0
+-
+fwdproxy-cco-115.fbsv.net
+0 1 1 255260 0 0
+-
+17-241-227-246.applebot.apple.com
+0 1 1 6489 0 0
+-
+ec2-52-20-19-158.compute-1.amazonaws.com
+0 38 38 412786 1 1749177428
+/
+149.57.180.197
+0 1 1 21650 1 1749428593
+/
+57.141.0.21
+0 1 0 0 1 1749648983
+/
+165.154.173.35
+0 1 1 65536 1 1749745690
+/
+193-186-4-238.v4.fetch.tunnel.googlezip.net
+0 1 1 21516 1 1749742676
+/
+ec2-35-95-102-141.us-west-2.compute.amazonaws.com
+0 2 2 21764 1 1749676889
+/
+17-241-227-155.applebot.apple.com
+0 1 1 1084 0 0
+-
+crawl-66-249-66-77.googlebot.com
+0 25 24 2491008 1 1749073782
+/
+fwdproxy-ldc-008.fbsv.net
+0 2 1 120 0 0
+-
+crawl-66-249-66-193.googlebot.com
+0 25 25 1430306 0 0
+-
+unn-149-22-91-81.datapacket.com
+0 2 1 22770 1 1749158809
+/
+186.233.182.215-rev.raimax.com.br
+0 1 1 21650 1 1749076145
+/
+ec2-99-81-216-206.eu-west-1.compute.amazonaws.com
+0 1 1 21628 1 1749678250
+/
+fwdproxy-rva-002.fbsv.net
+0 1 1 6263 0 0
+-
+ec2-34-217-90-210.us-west-2.compute.amazonaws.com
+0 147 147 42579714 1 1749253273
+/
+fwdproxy-nha-039.fbsv.net
+0 2 1 120 0 0
+-
+147.182.204.11
+0 2 0 0 1 1749619033
+/
+fwdproxy-cco-113.fbsv.net
+0 1 1 120 0 0
+-
+17-241-227-61.applebot.apple.com
+0 2 2 21764 1 1749197974
+/
+17-241-219-94.applebot.apple.com
+0 1 1 30364 0 0
+-
+ec2-13-221-75-40.compute-1.amazonaws.com
+0 1 1 123561 1 1749188887
+/
+139.59.134.44
+0 2 1 22901 1 1749340726
+/
+205.169.39.57
+0 78 78 21493413 2 1749073042
+/
+57.141.0.25
+0 1 1 2498 1 1749490260
+/category/balcao/feed/
+17-241-219-71.applebot.apple.com
+0 1 1 1644 0 0
+-
+ec2-98-82-33-50.compute-1.amazonaws.com
+0 113 113 21659874 1 1749178035
+/
+17-241-75-251.applebot.apple.com
+0 4 4 7754 0 0
+-
+23.27.145.12
+0 1 1 21650 1 1749427446
+/
+ec2-35-93-106-127.us-west-2.compute.amazonaws.com
+0 3 2 21764 1 1749649270
+/
+115.69.197.104.bc.googleusercontent.com
+0 75 75 21167665 1 1749073141
+/
+ec2-54-89-238-88.compute-1.amazonaws.com
+0 113 113 21772460 1 1749178002
+/
+ec2-52-23-199-243.compute-1.amazonaws.com
+0 2 0 14267 0 0
+-
+ec2-54-166-144-70.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+crawl-66-249-69-70.googlebot.com
+0 1 1 316 0 0
+-
+ec2-34-207-108-219.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+17-241-219-231.applebot.apple.com
+0 1 1 2858 0 0
+-
+fwdproxy-cln-007.fbsv.net
+0 11 11 287504 0 0
+-
+ec2-54-196-219-43.compute-1.amazonaws.com
+0 1 1 21650 1 1749188773
+/
+fwdproxy-rva-001.fbsv.net
+0 2 2 68352 0 0
+-
+154.28.229.160
+0 1 1 21519 1 1749085235
+/
+ec2-18-206-211-160.compute-1.amazonaws.com
+0 2 0 14267 0 0
+-
+17-241-75-209.applebot.apple.com
+0 2 2 207 0 0
+-
+104.232.199.177
+0 71 71 1617852 1 1749119890
+/
+57.141.0.28
+0 2 1 123561 2 1749690894
+/
+ec2-54-146-14-91.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+17-241-75-59.applebot.apple.com
+0 3 3 4405 0 0
+-
+crawl-66-249-66-15.googlebot.com
+0 35 34 2550761 5 1749541195
+/sobre-a-empresa-rj/
+191.179.162.34.bc.googleusercontent.com
+0 4 0 4968 0 0
+-
+209.46.125.160
+0 1 1 21650 1 1749474384
+/
+fwdproxy-eag-002.fbsv.net
+0 2 2 240 0 0
+-
+ec2-54-198-191-240.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+17-241-75-40.applebot.apple.com
+0 1 1 1800 0 0
+-
+fwdproxy-cln-005.fbsv.net
+0 12 12 38437 0 0
+-
+57.141.0.12
+0 1 0 63837 1 1749168463
+/
+planetlab24.gino-research.net.in.tum.de
+0 1 1 120 0 0
+-
+17-241-219-145.applebot.apple.com
+0 1 1 1063 0 0
+-
+ec2-54-164-210-221.compute-1.amazonaws.com
+0 1 0 1251 0 0
+-
+26.70.albatros.uz
+0 1 1 21650 1 1749640388
+/
+crawl-149-56-160-133.dataproviderbot.com
+0 77 77 21471894 1 1749428357
+/
+149.57.180.156
+0 1 1 21650 1 1749171065
+/
+rate-limited-proxy-66-249-92-166.google.com
+0 1 1 4722 0 0
+-
+57.141.0.7
+0 1 1 123561 1 1749691785
+/
+rate-limited-proxy-66-249-92-160.google.com
+0 1 1 548 0 0
+-
+117.132.188.206
+0 48 48 964462 1 1749320361
+/
+fwdproxy-hil-009.fbsv.net
+0 1 1 29371 0 0
+-
+ec2-98-83-138-4.compute-1.amazonaws.com
+0 113 113 21772460 1 1749178002
+/
+17-241-227-174.applebot.apple.com
+0 3 3 16158 0 0
+-
+17-241-219-196.applebot.apple.com
+0 1 1 7101 0 0
+-
+fwdproxy-prn-004.fbsv.net
+0 1 1 276141 0 0
+-
+57.141.0.22
+0 2 0 127674 2 1749437977
+/
+17-241-219-222.applebot.apple.com
+0 2 2 8965 0 0
+-
+149.57.180.19
+0 1 1 21650 1 1749080039
+/
+ec2-3-220-101-67.compute-1.amazonaws.com
+0 124 118 42659341 3 1749177380
+/
+ec2-54-227-121-65.compute-1.amazonaws.com
+0 1 1 21650 1 1749178012
+/
+crawl-66-249-79-138.googlebot.com
+0 1 1 771 0 0
+-
+fwdproxy-ldc-005.fbsv.net
+0 3 2 240 0 0
+-
+fwdproxy-eag-113.fbsv.net
+0 3 3 360 0 0
+-
+fwdproxy-eag-006.fbsv.net
+0 2 1 120 0 0
+-
+fwdproxy-ldc-002.fbsv.net
+0 2 1 120 0 0
+-
+17-241-219-221.applebot.apple.com
+0 2 0 0 1 1749197972
+/
+17-241-75-215.applebot.apple.com
+0 3 3 2518 0 0
+-
+fwdproxy-rva-003.fbsv.net
+0 1 1 44708 0 0
+-
+ec2-54-162-72-28.compute-1.amazonaws.com
+0 113 113 21659874 1 1749178017
+/
+47.91.89.3
+0 1 1 21650 1 1749309669
+/
+ec2-3-148-247-209.us-east-2.compute.amazonaws.com
+0 1 1 0 1 1749623335
+/
+57.141.0.19
+0 2 0 63837 2 1749654460
+/
+crawl-66-249-66-34.googlebot.com
+0 32 31 829540 2 1749576143
+-
+ec2-54-175-5-46.compute-1.amazonaws.com
+0 113 113 21659874 1 1749178011
+/
+google-proxy-74-125-213-41.google.com
+0 1 0 13014 0 0
+-
+fwdproxy-cln-011.fbsv.net
+0 1 1 94864 0 0
+-
+17-241-219-121.applebot.apple.com
+0 4 4 45058 0 0
+-
+crawl-66-249-66-169.googlebot.com
+0 16 16 4013217 3 1749761935
+/
+643e1389-3c0c-440d-a119-9d72e5e3f7fe.fr-par-2.baremetal.scw.cloud
+0 73 73 7663500 1 1749205374
+/
+fwdproxy-eag-005.fbsv.net
+0 2 1 120 0 0
+-
+ec2-3-91-193-8.compute-1.amazonaws.com
+0 113 113 21772460 1 1749178003
+/
+ec2-44-195-129-46.compute-1.amazonaws.com
+0 67 67 21017396 1 1749178009
+/
+# End Of Table - sites (monthly)
+# -sites- (daily)
+138.68.160.178
+0 2 2 24768 1 1749773536
+/
+# End Of Table - sites (daily)
+# -referrers- 
+https://www.elvidracaria.com.br/
+0 1
+https://elvidracaria.com.br/sobre-a-empresa-rj/
+0 20
+https://elvidracaria.com.br/sitemap.xml
+0 1
+http://www.elvidracaria.com.br
+0 1
+https://br.brasil114-2040.com.br:2083/
+0 2
+http://elvidracaria.com.br/
+0 3
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/roboto.css
+0 21
+http://elvidracaria.com.br
+0 2
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/raleway.css
+0 21
+https://www.google.com/
+0 1
+- (Direct Request)
+0 467
+https://br.brasil114-2040.com.br:2087/
+0 3
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/montserrat.css
+0 21
+https://elvidracaria.com.br/2025/04/08/vidro-jateado-estrutura-preta-rj/
+0 18
+https://elvidracaria.com.br/wp-content/uploads/elementor/css/post-37.css
+0 279
+https://elvidracaria.com.br/
+0 2279
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/didactgothic.css
+0 21
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/poppins.css
+0 36
+https://elvidracaria.com.br/localizacao-rj/
+0 11
+https://elvidracaria.com.br/projetos-realizados/
+0 71
+https://elvidracaria.com.br/wp-content/uploads/elementor/google-fonts/css/russoone.css
+0 21
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Sa
+0 73
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+0 16
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.79 Safari/537.36
+0 75
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.92 Mobile 
+0 171
+python-httpx/0.27.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+0 1
+Mozilla/5.0 (Linux; Android 10; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Mobile Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36
+0 72
+Mozilla/5.0 (compatible; Dataprovider.com)
+0 95
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Mobile S
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0
+0 1
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/123.0.6312.52 Mobile/
+0 144
+Mozilla/5.0 (X11; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36
+0 1
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/136.0.7
+0 28
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 9
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36; compat
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.66 Safari/537.36 Edg/103.0
+0 406
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+0 7
+Go-http-client/1.1
+0 5
+Googlebot-Image/1.0
+0 33
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/125.0.6422.60 Safari/537.36
+0 75
+Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 
+0 76
+Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+0 566
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36
+0 1
+Mozilla/5.0 (Linux; Android 11; Mi 9 SE) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36
+0 1
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+0 81
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.3
+0 73
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+0 3
+Mozilla/5.0 (Linux; Android 13; SM-X900) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (X11; Linux i686; rv:109.0) Gecko/20100101 Firefox/120.0
+0 10
+facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)
+0 53
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15 (Appleb
+0 53
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+0 6
+Mozilla/5.0 (Windows NT 6.1; WOW64; iPhone) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.3679.55 Safari/537.36 HuaweiCr
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+0 2
+Chrome Privacy Preserving Prefetch Proxy
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36
+0 154
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.113 Mobile
+0 37
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+0 463
+quic-go-HTTP/3
+0 1
+okhttp/4.9.2
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.190
+0 1
+WordPress/6.8.1; https://elvidracaria.com.br
+0 147
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.7049.114 Mobile
+0 9
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36
+0 48
+Mozilla/5.0 (compatible; wpbot/1.3; +https://forms.gle/ajBaxygz9jSR8p8G9)
+0 5
+meta-externalagent/1.1 (+https://developers.facebook.com/docs/sharing/webmasters/crawler)
+0 25
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36
+0 1
+Apache-HttpClient/5.1.4 (Java/11.0.18)
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36
+0 78
+ct\xe2\x80\x91git\xe2\x80\x91scanner/0.4
+0 6
+Opera/12.80 (Windows NT 5.1; U; en) Presto/2.10.289 Version/12.02
+0 1
+Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; Touch; SMJB; rv:11.0) like Gecko
+0 1
+curl/7.29.0
+0 1
+Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/131.0.6778.33 Safari/537.36
+0 156
+Mozilla/5.0 (Windows NT 6.3; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0
+0 9
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

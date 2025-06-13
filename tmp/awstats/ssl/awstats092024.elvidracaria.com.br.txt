@@ -1,0 +1,603 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202409 will be lost/reset.
+# Last config file used to build this data file was /home7/elvidracaria/tmp/awstats/ssl/awstats.elvidracaria.com.br.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2025                
+POS_TIME 2697                
+POS_VISITOR 15366               
+POS_DAY 19208               
+POS_DOMAIN 3451                
+POS_LOGIN 3910                
+POS_ROBOT 4065                
+POS_WORMS 4408                
+POS_EMAILSENDER 4539                
+POS_EMAILRECEIVER 4682                
+POS_SESSION 19889               
+POS_SIDER 20096               
+POS_FILETYPES 4817                
+POS_DOWNLOADS 5156                
+POS_OS 5204                
+POS_BROWSER 5503                
+POS_SCREENSIZE 6652                
+POS_UNKNOWNREFERER 6726                
+POS_UNKNOWNREFERERBROWSER 7296                
+POS_ORIGIN 7821                
+POS_SEREFERRALS 7963                
+POS_PAGEREFS 8107                
+POS_SEARCHWORDS 8321                
+POS_KEYWORDS 8473                
+POS_MISC 2361                
+POS_ERRORS 8532                
+POS_CLUSTER 3766                
+POS_SIDER_404 8678                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20241001230242 1 0 15231583853657
+FirstTime 20240903182719
+LastTime 20240930175226
+LastUpdate 20241002130010 1 0 0 0 0
+TotalVisits 152                 
+TotalUnique 80                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 101                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+JavascriptDisabled 0 0 0
+RealPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 581 701 3987707 0 1 120
+1 392 435 2744746 5 6 21899
+2 2 2 21431 0 0 0
+3 4 4 21473 2 3 0
+4 4 25 239659 0 0 0
+5 1 1 21 1 1 65536
+6 5 64 21989531 0 1 0
+7 8 8 180497 0 0 0
+8 4 4 42862 0 0 0
+9 11 21 162830 2 2 0
+10 8 63 21163306 2 3 0
+11 9 106 30522002 1 3 0
+12 16 22 332186 1 4 240
+13 26 233 67600063 1 4 11046
+14 25 119 46013239 1 2 0
+15 229 336 23928562 1 23 677182
+16 1047 1315 108673192 1 27 7532123
+17 917 1000 27346769 3 8 33024
+18 794 1006 72556746 2 19 7238559
+19 1000 1249 63254194 24 47 1025511
+20 457 599 24091406 6 8 0
+21 570 1013 85260507 11 14 1790
+22 1157 1607 114524583 4 10 474
+23 1029 1410 74946090 3 73 991992
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 16
+pa 5914 7970 456788284
+br 2285 2715 183252713
+us 71 458 125410646
+gb 6 58 565143
+ph 4 12 1008720
+eu 3 3 292381
+ru 3 36 558059
+ua 2 71 21510264
+jp 2 2 42374
+in 1 1 21032
+de 1 1 21410
+se 1 1 21546
+ca 1 6 24513
+vn 1 1 21296
+ro 1 7 50852
+hn 0 1 14369
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 5
+facebookexternalhit/ 20 1344615 20240920190607 0
+unknown 5 577 20240926224535 5
+(firefox/)([0-9]\.|[0-1][0]\.) 2 41932 20240903193603 0
+Apache\-HttpClient/ 1 21519 20240906191520 0
+curl 1 65536 20240905055521 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 14
+jpeg 29 7840900 0 0
+ttf 4 5520 0 0
+html 280 5561717 0 0
+webp 3 392450 0 0
+jpg 86 2255536 0 0
+svg 20 84669 0 0
+php 6135 26804028 0 0
+Unknown 1860 1426452 0 0
+woff2 13 1283772 0 0
+css 853 3472247 0 0
+gif 9 67650 0 0
+png 809 724696262 0 0
+woff 4 64584 0 0
+js 1238 15647815 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 17
+macosx15 27 20
+Unknown 2271 2271
+linux 151 14
+androidnougat 2 2
+win8 2 0
+winxp 2 0
+android10 203 15
+androidkitkat 1 1
+win8.1 7 0
+macosx9 1 1
+win10 8166 5956
+ios_iphone 453 12
+macosx11 1 1
+win7 2 0
+macosx 1 1
+android 52 1
+macosx8 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 56
+chrome117.0.0.0 1 1
+chrome119.0.0.0 1 0
+chrome84.0.4147.89 1 1
+firefox52.0 1 1
+safari17.3 1 0
+safari17.1.2 1 0
+chrome59.0.3071.125 2 2
+chrome128.0.0.0 7968 5913
+chrome64.0.3282.186 2 2
+msie11 3 0
+chrome116.0.0.0 17 16
+chrome58.0.3029.110 1 1
+firefox55.0 1 1
+safari16.1 1 0
+chrome122.0.6261.94 36 3
+chrome61.0.3163.100 1 1
+chrome126.0.0.0 26 14
+chrome118.0.0.0 1 0
+chrome105.0.0.0 2 2
+safari10.0 1 1
+firefox50.0 2 0
+safari15.5 1 0
+chrome113.0.0.0 1 1
+safari17.6 96 2
+chrome127.0.0.0 4 4
+chrome66.0.3359.181 6 6
+chrome128.0.6613.146 52 1
+chrome129.0.0.0 109 11
+firefox33.0 2 2
+chrome109.0.5414.119 6 1
+chrome107.0.0.0 1 1
+firefox122.0 2 2
+chrome124.0.0.0 59 7
+android 1 1
+firefox120.0 1 0
+Unknown 2269 2269
+safari17.5 205 6
+chrome120.0.0.0 11 2
+chrome117.0.5938.132 121 3
+chrome37.0.2049.0 1 0
+chrome106.0.0.0 3 3
+chrome125.0.0.0 52 1
+chrome83.0.4103.97 2 2
+chrome110.0.0.0 1 1
+chrome108.0.0.0 4 0
+safari16.6 1 0
+firefox36.0 3 0
+chrome122.0.0.0 3 3
+chrome23.0.1271.95 2 0
+safari 102 2
+opera12.16 2 0
+chrome85.0.4182.0 92 2
+chrome121.0.6167.160 7 1
+netscape5.0 1 1
+iphone 49 1
+chrome44.0.2403.157 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 9
+WordPress/6.2.6;_https://elvidracaria.com.br 20240903195330
+WordPress/6.6.1;_https://elvidracaria.com.br 20240910225923
+WhatsApp/2.2433.3_W 20240903220741
+Mozilla/5.0_Firefox/33.0 20240930011958
+Iframely/1.3.1_(_https://iframely.com/docs/about)_Canva 20240928204455
+Iframely/1.3.1_(_https://iframely.com/docs/about) 20240928204455
+WordPress/6.2;_https://elvidracaria.com.br 20240903182745
+WhatsApp/2.23.20.0 20240906151119
+WordPress/6.6.2;_https://elvidracaria.com.br 20240930112305
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+WordPress/6.6.2;_https://elvidracaria.com.br 20240930112305
+WhatsApp/2.23.20.0 20240906151119
+Iframely/1.3.1_(_https://iframely.com/docs/about) 20240928204455
+WordPress/6.2;_https://elvidracaria.com.br 20240903182745
+WhatsApp/2.2433.3_W 20240903220741
+Iframely/1.3.1_(_https://iframely.com/docs/about)_Canva 20240928204455
+WordPress/6.6.1;_https://elvidracaria.com.br 20240910225923
+WordPress/6.2.6;_https://elvidracaria.com.br 20240903195330
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 2409 2496
+From1 0 0
+From2 0 0
+From3 2 2
+From4 5885 8845
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://l.instagram.com 1 1
+https://br.asgard8040.com.br:2083 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+404 131 1590561
+301 26 795
+206 24 14532997
+302 11 0
+400 1 5
+500 1 959
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 59
+/wp-content/uploads/2024/09/365224069_1181943602751849_8326759738076721432_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/353394451_1149514035994806_8915171315078216955_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-json/elementor/v1/globals/colors/7fdd19c 14 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414424244_18005226092212969_2421659167669743788_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/358670329_1168529650759911_3846681475065027194_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/358599810_1168520794094130_2397386603096240382_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/363435810_1181947242751485_1331600056087731226_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414322158_18005111048212969_66128798487873093_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/13.png 7 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/357389935_1160824461530430_1120619258182086873_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/11.png 7 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/5.png 5 https://elvidracaria.com.br/wp-admin/post.php
+/ads.txt 2 -
+/wp-content/uploads/2024/09/351130788_1149514039328139_5152224405815469471_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/370188630_1193002198312656_951697999394513986_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414418109_18005332973212969_866257997960801179_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/placeholder-2.png 9 https://elvidracaria.com.br/sobre-a-empresa/
+/wp-json/elementor/v1/globals/colors/1476687 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/373542697_1198950061051203_2615858102955021082_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/400717246_17999633177212969_5656696831238100659_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/app/ 2 -
+/wp-content/uploads/2024/09/375736405_1198950054384537_5323934426733640321_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/346040012_611706727658937_8803694223559816932_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/360100061_1172050517074491_3118948356863464868_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/384795199_1213829819563227_273433368680201278_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/365267449_1181946289418247_2370012094641899247_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/sapp-plugin-activate.php 3 -
+/wp-content/uploads/2024/09/378537881_1203857207227155_4563767205765955384_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/423554088_18008759552212969_6880240788341973730_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/375312344_1198948254384717_3017422914262786506_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414113287_18005111039212969_3192177444242202541_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414355408_18005332964212969_8943823441189565186_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/373532088_1198938137719062_7005874667558626898_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/9.png 6 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414417565_18005226083212969_4967144011678507100_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/357235700_1160824471530429_8941174308447165248_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/projetos-realizados/ 1 https://elvidracaria.com.br/
+/wp-content/uploads/2024/09/414403069_18005226101212969_7312197250352385660_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/favicon.png 3 -
+/wp-content/uploads/2024/09/359493033_1168527924093417_6454383951322304821_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/app-ads.txt 1 -
+/wp-content/uploads/2024/09/423537716_18008759543212969_3795321902503797336_n-2.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/12.png 7 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/15.png 8 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/16.png 8 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/402387413_18000496061212969_801929074423548182_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414355408_18005332964212969_8943823441189565186_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/379375146_1207038416909034_8230884804050062903_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414322158_18005111048212969_66128798487873093_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/374571168_1201025990843610_5242750070055416188_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/376009780_1203857210560488_27045744059626933_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-json/elementor/v1/globals/colors/db955fe 4 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/356713012_1160824474863762_6249828618868836579_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/380364098_1207038413575701_4920684712891518348_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/375300135_1198950067717869_6789998687469704761_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/sellers.json 1 -
+/wp-json/elementor/v1/globals/colors/c1397e0 2 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/363344335_1176773249935551_4843099200935408336_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+/wp-content/uploads/2024/09/414403069_18005226101212969_7312197250352385660_n.jpg 1 https://elvidracaria.com.br/wp-admin/post.php
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 101
+179.48.84.245 5890 7640 372395210 20240911185606
+187.108.200.229 2267 2267 383068 20240930112305
+154.28.229.128 13 14 218982 20240903193328
+179.48.84.183 11 109 31498463 20240930175226
+177.192.9.210 8 97 40734256 20240909142619
+179.48.84.153 7 140 22889664 20240918125045
+179.48.85.137 6 81 30004947 20240909163954
+34.122.6.79 4 4 46508 20240919014801
+124.106.194.236 4 12 1008720 20240903212456
+104.164.173.247 3 3 43367 20240904073420
+54.144.101.172 3 105 57516417 20240903220706
+205.169.39.25 2 78 1033189 20240924211247
+52.26.23.35 2 2 42592 20240904121412
+93.119.227.91 2 2 174666 20240903205819
+8.41.221.60 2 2 137182 20240930012000
+35.90.128.205 2 2 43248 20240905111028
+100.28.178.85 2 2 22912 20240928204455
+51.158.205.68 2 23 205016 20240904172224
+35.89.33.109 2 2 42816 20240930112311
+35.206.115.46 2 2 39837 20240919134623
+69.4.87.74 2 2 174666 20240903201220
+95.216.45.37 2 70 21480893 20240906233052
+165.227.36.124 1 1 21546 20240910225901
+138.197.142.61 1 1 21410 20240922031045
+18.237.205.183 1 1 21412 20240916155854
+35.87.117.150 0 1 7102 
+209.127.106.149 1 1 21519 20240906191525
+54.80.76.175 1 1 116446 20240907074227
+161.35.32.66 1 1 21546 20240908015221
+54.90.200.16 1 1 107705 20240903215816
+177.26.84.25 1 47 21840885 20240904061138
+171.244.43.14 1 1 21296 20240904123100
+66.220.149.112 0 6 63365 
+199.244.88.218 1 1 21410 20240923025714
+84.247.105.152 1 7 50852 20240905222104
+189.40.64.167 1 47 21840418 20240904131149
+206.204.61.160 1 51 21220685 20240912130057
+54.244.75.243 0 1 811 
+51.159.214.65 1 14 148749 20240906041811
+34.216.146.240 0 1 30364 
+186.179.59.44 0 1 14369 
+51.159.103.19 1 9 90868 20240906041241
+177.26.84.69 1 1 0 20240904095231
+66.220.149.43 1 16 9073525 20240920190527
+35.160.25.6 1 1 115773 20240918233555
+193.218.118.178 1 1 20747 20240907233629
+35.88.150.112 0 1 5373 
+191.242.105.64 1 49 20981709 20240910160055
+137.184.116.49 1 1 21409 20240929134925
+35.91.128.166 0 3 37303 
+52.33.9.85 0 1 1800 
+205.169.39.26 1 1 21412 20240911090942
+66.220.149.63 0 4 16168 
+54.235.28.119 1 1 115773 20240914141940
+94.247.172.129 1 1 21546 20240908141233
+66.220.149.24 0 2 4551 
+205.169.39.17 1 43 401609 20240919134027
+100.27.190.61 1 1 107705 20240903215815
+89.22.101.69 1 1 21410 20240917084713
+35.233.38.31 1 1 21410 20240919015133
+104.223.118.59 1 1 4123 20240903193436
+167.172.229.114 1 1 21546 20240908230011
+133.242.140.127 1 1 21208 20240904013428
+35.87.125.22 1 1 21412 20240916155938
+198.20.189.82 0 1 276141 
+79.137.198.213 1 34 516565 20240904011036
+18.236.105.30 0 1 2984 
+66.220.149.19 0 8 176476 
+199.244.88.230 1 1 21403 20240926192540
+54.185.228.140 1 1 21412 20240917064218
+54.200.211.0 0 1 2274 
+133.242.174.119 1 1 21166 20240903223606
+66.220.149.22 0 12 5185092 
+69.4.89.106 1 1 117715 20240905145038
+179.102.133.250 1 47 21840417 20240904163239
+165.232.72.86 1 1 21467 20240904214054
+64.225.21.165 1 1 21412 20240912223735
+177.192.9.147 1 49 9311386 20240919110505
+205.169.39.46 1 1 21410 20240917085814
+3.208.17.225 1 1 115773 20240928101111
+191.57.19.183 1 49 21002627 20240905155231
+66.220.149.44 0 4 6865191 
+51.159.14.65 1 11 98964 20240904094042
+18.234.215.198 1 1 115773 20240928122414
+157.245.101.111 1 1 21412 20240914221650
+195.201.168.79 1 1 20747 20240906232839
+177.26.93.180 1 50 21124489 20240923110150
+52.41.30.117 0 1 12197 
+45.148.10.111 1 1 21032 20240905094553
+167.114.200.240 1 6 24513 20240903195330
+167.71.238.85 1 1 21546 20240906232026
+177.26.79.2 1 11 4172162 20240904200750
+170.254.178.58 0 1 94864 
+93.119.227.19 1 1 117715 20240905200535
+104.164.173.126 1 1 20642 20240904073414
+95.164.157.126 0 1 29371 
+205.169.39.32 1 1 21410 20240917124312
+35.90.251.240 0 1 7155 
+200.160.3.217 1 1 21296 20240904093105
+168.151.105.172 1 51 21220685 20240912130225
+35.87.39.176 0 1 19829 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 25
+20240903 1203 2356 193227336 13
+20240904 3741 4344 170507088 27
+20240905 25 107 30736983 15
+20240906 3174 3452 101526470 11
+20240907 6 22 6670190 5
+20240908 7 20 20178289 7
+20240909 23 193 70891271 5
+20240910 9 57 21089481 3
+20240911 6 80 23362182 3
+20240912 5 105 42462824 5
+20240913 7 82 1229580 3
+20240914 7 7 137269 5
+20240916 2 2 42824 2
+20240917 17 87 21836839 9
+20240918 4 5 237660 3
+20240919 16 140 10614392 9
+20240920 1 52 21384368 1
+20240922 2 2 21431 2
+20240923 3 52 21145920 3
+20240924 6 48 325285 2
+20240926 4 4 21445 3
+20240927 1 1 21 1
+20240928 11 56 17374775 7
+20240929 2 2 21430 2
+20240930 14 67 14558249 6
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+2mn-5mn 1
+30s-2mn 8
+30mn-1h 3
+15mn-30mn 3
+1h+ 8
+0s-30s 125
+5mn-15mn 4
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 61
+/wp-admin/admin-ajax.php 4616 15114361 45 49
+/wp-cron.php 1316 0 13 9
+/wp-json/image-optimizer/v1/optimize/status 1309 159681 0 0
+/wp-json/image-optimizer/v1/stats 376 128896 1 1
+/ 175 4418784 91 79
+/wp-admin/async-upload.php 56 48850 0 0
+/wp-admin/post.php 35 7106501 0 0
+/sobre-a-empresa/ 32 283134 0 4
+/wp-json/elementor/v1/globals 24 24358 0 0
+/wp-json/elementor/v1/global-widget/templates 24 48 0 0
+/wp-json/elementor/v1/kit-elements-defaults 24 48 0 0
+/wp-json/elementor/v1/site-navigation/recent-posts 24 36762 0 0
+/wp-json/ 23 190175 0 0
+/wp-admin/load-scripts.php 23 807281 0 0
+/wp-admin/edit.php 21 473104 0 0
+/wp-admin/load-styles.php 18 2091617 0 0
+/wp-admin/nav-menus.php 16 429108 0 0
+/wp-admin/admin.php 14 160171 0 0
+/wp-json/wp/v2/settings 12 90296 0 0
+/wp-json/wp/v2/block-patterns/categories 11 25454 0 0
+/wp-json/wp/v2/types 11 63052 0 0
+/wp-json/wp/v2/wp_pattern_category 11 22 0 0
+/wp-json/wp/v2/blocks 11 22 0 0
+/projetos-realizados/ 11 154482 0 1
+/localizacao/ 10 143004 0 1
+/comments/feed/ 1 1669 0 0
+/wp-json/wp/v2/categories/1 2 1262 0 0
+/wp-admin/update.php 1 15360 0 0
+/wp-includes/js/tinymce/skins/lightgray/fonts/tinymce.woff 3 56472 0 0
+/check_charset.php 1 77 0 0
+/hello-world/ 4 22616 0 1
+/wp-json/elementor/v1/template-library/templates 6 530448 0 0
+/wp-json/wp/v2/taxonomies/post_tag 2 4406 0 0
+/wp-content/themes/twentytwentyfour/assets/fonts/inter/Inter-VariableFont_slnt,wght.woff2 1 326628 0 0
+/wp-content/plugins/all-in-one-wp-migration/lib/view/assets/font/servmask.woff 1 8112 0 0
+/wp-json/wp/v2/pages/290 1 2015 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2 2 156392 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2 3 244836 0 0
+/wp-login.php 7 17527 1 1
+/wp-admin/plugins.php 3 75715 0 0
+/wp-json/wp/v2/posts/1 1 1753 0 0
+/wp-json/wp/v2/pages/191 1 2040 0 0
+/wp-admin/upgrade.php 1 21 0 0
+/wp-content/plugins/litespeed-cache/assets/css/fonts/litespeedfont.ttf 4 5520 0 0
+/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2 4 291396 0 1
+/projetos-residenciais/ 8 97378 1 2
+/hello-world/feed/ 1 1661 0 0
+/wp-json/wp/v2/users/me 3 3960 0 0
+/wp-admin/options-general.php 2 88069 0 0
+/wp-admin/plugin-install.php 1 23594 0 0
+/wp-admin/ 4 123601 0 0
+/comerciais/ 9 121468 0 0
+/wp-json/wp/v2/taxonomies/category 2 4542 0 0
+/wp-json/oembed/1.0/embed 3 5699 0 1
+/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_italic_400.woff2 1 105184 0 1
+/wp-content/themes/twentytwentyfour/assets/fonts/cardo/cardo_normal_400.woff2 1 146060 0 0
+/feed/ 2 3745 0 1
+/wp-admin/post-new.php 2 273393 0 0
+/wp-admin/upload.php 2 79279 0 0
+/wp-json/wp/v2/block-patterns/patterns 2 341688 0 0
+/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2 1 13276 0 0
+END_SIDER

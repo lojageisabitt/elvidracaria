@@ -1,0 +1,24 @@
+[04-Sep-2024 02:51:37 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[04-Sep-2024 21:54:59 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[06-Sep-2024 18:49:21 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[04-Oct-2024 15:12:08 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[04-Oct-2024 15:12:40 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[04-Oct-2024 15:13:26 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_avif_with_zero_dimensions` successfully executed.
+[04-Oct-2024 15:26:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[04-Apr-2025 23:09:07 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[05-Apr-2025 15:03:41 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[11-Apr-2025 19:41:43 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[11-Apr-2025 19:48:39 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[11-Apr-2025 20:14:33 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 20:14:34 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 20:21:32 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[11-Apr-2025 20:25:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 20:25:04 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 20:53:23 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[11-Apr-2025 21:32:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 21:37:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[11-Apr-2025 22:32:13 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[09-Jun-2025 15:53:08 UTC] [Image Optimizer]: warn in ImageOptimization\Classes\Async_Operation\Async_Operation::get_by_id(): ActionScheduler_NullAction found
+[09-Jun-2025 15:53:08 UTC] [Image Optimizer]: warn in ImageOptimization\Classes\Async_Operation\Async_Operation::get_by_id(): ActionScheduler_NullAction found
+[09-Jun-2025 15:53:08 UTC] [Image Optimizer]: warn in ImageOptimization\Classes\Async_Operation\Async_Operation::get_by_id(): ActionScheduler_NullAction found
+[09-Jun-2025 15:53:08 UTC] [Image Optimizer]: warn in ImageOptimization\Classes\Async_Operation\Async_Operation::get_by_id(): ActionScheduler_NullAction found

@@ -1,0 +1,42 @@
+Return-Path: <SRS0=z6Lz/i=QB=br.asgard8040.com.br=elvidracaria@elvidracaria.com.br>
+Delivered-To: elvidracaria@br.asgard8040.com.br
+Received: from br.asgard8040.com.br
+	by br.asgard8040.com.br with LMTP
+	id EJwXLU1/12YK6ikAYPGz1w
+	(envelope-from <SRS0=z6Lz/i=QB=br.asgard8040.com.br=elvidracaria@elvidracaria.com.br>)
+	for <elvidracaria@br.asgard8040.com.br>; Tue, 03 Sep 2024 18:27:41 -0300
+Return-path: <SRS0=z6Lz/i=QB=br.asgard8040.com.br=elvidracaria@elvidracaria.com.br>
+Envelope-to: admin@elvidracaria.com.br
+Delivery-date: Tue, 03 Sep 2024 18:27:41 -0300
+Received: from elvidracaria by br.asgard8040.com.br with local (Exim 4.95)
+	(envelope-from <elvidracaria@br.asgard8040.com.br>)
+	id 1slb3t-00Bobc-Ix
+	for admin@elvidracaria.com.br;
+	Tue, 03 Sep 2024 18:27:41 -0300
+To: admin@elvidracaria.com.br
+Subject: =?us-ascii?Q?[My_Blog]_Seu_site_foi_atualizado_para_o_WordPr?=  =?us-ascii?Q?ess_6.2.6?=
+X-PHP-Script: elvidracaria.com.br/wp-cron.php for 187.108.200.229
+X-PHP-Filename: /home7/elvidracaria/public_html/wp-cron.php REMOTE_ADDR: 187.108.200.229
+Date: Tue, 3 Sep 2024 21:27:41 +0000
+From: WordPress <wordpress@elvidracaria.com.br>
+Message-ID: <KorTjwngpd3tW6JlgVt0qvyIPfzHS50idloTXO1jk@elvidracaria.com.br>
+X-Mailer: PHPMailer 6.7 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Olá! Seu site em https://elvidracaria.com.br foi atualizado automaticamente para o WordPress 6.2.6.
+
+Para saber mais sobre a versão 6.2.6, veja a tela Sobre o WordPress:
+https://elvidracaria.com.br/wp-admin/about.php
+
+O WordPress 6.6.1 também está disponível agora. Atualizar é fácil e leva apenas um tempinho:
+https://elvidracaria.com.br/wp-admin/update-core.php
+
+Se você passar por qualquer problema ou precisar de suporte, os voluntários nos fóruns de suporte do WordPress.org podem ajudá-lo.
+https://br.wordpress.org/support/forums/
+
+Manter seu site atualizado é importante por segurança. Também torna a internet um lugar mais seguro para você e seus leitores.
+
+A equipe do WordPress
+
