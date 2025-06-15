@@ -1,0 +1,209 @@
+/* style.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--brand-gray);
+}
+    .navbar-logo {
+      position: absolute;
+      top: -30px;
+      left: 3rem;
+      width: 80px;
+      height: 80px;
+      z-index: 1031;
+    }
+    @media (max-width: 767.98px) {
+      .navbar-logo {
+        top: -20px;
+        left: 0.8rem;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .cta-section{
+      background-color: var(--brand-blue) !important;
+      color: var(--text-light) !important;
+      padding: 2rem 0;
+    }
+
+.navbar.bg-brand-blue {
+  background-color: var(--brand-blue) !important;
+}
+
+a.nav-link, .navbar-brand {
+  color: var(--text-light) !important;
+}
+
+a.nav-link:hover {
+  color: var(--brand-light) !important;
+}
+
+footer {
+  background-color: var(--brand-dark);
+}
+
+/* Hero Styles */
+#hero {
+  height: 90vh;
+  overflow: hidden;
+}
+.hero-slide {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    .hero-button {
+      position: relative;
+      z-index: 2;
+    }
+
+/* Card Styles */
+.card { border: none; }
+.card-body h5 { color: var(--brand-blue); font-weight: 600; }
+.card-img-top { height: 200px; object-fit: cover; }
+
+/* Testimonials */
+#testimonialsCarousel .carousel-item { min-height: 200px; }
+.top-bar { z-index: 1030; }
+.top-bar small, .top-bar a { font-size: 0.875rem; }
+.top-bar i { margin-right: 4px; }
+.card-img-top { height: 200px; object-fit: cover; }
+
+/* Tornar imagem quadrada e cobrir todo o card */
+.service-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Overlay semi‑opaca (70%) */
+.service-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s;
+}
+
+/* Título semi‑transparente por padrão */
+.service-title {
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Ao passar o mouse ou focar: overlay some e título fica 100% branco */
+.service-card:hover .service-overlay,
+.service-card:focus .service-overlay {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.service-card:hover .service-title,
+.service-card:focus .service-title {
+  color: #ffffff;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar a {
+  text-decoration: none;
+  color: var(--brand-blue);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+}
+
+.top-bar i {
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--brand-blue) !important;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff !important;
+  margin: 0 8px;
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: "\00b7"; /* ponto separador · */
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+.navbar-nav .nav-item:last-child .nav-link::after {
+  content: none;
+}
+
+/* Botão WhatsApp verde */
+.btn-whatsapp {
+  background-color: #00c173;
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #00a862;
+}
+
+/* Estilo dos cards de marcas */
+.brand-card {
+  background-color: rgba(0, 0, 0, 0.015);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand-card:hover {
+  background-color: #ffffff;
+  border-color: #ddd;
+}
+
+/* Estilo do link */
+.brand-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+  transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+.brand-footer{
+  width: 100%;
+  max-width: 150px;
+}

@@ -1,0 +1,12 @@
+/* colors.css */
+:root {
+  /* Paleta de Cores E & L Vidraçaria */
+  --brand-blue:    #004AAB;
+  --brand-light:   #0066ff;
+  --brand-dark:    #003399;
+  --brand-green:   #00b894;
+  --brand-gray:    #f8f9fa;
+  --text-dark:     #212529;
+  --text-light:    #ffffff;
+  --btn-success:   #28a745;
+}
