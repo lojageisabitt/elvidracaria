@@ -34,26 +34,26 @@ const defaultItems: BeforeAfterItem[] = [
     afterImageAlt: "Banheiro depois da instalação do box de vidro",
   },
   {
-    id: "espelho-sala-comercial",
-    title: "Espelho sob medida em ambiente comercial",
+    id: "espelho-lavabo-led",
+    title: "Espelho com iluminação em lavabo",
     description:
-      "Projeto com espelho sob medida para ampliar a sensação de espaço, valorizar a iluminação e entregar um visual mais sofisticado ao ambiente.",
-    href: "/projetos/espelho-sob-medida-ambiente-comercial",
-    beforeImage: "/images/before-after/espelho-antes.jpg",
-    beforeImageAlt: "Ambiente comercial antes da instalação do espelho",
-    afterImage: "/images/before-after/espelho-depois.jpg",
-    afterImageAlt: "Ambiente comercial depois da instalação do espelho",
+      "Projeto de espelho sob medida com iluminação em LED para lavabo, trazendo mais sofisticação, sensação de amplitude e um acabamento moderno ao ambiente.",
+    href: "/projetos/espelho-com-iluminacao-em-lavabo",
+    beforeImage: "/images/before-after/espelho-lavabo-antes.jpg",
+    beforeImageAlt: "Lavabo antes da instalação do espelho com iluminação",
+    afterImage: "/images/before-after/espelho-lavabo-depois.jpg",
+    afterImageAlt: "Lavabo depois da instalação do espelho com iluminação em LED",
   },
   {
-    id: "fechamento-sacada-rj",
-    title: "Fechamento de sacada com vidro",
+    id: "fachada-loja-vidro",
+    title: "Fachada de loja com vidro",
     description:
-      "Sacada transformada com fechamento em vidro para aumentar conforto, proteção contra vento e chuva e melhor aproveitamento do espaço no imóvel.",
-    href: "/projetos/fechamento-de-sacada-rj",
-    beforeImage: "/images/before-after/sacada-antes.jpg",
-    beforeImageAlt: "Sacada antes do fechamento com vidro",
-    afterImage: "/images/before-after/sacada-depois.jpg",
-    afterImageAlt: "Sacada depois do fechamento com vidro",
+      "Transformação de fachada comercial com instalação de vidro e estrutura sob medida, valorizando a entrada da loja, aumentando a visibilidade e trazendo um visual mais moderno e profissional.",
+    href: "/projetos/fachada-de-loja-com-vidro",
+    beforeImage: "/images/before-after/fachada-loja-antes.jpg",
+    beforeImageAlt: "Loja antes da instalação da fachada de vidro",
+    afterImage: "/images/before-after/fachada-loja-depois.jpg",
+    afterImageAlt: "Loja depois da instalação da fachada de vidro",
   },
 ];
 
@@ -75,7 +75,7 @@ function ProjectMedia({
           </span>
         </div>
 
-        <div className="relative aspect-[4/3]">
+        <div className="relative aspect-[3/4]">
           <Image
             src={beforeImage}
             alt={beforeImageAlt}
@@ -93,7 +93,7 @@ function ProjectMedia({
           </span>
         </div>
 
-        <div className="relative aspect-[4/3]">
+        <div className="relative aspect-[3/4]">
           <Image
             src={afterImage}
             alt={afterImageAlt}

@@ -32,91 +32,107 @@ async function main() {
   // ─────────────────────────────────────────
   await prisma.adminUser.create({
     data: {
-      email: 'admin@upnode.com.br',
-      passwordHash: await bcrypt.hash('upnode123', 10),
+      email: process.env.SEED_ADMIN_EMAIL || 'admin@elvidracaria.com.br',
+      passwordHash: await bcrypt.hash(process.env.SEED_ADMIN_PASSWORD!, 10),
       role: 'admin',
     },
   })
-  console.log('✅ Admin criado: admin@upnode.com.br / upnode123')
+  console.log('✅ Admin da E & L Vidraçaria criado!')
 
   // ─────────────────────────────────────────
   // 🛍️ CATEGORIAS DE PRODUTO
   // ─────────────────────────────────────────
   const [catSites, catMarketing, catSuporte] = await Promise.all([
-    prisma.category.create({ data: { name: 'Sites Profissionais', slug: 'sites-profissionais' } }),
-    prisma.category.create({ data: { name: 'Marketing Digital', slug: 'marketing-digital' } }),
-    prisma.category.create({ data: { name: 'Suporte & Manutenção', slug: 'suporte-manutencao' } }),
+    prisma.category.create({ data: { name: 'Box e Banheiros', slug: 'box-e-banheiros' } }),
+    prisma.category.create({ data: { name: 'Vidros e Espelhos', slug: 'vidros-e-espelhos' } }),
+    prisma.category.create({ data: { name: 'Serralheria e Estruturas', slug: 'serralheria-e-estruturas' } }),
   ])
 
   // ─────────────────────────────────────────
-  // 🛍️ PRODUTOS (6 genéricos Upnode)
+  // 🛍️ PRODUTOS (6 serviços E & L Vidraçaria)
   // ─────────────────────────────────────────
   const produtos = [
     {
-      name: 'Site Institucional',
-      slug: 'site-institucional',
-      description: 'Site profissional completo para apresentar seu negócio ao mundo. Inclui home personalizada, página sobre, formulário de contato e integração com WhatsApp.',
-      price: 1497.00,
+      name: 'Box de Vidro Temperado para Banheiro',
+      slug: 'box-vidro-temperado-banheiro',
+      description: 'Box de vidro temperado sob medida para banheiros residenciais e comerciais no Rio de Janeiro. Instalação com acabamento preciso, segurança e opções de vidro transparente, fumê ou jateado.',
+      price: 0.00,
       stock: 99,
       handmade: false,
       categories: [catSites.id],
-      colors: [{ name: 'Personalizado', hex: '#6C63FF' }],
-      sizes: ['Básico', 'Completo'],
+      colors: [
+        { name: 'Transparente', hex: '#EAF4F8' },
+        { name: 'Fumê', hex: '#59636B' },
+        { name: 'Jateado', hex: '#D9E0E3' },
+      ],
+      sizes: ['Sob medida'],
     },
     {
-      name: 'Site com Loja Virtual',
-      slug: 'site-com-loja-virtual',
-      description: 'Tudo do site institucional mais uma loja completa: catálogo de produtos, carrinho, checkout e gestão de pedidos pelo painel admin.',
-      price: 2497.00,
-      stock: 99,
-      handmade: false,
-      categories: [catSites.id],
-      colors: [{ name: 'Personalizado', hex: '#6C63FF' }],
-      sizes: ['Completo'],
-    },
-    {
-      name: 'Site com Blog SEO',
-      slug: 'site-com-blog-seo',
-      description: 'Site profissional com blog integrado e otimizado para ranqueamento no Google. Ideal para atrair clientes organicamente através de conteúdo.',
-      price: 1997.00,
-      stock: 99,
-      handmade: false,
-      categories: [catSites.id],
-      colors: [{ name: 'Personalizado', hex: '#6C63FF' }],
-      sizes: ['Completo'],
-    },
-    {
-      name: 'Pacote Presença Digital',
-      slug: 'pacote-presenca-digital',
-      description: 'Pacote completo: site + blog + loja + painel admin + configuração de domínio + Google Analytics. Tudo pronto para gerar clientes.',
-      price: 3497.00,
-      stock: 99,
-      handmade: false,
-      categories: [catSites.id, catMarketing.id],
-      colors: [{ name: 'Personalizado', hex: '#6C63FF' }],
-      sizes: ['Completo'],
-    },
-    {
-      name: 'Manutenção Mensal',
-      slug: 'manutencao-mensal',
-      description: 'Plano mensal de suporte: atualizações de conteúdo, correções, novos produtos, novos posts no blog e monitoramento do site.',
-      price: 297.00,
-      stock: 99,
-      handmade: false,
-      categories: [catSuporte.id],
-      colors: [{ name: 'Padrão', hex: '#6C63FF' }],
-      sizes: ['Mensal'],
-    },
-    {
-      name: 'Consultoria de Marketing Digital',
-      slug: 'consultoria-marketing-digital',
-      description: 'Sessão de consultoria para definir estratégia de conteúdo, SEO local e presença digital para pequenos negócios.',
-      price: 497.00,
+      name: 'Espelhos Sob Medida',
+      slug: 'espelhos-sob-medida',
+      description: 'Espelhos sob medida para banheiros, salas, quartos, academias, lojas e ambientes comerciais. Projetos personalizados com instalação profissional e acabamento de alta qualidade.',
+      price: 0.00,
       stock: 99,
       handmade: false,
       categories: [catMarketing.id],
-      colors: [{ name: 'Padrão', hex: '#6C63FF' }],
-      sizes: ['1h', '2h'],
+      colors: [
+        { name: 'Prata', hex: '#C0C0C0' },
+        { name: 'Bronze', hex: '#8C6A43' },
+        { name: 'Fumê', hex: '#5A5A5A' },
+      ],
+      sizes: ['Sob medida'],
+    },
+    {
+      name: 'Vidro Temperado Sob Medida',
+      slug: 'vidro-temperado-sob-medida',
+      description: 'Vidros temperados sob medida para portas, janelas, divisórias, fachadas e projetos residenciais ou comerciais. Solução resistente, segura e adequada às necessidades de cada ambiente.',
+      price: 0.00,
+      stock: 99,
+      handmade: false,
+      categories: [catMarketing.id],
+      colors: [
+        { name: 'Incolor', hex: '#EAF4F8' },
+        { name: 'Verde', hex: '#8FAFA3' },
+        { name: 'Fumê', hex: '#59636B' },
+      ],
+      sizes: ['Sob medida'],
+    },
+    {
+      name: 'Vidro Jateado',
+      slug: 'vidro-jateado',
+      description: 'Vidro jateado sob medida para quem busca privacidade sem perder luminosidade. Indicado para banheiros, portas, divisórias, escritórios, consultórios e ambientes comerciais.',
+      price: 0.00,
+      stock: 99,
+      handmade: false,
+      categories: [catMarketing.id],
+      colors: [{ name: 'Jateado', hex: '#D9E0E3' }],
+      sizes: ['Sob medida'],
+    },
+    {
+      name: 'Vidro Fumê',
+      slug: 'vidro-fume',
+      description: 'Vidro fumê sob medida para portas, janelas, fachadas, divisórias e projetos decorativos. Oferece visual moderno, maior privacidade e acabamento elegante para residências e empresas.',
+      price: 0.00,
+      stock: 99,
+      handmade: false,
+      categories: [catMarketing.id],
+      colors: [{ name: 'Fumê', hex: '#59636B' }],
+      sizes: ['Sob medida'],
+    },
+    {
+      name: 'Serralheria para Projetos em Vidro',
+      slug: 'serralheria-projetos-em-vidro',
+      description: 'Serviços de serralheria para instalação e suporte de portas, janelas, divisórias, fachadas e estruturas com vidro. Soluções sob medida com segurança e bom acabamento.',
+      price: 0.00,
+      stock: 99,
+      handmade: false,
+      categories: [catSuporte.id],
+      colors: [
+        { name: 'Alumínio', hex: '#A8A9AD' },
+        { name: 'Preto', hex: '#1A1A1A' },
+        { name: 'Branco', hex: '#F5F5F5' },
+      ],
+      sizes: ['Sob medida'],
     },
   ]
 
@@ -138,7 +154,7 @@ async function main() {
       },
     })
   }
-  console.log('✅ 6 produtos criados!')
+  console.log('✅ 6 serviços criados!')
 
   // ─────────────────────────────────────────
   // 📝 BLOG — CATEGORIAS
@@ -146,9 +162,9 @@ async function main() {
   const [blogSEO, blogVendas, blogPresenca] = await Promise.all([
     prisma.blogCategory.create({
       data: {
-        name: 'SEO e Google',
-        slug: 'seo-e-google',
-        description: 'Como aparecer no Google e atrair clientes pelo seu site.',
+        name: 'Box para Banheiro',
+        slug: 'box-para-banheiro',
+        description: 'Dicas para escolher, instalar e conservar box de vidro temperado para banheiro.',
         showOnHome: true,
         featured: true,
         order: 1,
@@ -156,9 +172,9 @@ async function main() {
     }),
     prisma.blogCategory.create({
       data: {
-        name: 'Vendas Online',
-        slug: 'vendas-online',
-        description: 'Estratégias para vender mais pelo seu site e loja virtual.',
+        name: 'Vidros e Espelhos',
+        slug: 'vidros-e-espelhos',
+        description: 'Ideias, aplicações e cuidados com vidros temperados, espelhos, vidros fumê e jateados.',
         showOnHome: true,
         featured: false,
         order: 2,
@@ -166,9 +182,9 @@ async function main() {
     }),
     prisma.blogCategory.create({
       data: {
-        name: 'Presença Digital',
-        slug: 'presenca-digital',
-        description: 'Como construir uma presença online sólida para o seu negócio.',
+        name: 'Dicas de Vidraçaria',
+        slug: 'dicas-de-vidracaria',
+        description: 'Orientações para contratar uma vidraçaria e planejar projetos em vidro com segurança.',
         showOnHome: true,
         featured: false,
         order: 3,
@@ -181,97 +197,171 @@ async function main() {
   // ─────────────────────────────────────────
   const posts = [
     {
-      title: 'Como aparecer no Google sem pagar por anúncios',
-      slug: 'como-aparecer-no-google-sem-pagar-anuncios',
-      excerpt: 'Descubra como o SEO pode colocar o seu negócio na primeira página do Google gratuitamente.',
-      content: `## O que é SEO e por que importa para o seu negócio?
+      title: 'Box de vidro para banheiro: como escolher o modelo ideal',
+      slug: 'box-de-vidro-para-banheiro-como-escolher',
+      excerpt: 'Conheça os principais modelos de box de vidro temperado e saiba o que avaliar antes de pedir um orçamento para o seu banheiro.',
+      content: `## Por que escolher um box de vidro temperado?
 
-SEO (Search Engine Optimization) é o conjunto de técnicas que fazem o seu site aparecer nos primeiros resultados do Google quando alguém pesquisa pelo seu produto ou serviço.
+O box de vidro temperado ajuda a manter o banheiro seco, organizado e mais fácil de limpar. Além da função prática, ele valoriza o ambiente e pode ser produzido sob medida para aproveitar melhor o espaço disponível.
 
-## Por que isso é tão poderoso?
+O vidro temperado é indicado para esse tipo de instalação porque passa por um processo que aumenta sua resistência. Quando corretamente medido e instalado, oferece segurança e durabilidade para o uso diário.
 
-Quando alguém pesquisa "vidraçaria em [sua cidade]" ou "petshop perto de mim", o Google mostra os sites mais relevantes. Se o seu negócio aparecer ali, você recebe visitas gratuitas todos os dias — sem pagar por anúncios.
+## Principais modelos de box para banheiro
 
-## Como o UpNode ajuda nisso?
+### Box de correr
 
-Todos os sites criados pelo UpNode já vêm com:
+É uma das opções mais utilizadas em banheiros pequenos e médios. As folhas deslizam sobre trilhos, evitando que a abertura ocupe espaço dentro ou fora da área do banho.
 
-- URLs amigáveis para o Google
-- Metadados otimizados por página
-- Blog integrado para publicação de conteúdo
-- Schema.org para negócios locais
-- Sitemap automático
+### Box de abrir
 
-## Dica prática
+Funciona como uma porta e costuma ser indicado quando existe espaço livre suficiente para a abertura. O resultado é elegante e facilita a entrada na área do chuveiro.
 
-Escreva um artigo por semana respondendo perguntas que seus clientes fazem. Com o tempo, seu site começa a aparecer no Google para essas buscas.`,
+### Box de canto
+
+É utilizado quando o chuveiro fica no encontro de duas paredes. Pode ter abertura de correr ou outras configurações, conforme as medidas e o formato do banheiro.
+
+## Qual vidro escolher?
+
+O vidro transparente amplia visualmente o ambiente e combina com diferentes estilos de decoração. O vidro fumê cria um visual mais marcante e oferece maior privacidade. Já o vidro jateado permite a passagem de luz, mas reduz a visão direta da área interna.
+
+A escolha deve considerar a iluminação, as cores do banheiro, o nível de privacidade desejado e o estilo do projeto.
+
+## A medição faz diferença
+
+Cada banheiro possui medidas e condições de instalação diferentes. Por isso, o box deve ser planejado após uma avaliação correta do vão, do alinhamento das paredes e da posição de bancadas, vasos sanitários, janelas e acessórios.
+
+Uma medição profissional reduz folgas inadequadas, problemas de abertura e retrabalho durante a instalação.
+
+## Cuidados para conservar o box
+
+- Evite produtos abrasivos e palhas de aço
+- Use detergente neutro e pano macio
+- Não force portas ou roldanas
+- Mantenha trilhos e ferragens limpos
+- Solicite manutenção ao perceber desalinhamento ou dificuldade de abertura
+
+## Box sob medida no Rio de Janeiro
+
+A E & L Vidraçaria desenvolve projetos de box de vidro temperado sob medida, com atendimento personalizado e instalação profissional no Rio de Janeiro. Para escolher o modelo adequado ao seu banheiro, solicite uma avaliação e um orçamento de acordo com as medidas do espaço.`,
       categoryId: blogSEO.id,
       published: true,
       seo: {
-        metaTitle: 'Como aparecer no Google sem pagar anúncios | UpNode',
-        metaDesc: 'Aprenda como o SEO pode colocar seu negócio na primeira página do Google de forma gratuita.',
-        keywords: 'SEO, Google, pequenos negócios, aparecer no Google',
+        metaTitle: 'Box de Vidro para Banheiro no Rio | E & L Vidraçaria',
+        metaDesc: 'Saiba como escolher box de vidro temperado para banheiro e solicite um projeto sob medida no Rio de Janeiro.',
+        keywords: 'box de vidro, box para banheiro, box blindex, vidro temperado, vidraçaria no Rio de Janeiro',
       },
     },
     {
-      title: 'Loja virtual para pequenos negócios: vale a pena?',
-      slug: 'loja-virtual-pequenos-negocios-vale-a-pena',
-      excerpt: 'Entenda como uma loja virtual pode aumentar suas vendas mesmo que você já venda pelo WhatsApp ou Instagram.',
-      content: `## Você já vende pelo WhatsApp. Por que ter uma loja virtual?
+      title: 'Espelho sob medida: como valorizar ambientes residenciais e comerciais',
+      slug: 'espelho-sob-medida-valorizar-ambientes',
+      excerpt: 'Veja como espelhos sob medida podem ampliar, iluminar e transformar banheiros, salas, quartos, academias, lojas e escritórios.',
+      content: `## Por que investir em um espelho sob medida?
 
-Vender pelo WhatsApp e Instagram funciona — mas tem limites. Sem uma loja virtual, você depende de estar sempre disponível para responder, não tem catálogo organizado e perde vendas enquanto dorme.
+O espelho é um elemento funcional e decorativo capaz de transformar um ambiente. Quando produzido sob medida, ele se adapta ao espaço disponível, acompanha o projeto do móvel ou da parede e proporciona um acabamento mais harmonioso.
 
-## O que uma loja virtual resolve?
+Além de facilitar o uso diário, o espelho pode ampliar visualmente ambientes pequenos, distribuir melhor a luz e destacar detalhes da decoração.
 
-- Catálogo sempre disponível, 24 horas por dia
-- Cliente escolhe, adiciona ao carrinho e finaliza sozinho
-- Você recebe o pedido organizado com nome, endereço e itens
-- Histórico de pedidos para acompanhar
+## Onde usar espelhos sob medida?
 
-## Não precisa ser grande para valer a pena
+### Banheiros e lavabos
 
-Mesmo negócios pequenos se beneficiam. Uma artesã que vende 10 peças por mês pode passar para 30 com uma loja organizada e fácil de navegar.
+Espelhos instalados acima da bancada podem ocupar somente a área da pia ou cobrir uma parede maior. A medida correta ajuda a alinhar o espelho com armários, luminárias, tomadas e revestimentos.
 
-## Como o UpNode entrega isso?
+### Salas e corredores
 
-A loja UpNode vem com catálogo, carrinho, checkout, cálculo de frete e painel admin para gerenciar produtos e pedidos. Tudo pronto, sem precisar de conhecimento técnico.`,
+Em salas, halls e corredores, o espelho pode aumentar a sensação de profundidade e tornar o espaço mais iluminado. O posicionamento deve considerar o que será refletido para criar um resultado agradável.
+
+### Quartos e closets
+
+Espelhos de corpo inteiro são úteis em portas, paredes e áreas de vestir. Em closets, podem ser integrados ao projeto para aproveitar melhor o espaço.
+
+### Academias, lojas e ambientes comerciais
+
+Academias, estúdios, salões de beleza, lojas e escritórios utilizam espelhos para melhorar a experiência do público e valorizar o ambiente. Nesses locais, o planejamento das dimensões e das emendas é especialmente importante.
+
+## Tipos e acabamentos
+
+O espelho prata é o modelo mais tradicional e combina com praticamente qualquer ambiente. Espelhos fumê e bronze oferecem um efeito decorativo mais sofisticado e podem ser utilizados em projetos específicos.
+
+Também é possível definir detalhes como lapidação, bisotê, recortes e formatos personalizados, de acordo com a aplicação e com as possibilidades técnicas do projeto.
+
+## O que avaliar antes da instalação?
+
+- Medidas exatas da parede ou do móvel
+- Condições da superfície onde será instalado
+- Presença de tomadas, interruptores e luminárias
+- Umidade do ambiente
+- Posição das emendas em projetos maiores
+- Tipo de acabamento desejado
+
+## Como limpar corretamente?
+
+Utilize pano macio e produto próprio para vidros ou uma solução suave. Evite aplicar excesso de líquido diretamente nas bordas, principalmente em ambientes úmidos, e não use materiais abrasivos que possam riscar a superfície.
+
+## Espelhos sob medida no Rio de Janeiro
+
+A E & L Vidraçaria produz e instala espelhos sob medida para residências e estabelecimentos comerciais no Rio de Janeiro. Solicite um orçamento para desenvolver uma solução adequada às medidas, ao uso e ao estilo do seu ambiente.`,
       categoryId: blogVendas.id,
       published: true,
       seo: {
-        metaTitle: 'Loja virtual para pequenos negócios: vale a pena? | UpNode',
-        metaDesc: 'Descubra como uma loja virtual pode aumentar suas vendas mesmo sendo um negócio pequeno.',
-        keywords: 'loja virtual, pequenos negócios, vender online, e-commerce',
+        metaTitle: 'Espelhos Sob Medida no Rio de Janeiro | E & L Vidraçaria',
+        metaDesc: 'Descubra como usar espelhos sob medida em banheiros, salas, academias e lojas. Peça seu orçamento no Rio de Janeiro.',
+        keywords: 'espelho sob medida, espelhos no Rio de Janeiro, espelho para banheiro, espelho para academia, vidraçaria',
       },
     },
     {
-      title: 'Por que todo negócio local precisa de um site profissional',
-      slug: 'por-que-todo-negocio-local-precisa-de-site-profissional',
-      excerpt: 'Instagram e WhatsApp não substituem um site. Entenda por que ter presença digital própria faz diferença.',
-      content: `## Só ter Instagram não é suficiente
+      title: 'Como escolher uma vidraçaria no Rio de Janeiro com segurança',
+      slug: 'como-escolher-vidracaria-no-rio-de-janeiro',
+      excerpt: 'Saiba o que avaliar antes de contratar uma vidraçaria para box, espelhos, portas, janelas, divisórias e outros projetos em vidro.',
+      content: `## A escolha da vidraçaria influencia todo o projeto
 
-Muitos pequenos negócios apostam tudo no Instagram — e funciona até certo ponto. Mas quando alguém pesquisa no Google, perfis de Instagram raramente aparecem nos primeiros resultados.
+Projetos em vidro exigem medidas corretas, materiais adequados e instalação cuidadosa. Uma escolha baseada somente no menor preço pode resultar em atrasos, acabamento inadequado, peças incompatíveis com o espaço ou necessidade de refazer o serviço.
 
-## O que um site faz que o Instagram não faz?
+Antes de contratar, vale analisar a experiência da empresa, a clareza do orçamento e a atenção dada às necessidades do ambiente.
 
-- Aparece no Google quando alguém pesquisa pelo seu serviço
-- Transmite mais credibilidade e profissionalismo
-- Você é dono do seu espaço — não depende do algoritmo
-- Tem páginas dedicadas para cada serviço ou produto
-- Recebe pedidos e contatos de forma organizada
+## Verifique quais serviços são oferecidos
 
-## O cliente decide em segundos
+Uma vidraçaria completa pode atender diferentes demandas, como:
 
-Quando alguém cai no seu site, você tem poucos segundos para convencer que vale a pena entrar em contato. Um site bem feito, rápido e claro faz isso automaticamente.
+- Box de vidro temperado para banheiro
+- Espelhos sob medida
+- Portas e janelas de vidro
+- Divisórias para ambientes
+- Vidros transparentes, fumê e jateados
+- Fachadas e projetos comerciais
+- Serralheria para estruturas e instalação de vidros
 
-## UpNode foi criado para isso
+Confirmar os serviços disponíveis ajuda a centralizar o projeto e manter um padrão de acabamento.
 
-Cada site UpNode é desenvolvido especificamente para o negócio do cliente — com foco em conversão, velocidade e ranqueamento no Google. Não é um template genérico, é uma presença digital feita para gerar clientes.`,
+## Solicite uma avaliação das medidas
+
+A medição é uma etapa essencial. O profissional deve observar dimensões, nivelamento, pontos de fixação, interferências e condições da estrutura.
+
+Em box para banheiro, por exemplo, é necessário avaliar a posição do chuveiro, do vaso sanitário, da bancada e da área de abertura. Em portas, janelas e divisórias, também devem ser considerados circulação, ferragens e segurança.
+
+## Peça um orçamento detalhado
+
+O orçamento deve informar de forma clara o serviço, o tipo de vidro, as medidas, os acabamentos e as condições combinadas. Isso facilita a comparação entre propostas e reduz dúvidas durante a execução.
+
+Também é importante confirmar como funcionam a instalação, o atendimento após o serviço e eventuais ajustes necessários.
+
+## Observe o acabamento e a comunicação
+
+Uma boa empresa explica as opções disponíveis, orienta sobre limitações técnicas e mantém uma comunicação objetiva. O cuidado com ferragens, alinhamento, vedação, limpeza e acabamento final faz diferença no resultado.
+
+## Escolha o vidro adequado para cada aplicação
+
+Nem todo vidro serve para qualquer uso. Ambientes e estruturas diferentes podem exigir vidro temperado, espelho, vidro jateado, fumê ou outra solução. A indicação deve considerar segurança, privacidade, luminosidade e estética.
+
+## Vidraçaria na Vila da Penha e no Rio de Janeiro
+
+A E & L Vidraçaria está localizada na Avenida Brás de Pina, na Vila da Penha, e oferece soluções em vidros para projetos residenciais e comerciais no Rio de Janeiro. Entre em contato para explicar sua necessidade e solicitar um orçamento personalizado.`,
       categoryId: blogPresenca.id,
       published: true,
       seo: {
-        metaTitle: 'Por que todo negócio local precisa de site profissional | UpNode',
-        metaDesc: 'Instagram e WhatsApp não substituem um site. Saiba por que presença digital própria faz diferença.',
-        keywords: 'site profissional, negócio local, presença digital, site para empresa',
+        metaTitle: 'Vidraçaria no Rio de Janeiro: Como Escolher | E & L',
+        metaDesc: 'Veja como escolher uma vidraçaria no Rio para box, espelhos e vidros sob medida com segurança e bom acabamento.',
+        keywords: 'vidraçaria no Rio de Janeiro, vidraçaria Vila da Penha, vidros sob medida, box de vidro, espelhos',
       },
     },
   ]
@@ -298,33 +388,33 @@ Cada site UpNode é desenvolvido especificamente para o negócio do cliente — 
     data: [
       {
         slug: 'sobre',
-        title: 'Sobre a UpNode',
-        introText: 'UpNode by BittUp é uma plataforma de sites profissionais para pequenos negócios, com foco em geração de clientes através de SEO, loja virtual e presença digital.',
-        section1Title: 'Por que a UpNode existe?',
-        section1Text: 'Pequenos negócios merecem sites tão bons quanto os das grandes empresas. A UpNode nasceu para tornar isso possível — com sites rápidos, bonitos, otimizados para o Google e fáceis de gerenciar, tudo a um custo acessível para quem está construindo seu negócio.',
+        title: 'Sobre a E & L Vidraçaria',
+        introText: 'A E & L Vidraçaria oferece soluções em vidros para projetos residenciais e comerciais no Rio de Janeiro, com serviços de box para banheiro, vidros temperados, espelhos sob medida, vidros jateados, vidros fumê e serralheria.',
+        section1Title: 'Qualidade e atendimento em cada projeto',
+        section1Text: 'Localizada na Avenida Brás de Pina, na Vila da Penha, a E & L Vidraçaria trabalha com atendimento personalizado para entender as medidas, o estilo e as necessidades de cada ambiente. O objetivo é entregar soluções funcionais, seguras e com excelente acabamento para residências, empresas, lojas, academias e outros espaços.',
       },
       {
         slug: 'personalizado',
-        title: 'Cada site é único',
-        introText: 'Não existe um site UpNode igual ao outro. Cada projeto é desenvolvido de acordo com a identidade, o público e os objetivos do negócio do cliente.',
-        section1Title: 'O que muda em cada site?',
-        section1Text: 'Cores, tipografia, layout da home, conteúdo das páginas, categorias da loja e do blog — tudo é configurado para refletir a personalidade do negócio. O sistema é o mesmo, a experiência é única.',
+        title: 'Projetos em vidro sob medida',
+        introText: 'Cada ambiente exige uma solução diferente. Por isso, a E & L Vidraçaria desenvolve projetos sob medida para banheiros, salas, quartos, varandas, escritórios, lojas e outros espaços residenciais ou comerciais.',
+        section1Title: 'Soluções planejadas para o seu espaço',
+        section1Text: 'O projeto considera as medidas do ambiente, o tipo de uso, a segurança, a privacidade, a luminosidade e o acabamento desejado. Trabalhamos com box de vidro temperado, espelhos, portas, janelas, divisórias, vidros fumê, vidros jateados e estruturas de serralheria.',
         faq: [
           {
-            pergunta: 'Posso escolher as cores do meu site?',
-            resposta: 'Sim! Cada site tem sua própria identidade visual com cores, fontes e estilo definidos junto com o cliente.',
+            pergunta: 'Quais serviços a E & L Vidraçaria oferece?',
+            resposta: 'Trabalhamos com box para banheiro, vidros temperados, espelhos sob medida, vidros jateados, vidros fumê, portas, janelas, divisórias e serviços de serralheria para projetos em vidro.',
           },
           {
-            pergunta: 'O conteúdo do site é meu?',
-            resposta: 'Sim. Textos, imagens, produtos e posts do blog são totalmente seus e podem ser editados pelo painel admin.',
+            pergunta: 'Os projetos são feitos sob medida?',
+            resposta: 'Sim. As medidas, o tipo de vidro, os acabamentos e a forma de instalação são definidos de acordo com as características e necessidades de cada ambiente.',
           },
           {
-            pergunta: 'Posso adicionar produtos e posts sozinho?',
-            resposta: 'Sim! O painel admin foi desenvolvido para ser simples. Você adiciona produtos, escreve posts e acompanha pedidos sem precisar de conhecimento técnico.',
+            pergunta: 'Como solicitar um orçamento?',
+            resposta: 'Entre em contato pelos canais disponíveis no site e envie as informações do projeto. Quando necessário, a equipe orientará sobre medidas, avaliação do local e opções de acabamento.',
           },
           {
-            pergunta: 'Meu site vai aparecer no Google?',
-            resposta: 'Todos os sites UpNode já vêm otimizados para SEO. Com publicação regular de conteúdo no blog, seu site ganha posições no Google ao longo do tempo.',
+            pergunta: 'A vidraçaria atende projetos residenciais e comerciais?',
+            resposta: 'Sim. A E & L Vidraçaria atende residências, lojas, escritórios, academias e outros estabelecimentos comerciais no Rio de Janeiro.',
           },
         ],
       },
@@ -333,8 +423,8 @@ Cada site UpNode é desenvolvido especificamente para o negócio do cliente — 
   console.log('✅ Páginas sobre e personalizado criadas!')
 
   console.log('')
-  console.log('🎉 Seed completo! UpNode by BittUp pronto.')
-  console.log('   Admin: admin@upnode.com.br / upnode123')
+  console.log('🎉 Seed completo! E & L Vidraçaria pronta.')
+  console.log('   Admin: admin@elvidracaria.com.br')
 }
 
 main()
