@@ -31,7 +31,7 @@ const defaultServices: ServiceItem[] = [
     name: "Espelhos Sob Medida",
     description:
       "Espelhos personalizados para salas, quartos, banheiros, academias, lojas e ambientes corporativos, valorizando iluminação e amplitude do espaço.",
-    href: "/servicos/espelhos-sob-medida",
+    href: "/servicos/espelho-com-iluminacao",
     image: "/servicos/espelho-com-led.png",
     imageAlt: "Espelho sob medida instalado em ambiente interno",
   },
@@ -63,7 +63,7 @@ const defaultServices: ServiceItem[] = [
     name: "Fachadas e Vidros Temperados",
     description:
       "Projetos em fachadas de vidro e aplicações com vidro temperado para quem busca resistência, elegância e uma apresentação profissional do imóvel.",
-    href: "/servicos/fachadas-e-vidros-temperados",
+    href: "/servicos/fachada-de-loja-com-vidro",
     image: "/empresa-smartfit.jpeg",
     imageAlt: "Fachada de vidro em imóvel comercial no Rio de Janeiro",
   },
@@ -151,17 +151,19 @@ export default function ServicesSection({
                   {service.description}
                 </p>
 
-                <div className="mt-6">
-                  <Button
-                    
-                    className="rounded-xl bg-[var(--color-accent)] text-[var(--color-text-light)] hover:bg-[var(--color-accent-hover)]"
-                  >
-                    <Link href={service.href}>
-                      Saiba mais
-                      <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-                    </Link>
-                  </Button>
-                </div>
+<div className="mt-6">
+  <Link
+    href={service.href}
+    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[var(--color-accent)] px-6 py-3 font-semibold text-[var(--color-text-light)] transition-colors hover:bg-[var(--color-accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-light)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-primary)]"
+  >
+    <span>Saiba mais</span>
+
+    <ArrowRight
+      className="h-4 w-4 shrink-0"
+      aria-hidden="true"
+    />
+  </Link>
+</div>
               </CardContent>
             </Card>
           ))}

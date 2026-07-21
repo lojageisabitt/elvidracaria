@@ -94,19 +94,6 @@ export default function Header() {
               </div>
             ))}
 
-            <Link
-              href="/loja/carrinho"
-              className="relative inline-flex items-center gap-2 transition-opacity hover:opacity-80"
-              aria-label="Carrinho"
-            >
-              <ShoppingCart className="h-4 w-4" />
-              <span>Carrinho</span>
-              {totalItems > 0 ? (
-                <span className="absolute -right-3 -top-2 inline-flex h-5 min-w-[1.25rem] items-center justify-center rounded-full bg-white px-1.5 text-[11px] font-bold text-[#004aad]">
-                  {totalItems}
-                </span>
-              ) : null}
-            </Link>
           </nav>
 
           <div className="hidden items-center md:flex">
@@ -122,18 +109,6 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-3 md:hidden">
-            <Link
-              href="/loja/carrinho"
-              className="relative text-white"
-              aria-label="Carrinho"
-            >
-              <ShoppingCart className="h-5 w-5" />
-              {totalItems > 0 ? (
-                <span className="absolute -right-2 -top-2 flex h-4 min-w-[1rem] items-center justify-center rounded-full bg-white px-1 text-[10px] font-bold text-[#004aad]">
-                  {totalItems}
-                </span>
-              ) : null}
-            </Link>
 
             <button
               type="button"

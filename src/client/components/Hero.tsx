@@ -74,33 +74,34 @@ export default function Hero({
             ))}
           </ul>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button
-              size="lg"
-              className="min-h-11 rounded-xl bg-[var(--color-accent)] px-6 text-[var(--color-text-light)] hover:bg-[var(--color-accent-hover)]"
-            >
-              <Link href={quoteHref}>
-                Solicitar orçamento
-                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-              </Link>
-            </Button>
+<div className="mt-8 flex flex-col gap-3 sm:flex-row">
+  <Link
+    href={quoteHref}
+    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[var(--color-accent)] px-6 py-3 font-semibold text-[var(--color-text-light)] transition-colors hover:bg-[var(--color-accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-light)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-primary)]"
+  >
+    <span>Solicitar orçamento</span>
 
-            <Button
-              size="lg"
-              variant="outline"
-              className="min-h-11 rounded-xl border-[var(--color-border)] bg-[var(--color-bg-card)] px-6 text-[var(--color-text-primary)] hover:bg-[var(--color-bg-hover)] hover:text-[var(--color-text-primary)]"
-            >
-              <Link
-                href={whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Falar com a E&L Vidraçaria pelo WhatsApp"
-              >
-                <MessageCircle className="mr-2 h-4 w-4" aria-hidden="true" />
-                WhatsApp
-              </Link>
-            </Button>
-          </div>
+    <ArrowRight
+      className="h-4 w-4 shrink-0"
+      aria-hidden="true"
+    />
+  </Link>
+
+  <Link
+    href={whatsappHref}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a E & L Vidraçaria pelo WhatsApp"
+    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] px-6 py-3 font-semibold text-[var(--color-text-primary)] transition-colors hover:border-[var(--color-accent-light)] hover:bg-[var(--color-bg-hover)] hover:text-[var(--color-text-primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-primary)]"
+  >
+    <MessageCircle
+      className="h-4 w-4 shrink-0"
+      aria-hidden="true"
+    />
+
+    <span>WhatsApp</span>
+  </Link>
+</div>
 
           <p className="mt-4 text-sm text-[var(--color-text-muted)]">
             Solicite seu orçamento com atendimento ágil para projetos

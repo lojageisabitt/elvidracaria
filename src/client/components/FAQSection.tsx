@@ -26,7 +26,7 @@ const defaultFaqs: FAQItem[] = [
   {
     question: "A E&L Vidraçaria atende todos os bairros do Rio de Janeiro?",
     answer:
-      "Sim. A E&L Vidraçaria atende diferentes regiões do município do Rio de Janeiro, oferecendo suporte para clientes que buscam uma vidraçaria com atendimento em diversos bairros da cidade. Se você precisa de orçamento para residência, comércio ou empresa, nossa equipe pode avaliar a sua demanda e orientar a melhor solução para o local de instalação.",
+      "Sim. A E&L Vidraçaria atende diferentes regiões do Rio de Janeiro, oferecendo suporte para clientes que buscam uma vidraçaria com atendimento em diversos bairros da cidade. Se você precisa de orçamento para residência, comércio ou empresa, nossa equipe pode avaliar a sua demanda e orientar a melhor solução para o local de instalação.",
   },
   {
     question: "Como funciona o orçamento para box de vidro, espelhos e outros serviços?",

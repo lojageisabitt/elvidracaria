@@ -1,7 +1,9 @@
 import Link from "next/link";
-import { ArrowRight, MessageCircle, PhoneCall } from "lucide-react";
-
-import { Button } from "@/components/ui/button";
+import {
+  ArrowRight,
+  MessageCircle,
+  PhoneCall,
+} from "lucide-react";
 
 type FinalCTAProps = {
   whatsappHref?: string;
@@ -11,34 +13,51 @@ type FinalCTAProps = {
 };
 
 export default function FinalCTA({
-  whatsappHref = "https://wa.me/5521999999999?text=Olá%2C%20quero%20solicitar%20um%20orçamento%20para%20um%20projeto%20de%20vidraçaria%20no%20Rio%20de%20Janeiro.",
-  phoneHref = "tel:+5521999999999",
-  title = "Solicite agora seu orçamento com a E&L Vidraçaria",
-  subtitle = "Atendemos todo o município do Rio de Janeiro com soluções em box de vidro, espelhos sob medida, guarda-corpo, corrimão, fechamento de sacadas, portas de vidro, fachadas de vidro e vidros temperados. Fale com nossa equipe e receba um atendimento rápido para o seu projeto.",
+  whatsappHref = "https://wa.me/5521964883630?text=Olá%2C%20quero%20solicitar%20um%20orçamento%20para%20um%20projeto%20de%20vidraçaria%20no%20Rio%20de%20Janeiro.",
+  phoneHref = "tel:+5521964883630",
+  title = "Solicite agora seu orçamento com a E & L Vidraçaria",
+  subtitle = "Atendemos todo o Rio de Janeiro com soluções em box de vidro, espelhos sob medida, guarda-corpo, corrimão, fechamento de sacadas, portas de vidro, fachadas de vidro e vidros temperados. Fale com nossa equipe e receba um atendimento rápido para o seu projeto.",
 }: FinalCTAProps) {
   return (
     <section
+      id="contato"
       aria-labelledby="final-cta-title"
       className="py-16 sm:py-20 lg:py-24"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,_#0f172a_0%,_#0f766e_50%,_#14b8a6_100%)] px-6 py-10 shadow-2xl sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+        <div
+          className="relative overflow-hidden rounded-[2rem] border border-white/15 px-6 py-10 shadow-2xl sm:px-8 sm:py-12 lg:px-12 lg:py-14"
+          style={{
+            background:
+              "linear-gradient(135deg, var(--color-accent-hover) 0%, var(--color-accent) 52%, var(--color-accent-light) 100%)",
+          }}
+        >
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.22),transparent_32%),radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.14),transparent_28%)]"
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(circle at top left, rgba(255,255,255,0.24), transparent 34%), radial-gradient(circle at bottom right, rgba(255,255,255,0.12), transparent 30%)",
+            }}
           />
+
           <div
             aria-hidden="true"
-            className="absolute -left-16 top-10 h-40 w-40 rounded-full bg-white/10 blur-3xl"
+            className="absolute -left-16 top-10 h-40 w-40 rounded-full bg-white/15 blur-3xl"
           />
+
           <div
             aria-hidden="true"
-            className="absolute -right-10 bottom-0 h-48 w-48 rounded-full bg-cyan-300/20 blur-3xl"
+            className="absolute -right-10 bottom-0 h-48 w-48 rounded-full opacity-30 blur-3xl"
+            style={{
+              backgroundColor:
+                "var(--color-accent-light)",
+            }}
           />
 
           <div className="relative grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-center">
             <div className="max-w-3xl">
-              <span className="inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur">
+              <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white/90 backdrop-blur">
                 Orçamento rápido no Rio de Janeiro
               </span>
 
@@ -54,53 +73,65 @@ export default function FinalCTA({
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-                <Button
-                  size="lg"
-                  className="h-12 rounded-xl bg-white text-slate-900 shadow-lg hover:bg-white/90"
+                <Link
+                  href={whatsappHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Solicitar orçamento com a E & L Vidraçaria pelo WhatsApp"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-white px-6 py-3 font-bold text-[var(--color-accent-hover)] shadow-lg transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-accent)]"
                 >
-                  <Link
-                    href={whatsappHref}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
-                    Solicitar orçamento no WhatsApp
-                  </Link>
-                </Button>
+                  <MessageCircle
+                    className="h-5 w-5 shrink-0"
+                    aria-hidden="true"
+                  />
 
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="h-12 rounded-xl border-white/30 bg-white/5 text-white backdrop-blur hover:bg-white/10 hover:text-white"
+                  <span>
+                    Solicitar orçamento no WhatsApp
+                  </span>
+                </Link>
+
+                <Link
+                  href={phoneHref}
+                  aria-label="Ligar para a E & L Vidraçaria"
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/35 bg-white/10 px-6 py-3 font-bold text-white backdrop-blur transition-colors hover:bg-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-accent)]"
                 >
-                  <Link href={phoneHref}>
-                    <PhoneCall className="mr-2 h-5 w-5" aria-hidden="true" />
-                    Ligar agora
-                  </Link>
-                </Button>
+                  <PhoneCall
+                    className="h-5 w-5 shrink-0"
+                    aria-hidden="true"
+                  />
+
+                  <span>Ligar agora</span>
+                </Link>
               </div>
 
-              <p className="mt-4 text-sm leading-6 text-white/70">
-                Atendimento para projetos residenciais e comerciais, com mais
-                agilidade, orientação técnica e acabamento profissional.
+              <p className="mt-4 text-sm leading-6 text-white/75">
+                Atendimento para projetos residenciais
+                e comerciais, com mais agilidade,
+                orientação técnica e acabamento
+                profissional.
               </p>
             </div>
 
-            <aside className="rounded-[1.75rem] border border-white/15 bg-white/10 p-6 backdrop-blur-md sm:p-8">
+            <aside className="rounded-[1.75rem] border border-white/20 bg-white/10 p-6 shadow-xl backdrop-blur-md sm:p-8">
               <h3 className="text-xl font-semibold text-white">
                 Fale com a equipe e tire suas dúvidas
               </h3>
 
               <div className="mt-5 space-y-4 text-sm leading-7 text-white/80 sm:text-base">
                 <p>
-                  Solicite informações sobre box de vidro, espelhos sob medida,
-                  guarda-corpo, corrimão, fechamento de sacadas, portas de
-                  vidro, fachadas de vidro e vidros temperados.
+                  Solicite informações sobre box de
+                  vidro, espelhos sob medida,
+                  guarda-corpo, corrimão, fechamento
+                  de sacadas, portas de vidro,
+                  fachadas de vidro e vidros
+                  temperados.
                 </p>
+
                 <p>
-                  Nossa equipe está pronta para entender sua necessidade,
-                  orientar a melhor solução e iniciar seu atendimento com mais
-                  rapidez.
+                  Nossa equipe está pronta para
+                  entender sua necessidade, orientar
+                  a melhor solução e iniciar seu
+                  atendimento com mais rapidez.
                 </p>
               </div>
 
@@ -108,10 +139,16 @@ export default function FinalCTA({
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center text-sm font-semibold text-white transition-opacity hover:opacity-90"
+                className="mt-6 inline-flex items-center gap-2 font-semibold text-white transition-opacity hover:opacity-85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
-                Falar com a E&amp;L Vidraçaria
-                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
+                <span>
+                  Falar com a E &amp; L Vidraçaria
+                </span>
+
+                <ArrowRight
+                  className="h-4 w-4 shrink-0"
+                  aria-hidden="true"
+                />
               </Link>
             </aside>
           </div>

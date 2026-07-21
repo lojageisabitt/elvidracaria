@@ -27,7 +27,7 @@ const defaultItems: BeforeAfterItem[] = [
     title: "Box de vidro em banheiro residencial",
     description:
       "Transformação de banheiro com instalação de box de vidro sob medida, melhorando a funcionalidade, a segurança e o acabamento visual do ambiente.",
-    href: "/projetos/box-de-vidro-banheiro-residencial",
+    href: "/servicos/box-de-vidro",
     beforeImage: "/images/before-after/box-banheiro-antes.jpg",
     beforeImageAlt: "Banheiro antes da instalação do box de vidro",
     afterImage: "/images/before-after/box-banheiro-depois.jpg",
@@ -38,7 +38,7 @@ const defaultItems: BeforeAfterItem[] = [
     title: "Espelho com iluminação em lavabo",
     description:
       "Projeto de espelho sob medida com iluminação em LED para lavabo, trazendo mais sofisticação, sensação de amplitude e um acabamento moderno ao ambiente.",
-    href: "/projetos/espelho-com-iluminacao-em-lavabo",
+    href: "/servicos/espelho-com-iluminacao",
     beforeImage: "/images/before-after/espelho-lavabo-antes.jpg",
     beforeImageAlt: "Lavabo antes da instalação do espelho com iluminação",
     afterImage: "/images/before-after/espelho-lavabo-depois.jpg",
@@ -49,7 +49,7 @@ const defaultItems: BeforeAfterItem[] = [
     title: "Fachada de loja com vidro",
     description:
       "Transformação de fachada comercial com instalação de vidro e estrutura sob medida, valorizando a entrada da loja, aumentando a visibilidade e trazendo um visual mais moderno e profissional.",
-    href: "/projetos/fachada-de-loja-com-vidro",
+    href: "/servicos/fachada-de-loja-com-vidro",
     beforeImage: "/images/before-after/fachada-loja-antes.jpg",
     beforeImageAlt: "Loja antes da instalação da fachada de vidro",
     afterImage: "/images/before-after/fachada-loja-depois.jpg",
@@ -169,16 +169,23 @@ export default function BeforeAfter({
                       {item.description}
                     </p>
 
-                    <div className="mt-6">
-                      <Button
-                        className="rounded-xl bg-[var(--color-accent)] text-[var(--color-text-light)] hover:bg-[var(--color-accent-hover)]"
-                      >
-                        <Link href={item.href}>
-                          Ver detalhes do projeto
-                          <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-                        </Link>
-                      </Button>
-                    </div>
+<div className="mt-6">
+  <Button
+    className="h-auto w-fit rounded-xl bg-[var(--color-accent)] p-0 text-[var(--color-text-light)] hover:bg-[var(--color-accent-hover)]"
+  >
+    <Link
+      href={item.href}
+      className="inline-flex min-h-12 items-center justify-center gap-2 px-7 py-4 font-extrabold"
+    >
+      <span>Ver detalhes do serviço</span>
+
+      <ArrowRight
+        className="h-4 w-4 shrink-0"
+        aria-hidden="true"
+      />
+    </Link>
+  </Button>
+</div>
                   </div>
                 </div>
               </CardContent>

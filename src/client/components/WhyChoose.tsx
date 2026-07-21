@@ -14,7 +14,7 @@ const reasons = [
     icon: MapPinned,
     title: "Atendimento em todo o Rio de Janeiro",
     description:
-      "A E&L Vidraçaria atende todo o município do Rio de Janeiro com soluções sob medida para projetos residenciais e comerciais, facilitando o orçamento e a execução com mais agilidade.",
+      "A E&L Vidraçaria atende todo o Rio de Janeiro com soluções sob medida para projetos residenciais e comerciais, facilitando o orçamento e a execução com mais agilidade.",
   },
   {
     icon: Clock3,

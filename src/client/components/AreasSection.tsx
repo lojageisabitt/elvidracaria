@@ -140,15 +140,17 @@ export default function AreasSection({
                 </p>
               </div>
 
-              <Button 
-                size="lg"
-                className="min-h-11 rounded-xl bg-[var(--color-accent)] px-6 text-[var(--color-text-light)] hover:bg-[var(--color-accent-hover)]"
-              >
-                <Link href={ctaHref}>
-                  Solicitar orçamento
-                  <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
-                </Link>
-              </Button>
+<Link
+  href={ctaHref}
+  className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-[var(--color-accent)] px-6 py-3 font-semibold text-[var(--color-text-light)] transition-colors hover:bg-[var(--color-accent-hover)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-light)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-primary)]"
+>
+  <span>Solicitar orçamento</span>
+
+  <ArrowRight
+    className="h-4 w-4 shrink-0"
+    aria-hidden="true"
+  />
+</Link>
             </div>
           </CardContent>
         </Card>

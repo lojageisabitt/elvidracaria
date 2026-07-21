@@ -32,7 +32,7 @@ export default function SEOText() {
             </h2>
 
             <p className="mt-4 text-base leading-7 text-[var(--color-text-tertiary)] sm:text-lg">
-              A E&amp;L Vidraçaria atende todo o município do Rio de Janeiro com
+              A E&amp;L Vidraçaria atende todo o Rio de Janeiro com
               projetos sob medida em box de vidro, espelhos, guarda-corpo,
               corrimão, vidros temperados, fechamento de sacadas, portas de
               vidro e fachadas de vidro.
@@ -207,14 +207,14 @@ export default function SEOText() {
 
             <section className="rounded-3xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 shadow-sm sm:p-8">
               <h2 className="text-2xl font-semibold tracking-tight text-[var(--color-text-primary)]">
-                Atendimento em todo o município do Rio de Janeiro
+                Atendimento em todo o Rio de Janeiro
               </h2>
 
               <div className="mt-5 space-y-4 text-base leading-8 text-[var(--color-text-tertiary)]">
                 <p>
                   Um dos pontos mais importantes para quem busca uma vidraçaria
                   no Rio de Janeiro é saber se a empresa realmente atende a sua
-                  região. A E&amp;L Vidraçaria atua em todo o município,
+                  região. A E&amp;L Vidraçaria atua em todo o Rio de Janeiro,
                   facilitando o atendimento de clientes residenciais e
                   comerciais em diferentes bairros.
                 </p>

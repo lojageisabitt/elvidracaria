@@ -26,16 +26,12 @@ export const siteConfig = {
   // Navegação desktop — visível no header do site
   navLinks: [
     { label: "Início",   href: "/" },
-    { label: "Serviços", href: "/servicos" },
-    { label: "Projetos", href: "/projetos" },
     { label: "Contato",  href: "/contato" },
   ],
 
   // Navegação mobile
   mobileNavLinks: [
     { label: "Início",   href: "/" },
-    { label: "Serviços", href: "/servicos" },
-    { label: "Projetos", href: "/projetos" },
     { label: "Contato",  href: "/contato" },
   ],
 
@@ -49,8 +45,6 @@ export const siteConfig = {
   // Footer — links rápidos (exatamente como no rodapé do site)
   footerNavLinks: [
     { label: "Início",   href: "/" },
-    { label: "Serviços", href: "/servicos" },
-    { label: "Projetos", href: "/projetos" },
     { label: "Contato",  href: "/contato" },
   ],
 
