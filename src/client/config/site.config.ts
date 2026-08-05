@@ -23,17 +23,39 @@ export const siteConfig = {
 
   cidade: "Rio de Janeiro, RJ",
 
-  // Navegação desktop — visível no header do site
-  navLinks: [
-    { label: "Início",   href: "/" },
-    { label: "Contato",  href: "/contato" },
-  ],
+ // Navegação desktop — visível no header do site
+navLinks: [
+  { label: "Início", href: "/" },
+  { label: "Serviços", href: "/servicos" },
+  { label: "Projetos", href: "/projetos" },
+  { label: "Sobre", href: "/sobre" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contato", href: "/contato" },
+],
 
-  // Navegação mobile
-  mobileNavLinks: [
-    { label: "Início",   href: "/" },
-    { label: "Contato",  href: "/contato" },
-  ],
+// Navegação mobile
+mobileNavLinks: [
+  { label: "Início", href: "/" },
+  { label: "Serviços", href: "/servicos" },
+  { label: "Projetos", href: "/projetos" },
+  { label: "Sobre", href: "/sobre" },
+  { label: "Onde atendemos", href: "/onde-atendemos" },
+  { label: "Dúvidas frequentes", href: "/duvidas-frequentes" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contato", href: "/contato" },
+],
+
+// Footer — navegação mais completa
+footerNavLinks: [
+  { label: "Início", href: "/" },
+  { label: "Serviços", href: "/servicos" },
+  { label: "Projetos", href: "/projetos" },
+  { label: "Sobre", href: "/sobre" },
+  { label: "Onde atendemos", href: "/onde-atendemos" },
+  { label: "Dúvidas frequentes", href: "/duvidas-frequentes" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contato", href: "/contato" },
+],
 
   // Footer — benefícios (baseados nos serviços destacados)
   benefits: [
@@ -42,11 +64,6 @@ export const siteConfig = {
     { title: "Satisfação Garantida",    description: "Excelência no acabamento e total satisfação do cliente carioca" },
   ],
 
-  // Footer — links rápidos (exatamente como no rodapé do site)
-  footerNavLinks: [
-    { label: "Início",   href: "/" },
-    { label: "Contato",  href: "/contato" },
-  ],
 
   footerDescription:
     "E & L Vidraçaria oferece soluções em vidros para toda a cidade do Rio de Janeiro. Trabalhamos com box para banheiros, vidros temperados, espelhos sob medida, janelas de vidro e muito mais.",
