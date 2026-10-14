@@ -541,7 +541,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA FINAL */}
-      <section
+      <section id="contato"
         className="py-20 lg:py-28"
         style={{
           background:

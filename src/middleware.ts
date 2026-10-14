@@ -1,3 +1,4 @@
+import { jwtVerify } from 'jose'
 // src/middleware.ts
 
 import { NextResponse, type NextRequest } from 'next/server'
@@ -18,7 +19,7 @@ function redirectToLogin(req: NextRequest) {
   return NextResponse.redirect(url)
 }
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname
 
   // libera tudo fora do admin/api admin
@@ -31,15 +32,17 @@ export function middleware(req: NextRequest) {
     return NextResponse.next()
   }
 
-  // só verifica existência do cookie (SEM JWT VERIFY AQUI)
   const token = req.cookies.get(AUTH_COOKIE_NAME)?.value
+  const secret = process.env.AUTH_JWT_SECRET
+  if (!token || !secret) return redirectToLogin(req)
 
-
-  if (!token) {
+  try {
+    const { payload } = await jwtVerify(token, new TextEncoder().encode(secret), { algorithms: ['HS256'] })
+    if (payload.role !== 'admin') return redirectToLogin(req)
+  } catch {
     return redirectToLogin(req)
   }
 
-  // não valida assinatura aqui (Edge incompatível com jsonwebtoken)
   return NextResponse.next()
 }
 

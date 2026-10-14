@@ -1,3 +1,5 @@
+import { canAccessOrder } from '@/core/lib/order-access'
+import { redirect } from 'next/navigation'
 import { prisma } from '@/core/lib/prisma'
 import { notFound } from 'next/navigation'
 import { PagarNovamenteButton } from '@/core/components/PagarNovamenteButton'
@@ -9,31 +11,20 @@ interface PedidoPageProps {
 
 export default async function PedidoPage({ params, searchParams }: PedidoPageProps) {
   const { id } = await params
+  if (!await canAccessOrder(id)) redirect('/loja/meus-pedidos')
   const query = await searchParams
 
   const statusQuery = query?.status
-  const paymentId = query?.payment_id
+
 
   // 🥇 BUSCA PEDIDO PRIMEIRO
-  let order = await prisma.order.findUnique({
+  const order = await prisma.order.findUnique({
     where: { id },
     include: { items: true },
   })
 
   if (!order) return notFound()
 
-  if (
-    statusQuery === 'approved' &&
-    paymentId &&
-    order.statusPagamento !== 'approved'
-  ) {
-    await prisma.order.update({
-      where: { id },
-      data: { statusPagamento: 'approved' },
-    })
-
-    order = { ...order, statusPagamento: 'approved' }
-  }
 
   // 🧠 STATUS
   const statusText = {

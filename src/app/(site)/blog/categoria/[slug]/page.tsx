@@ -1,3 +1,5 @@
+import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
+import { notFound } from 'next/navigation'
 import { prisma } from '@/core/lib/prisma'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -22,7 +24,7 @@ export default async function CategoriaPage({ params }: Props) {
   })
 
   if (!category) {
-    return <div className="p-10 text-center">Categoria não encontrada</div>
+    notFound()
   }
 
   return (
@@ -87,4 +89,11 @@ export default async function CategoriaPage({ params }: Props) {
 
     </main>
   )
+}
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+
+  const record = await prisma.blogCategory.findUnique({ where: { slug } })
+  if (!record) notFound()
+  return generatePageMetadata({ title: record.name, pathname: '/blog/categoria/' + slug })
 }

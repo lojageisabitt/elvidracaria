@@ -1,3 +1,4 @@
+import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
 // app/loja/categoria/[slug]/page.tsx
 import Link from 'next/link'
 import Image from 'next/image'
@@ -151,4 +152,11 @@ export default async function CategoriaPage({ params }: CategoriaPageProps) {
       </section>
     </main>
   )
+}
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  if (slug === 'todos') return generatePageMetadata({ title: 'Todos os produtos', pathname: '/loja' })
+  const record = await prisma.category.findUnique({ where: { slug } })
+  if (!record) notFound()
+  return generatePageMetadata({ title: record.name, pathname: '/loja/categoria/' + slug })
 }

@@ -1,3 +1,4 @@
+import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
 import { prisma } from "@/core/lib/prisma"
 import { notFound } from "next/navigation"
 
@@ -41,4 +42,9 @@ export default async function PersonalizadosPage() {
 
     </div>
   )
+}
+export async function generateMetadata() {
+  const page = await getPage()
+  if (!page) notFound()
+  return generatePageMetadata({ title: page.title, pathname: '/personalizado' })
 }

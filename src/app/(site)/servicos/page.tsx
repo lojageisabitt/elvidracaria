@@ -42,7 +42,7 @@ const services: ServiceItem[] = [
     name: "Espelhos Sob Medida",
     description:
       "Espelhos personalizados para salas, quartos, banheiros, academias, lojas e ambientes corporativos, valorizando iluminação e amplitude do espaço.",
-    href: "/servicos/espelho-com-iluminacao",
+    href: "/servicos/espelhos-sob-medida",
     image: "/servicos/espelho-com-led.png",
     imageAlt: "Espelho sob medida instalado em ambiente interno",
   },
@@ -74,7 +74,7 @@ const services: ServiceItem[] = [
     name: "Fachadas e Vidros Temperados",
     description:
       "Projetos em fachadas de vidro e aplicações com vidro temperado para quem busca resistência, elegância e uma apresentação profissional do imóvel.",
-    href: "/servicos/fachada-de-loja-com-vidro",
+    href: "/servicos/fachadas-de-vidro",
     image: "/empresa-smartfit.jpeg",
     imageAlt: "Fachada de vidro em imóvel comercial no Rio de Janeiro",
   },

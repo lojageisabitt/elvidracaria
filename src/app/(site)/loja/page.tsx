@@ -1,3 +1,5 @@
+import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
+export const metadata = generatePageMetadata({ title: 'Loja', pathname: '/loja' })
 import Link from 'next/link'
 import { prisma } from '@/core/lib/prisma'
 import Image from 'next/image'

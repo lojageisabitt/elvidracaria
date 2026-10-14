@@ -1,7 +1,9 @@
+import { isOrderAdmin } from '@/core/lib/order-access'
 import { NextResponse } from 'next/server'
 import { prisma } from '@/core/lib/prisma'
 
 export async function GET(request: Request) {
+  if (!await isOrderAdmin()) return NextResponse.json({ error: 'Acesso negado' }, { status: 403 })
   const { searchParams } = new URL(request.url)
   const status = searchParams.get('status') || ''
   const search = searchParams.get('search') || ''

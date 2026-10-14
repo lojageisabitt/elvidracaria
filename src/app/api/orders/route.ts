@@ -1,3 +1,4 @@
+import { isOrderAdmin, grantOrderAccess } from '@/core/lib/order-access'
 // src/app/api/orders/route.ts
 import { checkoutSchema } from '@/core/lib/validators/checkoutSchema'
 import { NextRequest, NextResponse } from 'next/server'
@@ -5,7 +6,8 @@ import { prisma } from '@/core/lib/prisma'
 import { ValidationError } from 'yup'
 
 // ✅ GET - Listar pedidos
-export async function GET(req: NextRequest) {
+export async function GET() {
+  if (!await isOrderAdmin()) return NextResponse.json({ error: 'Acesso negado' }, { status: 403 })
   try {
     const orders = await prisma.order.findMany({
       include: {
@@ -120,7 +122,7 @@ export async function POST(req: NextRequest) {
       return createdOrder
     })
 
-    return NextResponse.json({ success: true, orderId: order.id })
+    return grantOrderAccess(NextResponse.json({ success: true, orderId: order.id }), [order.id])
   } catch (error: any) {
     console.error(error)
 

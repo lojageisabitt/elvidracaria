@@ -1,3 +1,5 @@
+import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
+import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import ProductDetailClient, { ProductDetailClientProps } from '@/core/components/ProductDetailClient'
 import prisma from '@/core/lib/prisma'
@@ -21,7 +23,7 @@ export default async function ProdutoPage({ params }: ProdutoPageProps) {
   })
 
   if (!product) {
-    return <div className="p-4 text-red-600">Produto não encontrado.</div>
+    notFound()
   }
 
   // ✅ pega imagem principal
@@ -59,4 +61,11 @@ export default async function ProdutoPage({ params }: ProdutoPageProps) {
       </div>
     </main>
   )
+}
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+
+  const record = await prisma.product.findUnique({ where: { slug } })
+  if (!record) notFound()
+  return generatePageMetadata({ title: record.name, pathname: '/loja/produto/' + slug })
 }
