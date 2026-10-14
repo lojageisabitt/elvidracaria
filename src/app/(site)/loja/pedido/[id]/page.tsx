@@ -1,3 +1,4 @@
+import { requireStoreEnabled } from '@/core/lib/store-server'
 import { canAccessOrder } from '@/core/lib/order-access'
 import { redirect } from 'next/navigation'
 import { prisma } from '@/core/lib/prisma'
@@ -10,6 +11,8 @@ interface PedidoPageProps {
 }
 
 export default async function PedidoPage({ params, searchParams }: PedidoPageProps) {
+  requireStoreEnabled()
+
   const { id } = await params
   if (!await canAccessOrder(id)) redirect('/loja/meus-pedidos')
   const query = await searchParams

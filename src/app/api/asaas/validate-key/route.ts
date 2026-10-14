@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 /**
  * Validates Asaas API key by making a simple test request
  * GET /api/asaas/validate-key
@@ -9,6 +10,9 @@ import { asaasFetch, maskApiKey, getAsaasConfig } from '@/core/lib/asaas';
 export const runtime = 'nodejs';
 
 export async function GET(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const config = getAsaasConfig();
     const env = config.isSandbox ? 'SANDBOX' : 'PRODUCTION';

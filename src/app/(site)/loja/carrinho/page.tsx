@@ -1,11 +1,13 @@
 //src/app/carrinho/page.tsx
 'use client';
+import { isStoreEnabled } from '@/core/lib/store'
+
 
 import { useCart } from '@/core/context/CartContext';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function CarrinhoPage() {
+function CarrinhoPageEnabled() {
   const { items, removeItem, totalItems, totalPrice, clearCart } = useCart();
 
   if (items.length === 0) {
@@ -84,4 +86,8 @@ export default function CarrinhoPage() {
       </div>
     </main>
   );
+}
+
+export default function CarrinhoPage() {
+  return isStoreEnabled() ? <CarrinhoPageEnabled /> : null
 }

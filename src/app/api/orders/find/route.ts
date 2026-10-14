@@ -1,8 +1,12 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { canAccessOrder, grantOrderAccess } from '@/core/lib/order-access'
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/core/lib/prisma'
 
 export async function GET(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { searchParams } = new URL(req.url)
   const orderId = searchParams.get('orderId')
 
@@ -31,6 +35,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: Request) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { email, cpf } = await req.json()
 
   if (!email || !cpf) {

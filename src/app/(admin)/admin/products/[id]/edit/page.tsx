@@ -1,3 +1,4 @@
+import { requireStoreEnabled } from '@/core/lib/store-server'
 import { prisma } from '@/core/lib/prisma'
 import ProductForm from '@/core/components/admin/ProductForm'
 
@@ -8,6 +9,8 @@ type EditProductPageProps = {
 }
 
 export default async function EditProductPage({ params }: EditProductPageProps) {
+  requireStoreEnabled()
+
   const { id } = await params
 
   const categories = await prisma.category.findMany({

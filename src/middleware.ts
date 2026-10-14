@@ -1,3 +1,4 @@
+import { isStoreEnabled, isStorefrontPath, isDisabledStoreApi } from '@/core/lib/store'
 import { jwtVerify } from 'jose'
 // src/middleware.ts
 
@@ -21,6 +22,16 @@ function redirectToLogin(req: NextRequest) {
 
 export async function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname
+
+  if (!isStoreEnabled() && isStorefrontPath(pathname)) {
+    return NextResponse.rewrite(new URL('/_not-found', req.url), {
+      status: 404,
+      headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' },
+    })
+  }
+  if (isDisabledStoreApi(pathname, req.method)) {
+    return NextResponse.json({ error: 'Módulo de loja indisponível.' }, { status: 404, headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' } })
+  }
 
   // libera tudo fora do admin/api admin
   if (!pathname.startsWith('/admin') && !pathname.startsWith('/api/admin')) {
@@ -47,5 +58,5 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/admin/:path*', '/api/admin/:path*']
+  matcher: ['/admin/:path*', '/api/:path*', '/loja/:path*', '/carrinho/:path*', '/checkout/:path*', '/pedido/:path*', '/minha-conta/:path*']
 }

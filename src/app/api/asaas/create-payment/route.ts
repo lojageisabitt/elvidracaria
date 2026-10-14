@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { NextRequest, NextResponse } from 'next/server';
 import { asaasFetch, AsaasPayment } from '@/core/lib/asaas';
 import * as yup from 'yup';
@@ -50,6 +51,9 @@ const createPaymentSchema = yup.object({
 type CreatePaymentRequest = yup.InferType<typeof createPaymentSchema>;
 
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = await req.json();
 

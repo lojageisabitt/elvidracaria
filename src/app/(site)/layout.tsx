@@ -8,8 +8,6 @@ import "@/app/globals.css";
 
 import { Toaster } from "react-hot-toast";
 
-import { CartProvider } from "@/core/context/CartContext";
-
 import { siteConfig } from "@/client/config/site.config";
 
 import Footer from "@/client/components/Footer";
@@ -169,7 +167,7 @@ export default function RootLayout({
             reverseOrder={false}
           />
 
-          <CartProvider>
+
             <div className="flex min-h-screen flex-col">
               <Header />
 
@@ -185,7 +183,7 @@ export default function RootLayout({
 
               <Footer />
             </div>
-          </CartProvider>
+
         </PwaProvider>
       </body>
     </html>

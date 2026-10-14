@@ -1,6 +1,9 @@
 // src/client/config/site.config.ts
 
 export const siteConfig = {
+  // Módulo comercial preservado para reativação futura neste cliente.
+  store: { enabled: false },
+
   nome: "E & L Vidraçaria",
 
   // Logo

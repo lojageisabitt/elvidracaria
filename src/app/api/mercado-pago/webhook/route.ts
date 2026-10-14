@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 // src/app/api/mercado-pago/webhook/route.ts
 
 import { NextRequest, NextResponse } from 'next/server'
@@ -7,6 +8,9 @@ import { fetchMercadoPagoPayment } from '@/core/lib/mercado-pago-security'
 const TOKEN = process.env.MERCADO_PAGO_ACCESS_TOKEN!
 
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = await req.json()
 

@@ -1,5 +1,7 @@
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
@@ -10,7 +12,7 @@ type Categoria = {
   slug: string
 }
 
-export default function CategoriasMenu() {
+function CategoriasMenuEnabled() {
   const [categorias, setCategorias] = useState<Categoria[]>([])
   const [open, setOpen] = useState(false)
 
@@ -86,4 +88,7 @@ export default function CategoriasMenu() {
       </div>
     </nav>
   )
+}
+export default function CategoriasMenu() {
+  return isStoreEnabled() ? <CategoriasMenuEnabled /> : null
 }

@@ -1,11 +1,13 @@
 //src/app/checkout/page.tsx
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import CheckoutForm from '@/core/components/CheckoutForm'
 import Link from 'next/link'
 import { useCart } from '@/core/context/CartContext'
 
-export default function CheckoutPage() {
+function CheckoutPageEnabled() {
   const { items } = useCart()
 
   return (
@@ -44,4 +46,8 @@ export default function CheckoutPage() {
       )}
     </main>
   )
+}
+
+export default function CheckoutPage() {
+  return isStoreEnabled() ? <CheckoutPageEnabled /> : null
 }

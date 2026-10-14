@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 // src/app/api/products/route.ts
 import { prisma } from '@/core/lib/prisma'
 import { NextResponse } from 'next/server'
@@ -22,6 +23,9 @@ type CreateProductRequest = {
 }
 
 export async function POST(req: Request) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const body = (await req.json()) as CreateProductRequest
   const { name, slug, price, imageUrl, description, colors, sizes } = body
 
@@ -67,6 +71,9 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const products = await prisma.product.findMany({
       include: {
