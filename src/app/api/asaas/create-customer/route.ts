@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 /**
  * Creates a new customer in Asaas
  * POST /api/asaas/create-customer
@@ -53,6 +54,9 @@ const createCustomerSchema = yup.object({
 type CreateCustomerRequest = yup.InferType<typeof createCustomerSchema>;
 
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = await req.json();
     

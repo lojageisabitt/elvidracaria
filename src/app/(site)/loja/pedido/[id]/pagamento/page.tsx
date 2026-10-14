@@ -1,5 +1,7 @@
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import { useParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
@@ -34,7 +36,7 @@ interface CreditCardFormData {
   creditCardCvv: string
 }
 
-export default function PagamentoPage() {
+function PagamentoPageEnabled() {
   const params = useParams()
   const router = useRouter()
   const orderId = params?.id as string
@@ -320,4 +322,8 @@ export default function PagamentoPage() {
       </div>
     </main>
   )
+}
+
+export default function PagamentoPage() {
+  return isStoreEnabled() ? <PagamentoPageEnabled /> : null
 }

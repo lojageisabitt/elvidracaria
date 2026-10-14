@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { isOrderAdmin, grantOrderAccess } from '@/core/lib/order-access'
 // src/app/api/orders/route.ts
 import { checkoutSchema } from '@/core/lib/validators/checkoutSchema'
@@ -7,6 +8,9 @@ import { ValidationError } from 'yup'
 
 // ✅ GET - Listar pedidos
 export async function GET() {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   if (!await isOrderAdmin()) return NextResponse.json({ error: 'Acesso negado' }, { status: 403 })
   try {
     const orders = await prisma.order.findMany({
@@ -27,6 +31,9 @@ export async function GET() {
 
 // ✅ POST - Criar pedido
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = await req.json()
     const { items, ...customerData } = body

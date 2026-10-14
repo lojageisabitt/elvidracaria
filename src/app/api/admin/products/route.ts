@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { NextResponse } from 'next/server'
 import { Prisma } from '@/generated/client'
 import { prisma } from '@/core/lib/prisma'
@@ -36,6 +37,9 @@ type AdminProductCreateRequest = {
 }
 
 export async function POST(request: Request) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const body = (await request.json()) as AdminProductCreateRequest
   const { name, slug, description, price, stock, materials, handmade, categories, youtubeUrl, imageUrls, colors, sizes } = body
 

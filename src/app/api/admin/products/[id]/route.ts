@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { NextResponse } from 'next/server'
 import { Prisma } from '@/generated/client'
 import { prisma } from '@/core/lib/prisma'
@@ -34,6 +35,9 @@ type AdminProductUpdateRequest = {
 }
 
 export async function PATCH(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { id } = await params
   const body = (await request.json()) as AdminProductUpdateRequest
 
@@ -145,6 +149,9 @@ export async function PATCH(request: Request, { params }: { params: Promise<{ id
 }
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { id } = await params
 
   try {

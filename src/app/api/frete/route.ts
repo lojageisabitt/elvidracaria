@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 // src/app/api/frete/route.ts
 import { NextResponse } from 'next/server'
 
@@ -10,6 +11,9 @@ interface MelhorEnvioResponse {
 }
 
 export async function POST(request: Request) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const { cepDestino, quantidade } = await request.json()
 

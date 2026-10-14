@@ -1,5 +1,7 @@
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import { useState } from 'react'
 import { useCart } from '@/core/context/CartContext'
 import { toast } from 'react-hot-toast'
@@ -16,7 +18,7 @@ export type ProductDetailClientProps = {
   sizes: { id: string; name: string }[]
 }
 
-export default function ProductDetailClient({ product }: { product: ProductDetailClientProps }) {
+function ProductDetailClientEnabled({ product }: { product: ProductDetailClientProps }) {
   const { addItem } = useCart()
   const [selectedImage, setSelectedImage] = useState(
     product.images?.[0] || '/logo-artesanaio.jpeg'
@@ -198,4 +200,7 @@ export default function ProductDetailClient({ product }: { product: ProductDetai
       </div>
     </div>
   )
+}
+export default function ProductDetailClient(props: React.ComponentProps<typeof ProductDetailClientEnabled>) {
+  return isStoreEnabled() ? <ProductDetailClientEnabled {...props} /> : null
 }

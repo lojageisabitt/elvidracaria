@@ -1,3 +1,4 @@
+import { isPublicLinkEnabled } from '@/core/lib/store'
 import type { Metadata } from "next";
 
 import { siteConfig } from "@/client/config/site.config";
@@ -19,7 +20,7 @@ export default function PrepareOfflinePage() {
   return (
     <OfflinePresentationManager
       appName={siteConfig.nome}
-      routes={siteConfig.pwa.offlineRoutes}
+      routes={siteConfig.pwa.offlineRoutes.filter(isPublicLinkEnabled)}
     />
   );
 }

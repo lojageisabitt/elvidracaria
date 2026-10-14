@@ -81,7 +81,7 @@ export default function AdminLayout({
               {/* Desktop */}
               <nav className="hidden md:flex items-center gap-3 text-sm font-medium">
                 <Link href="/">Site</Link>
-                <Link href="/loja">Loja</Link>
+                {siteConfig.store.enabled && (<Link href="/loja">Loja</Link>)}
                 <Link href="/admin">Dashboard</Link>
                 <Link href="/admin/products">Produtos</Link>
                 <Link href="/admin/pedidos">Pedidos</Link>
@@ -89,7 +89,7 @@ export default function AdminLayout({
                 <Link href="/admin/blog/posts">Posts Blog</Link>
                 <Link href="/admin/custom-page">Páginas Personalizadas</Link>
                 <Link href="/admin/etiquetas">Etiquetas</Link>
-                <Link href="/admin/clients">Asaas</Link>
+                {siteConfig.store.enabled && (<Link href="/admin/clients">Asaas</Link>)}
                 <LogoutButton />
               </nav>
 

@@ -1,3 +1,4 @@
+import { siteConfig } from '@/client/config/site.config'
 // src/app/(admin)/admin/products/page.tsx
 
 import Link from 'next/link'
@@ -39,12 +40,12 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
           </p>
         </div>
 
-        <Link
+        {siteConfig.store.enabled && (<Link
           href="/admin/products/new"
           className="inline-flex items-center justify-center rounded-3xl bg-[var(--color-bg-primary)] px-5 py-3 text-sm font-semibold text-[var(--color-text-primary)] transition hover:bg-[var(--color-bg-hover)]"
         >
           + Novo produto
-        </Link>
+        </Link>)}
       </div>
 
       <div className="overflow-hidden rounded-3xl border border-[var(--color-admin-border)] bg-[var(--color-admin-bg)] shadow-sm">
@@ -90,14 +91,14 @@ export default async function ProductsPage({ searchParams }: ProductsPageProps) 
                   </td>
 
                   <td className="px-4 py-3 space-x-2">
-                    <Link
+                    {siteConfig.store.enabled && (<Link
                       href={`/admin/products/${product.id}/edit`}
                       className="rounded-2xl border border-[var(--color-admin-border)] bg-[var(--color-bg-tertiary)] px-3 py-2 text-xs font-semibold text-[var(--color-admin-text)] transition hover:bg-[var(--color-bg-hover)]"
                     >
                       Editar
-                    </Link>
+                    </Link>)}
 
-                    <DeleteProductButton productId={product.id} />
+                    {siteConfig.store.enabled && <DeleteProductButton productId={product.id} />}
                   </td>
                 </tr>
               )

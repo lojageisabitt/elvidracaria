@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 /**
  * Asaas Webhook Handler
  * Recebe notificações de pagamento do Asaas
@@ -36,6 +37,9 @@ const statusMap: Record<string, string> = {
 };
 
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = await req.json();
 

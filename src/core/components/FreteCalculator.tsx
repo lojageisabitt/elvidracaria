@@ -1,6 +1,8 @@
 // src/components/FreteCalculator.tsx
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import { useState } from 'react'
 import { toast } from 'react-hot-toast'
 
@@ -15,7 +17,7 @@ type Props = {
   quantidade: number // Alterado de pesoTotalKg para quantidade
 }
 
-export default function FreteCalculator({ quantidade }: Props) {
+function FreteCalculatorEnabled({ quantidade }: Props) {
   const [cep, setCep] = useState('')
   const [loading, setLoading] = useState(false)
   const [fretes, setFretes] = useState<FreteOption[] | null>(null)
@@ -95,4 +97,7 @@ export default function FreteCalculator({ quantidade }: Props) {
       )}
     </div>
   )
+}
+export default function FreteCalculator(props: React.ComponentProps<typeof FreteCalculatorEnabled>) {
+  return isStoreEnabled() ? <FreteCalculatorEnabled {...props} /> : null
 }

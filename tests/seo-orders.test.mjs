@@ -2,13 +2,14 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 
 const base = process.env.SEO_TEST_URL || 'http://127.0.0.1:3100'
+const storeEnabled = process.env.STORE_ENABLED === 'true'
 const missing = 'seo-check-nonexistent-20261013'
 
 for (const cookie of ['', 'order_access=invalid; auth_token=invalid']) {
   test('Pedidos negam acesso sem autorização válida: ' + (cookie ? 'cookie inválido' : 'anônimo'), async () => {
     for (const path of ['/api/orders', '/api/orders/' + missing, '/api/orders/find?orderId=' + missing]) {
       const response = await fetch(base + path, { headers: { cookie } })
-      assert.equal(response.status, path === '/api/orders' ? 403 : 404)
+      assert.equal(response.status, path === '/api/orders' && storeEnabled ? 403 : 404)
       assert.ok(!('email' in await response.json()))
     }
     const patch = await fetch(base + '/api/orders/' + missing, { method: 'PATCH', headers: { cookie, 'Content-Type': 'application/json' }, body: JSON.stringify({ statusPagamento: 'approved' }) })
@@ -16,7 +17,7 @@ for (const cookie of ['', 'order_access=invalid; auth_token=invalid']) {
   })
 }
 
-test('Páginas transacionais publicam noindex', async () => {
+test('Páginas transacionais publicam noindex', { skip: !storeEnabled }, async () => {
   for (const path of ['/loja/checkout', '/loja/carrinho', '/loja/meus-pedidos', '/carrinho', '/pedido/' + missing]) {
     const response = await fetch(base + path)
     const html = await response.text()
@@ -24,7 +25,7 @@ test('Páginas transacionais publicam noindex', async () => {
   }
 })
 
-test('Pedido e pagamento redirecionam visitantes não autorizados', async () => {
+test('Pedido e pagamento redirecionam visitantes não autorizados', { skip: !storeEnabled }, async () => {
   for (const suffix of ['', '/pagamento']) {
     const response = await fetch(base + '/loja/pedido/' + missing + suffix, { redirect: 'manual' })
     assert.equal(response.status, 307)

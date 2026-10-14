@@ -8,16 +8,14 @@ import {
   Menu,
   MessageCircle,
   Phone,
-  ShoppingCart,
   X,
 } from 'lucide-react'
 
-import { useCart } from '@/core/context/CartContext'
 import { siteConfig } from '@/client/config/site.config'
+import { isPublicLinkEnabled } from "@/core/lib/store"
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const { totalItems } = useCart()
 
   const whatsappHref = `https://wa.me/${siteConfig.whatsapp}`
 
@@ -79,7 +77,7 @@ export default function Header() {
           </Link>
 
           <nav className="hidden items-center gap-7 text-[15px] font-normal text-white md:flex">
-            {siteConfig.navLinks.map((link, index) => (
+            {siteConfig.navLinks.filter(link => isPublicLinkEnabled(link.href)).map((link, index) => (
               <div key={link.href} className="flex items-center gap-7">
                 <Link
                   href={link.href}
@@ -124,7 +122,7 @@ export default function Header() {
         {open ? (
           <div className="border-t border-white/10 bg-[#004aad] md:hidden">
             <nav className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 text-white">
-              {siteConfig.mobileNavLinks.map((link) => (
+              {siteConfig.mobileNavLinks.filter(link => isPublicLinkEnabled(link.href)).map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}

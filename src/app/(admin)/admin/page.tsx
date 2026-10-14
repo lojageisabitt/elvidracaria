@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { siteConfig } from '@/client/config/site.config'
 // src/app/(admin)/admin/page.tsx
 import { prisma } from '@/core/lib/prisma'
 import { subDays, format, eachDayOfInterval } from 'date-fns'
@@ -66,6 +68,18 @@ async function getDashboardData() {
 }
 
 export default async function AdminPage() {
+  if (!siteConfig.store.enabled) {
+    return <div className="space-y-6">
+      <h2 className="text-2xl font-bold">Administração do site</h2>
+      <p>Gerencie o conteúdo institucional e o blog. Os registros da loja estão preservados em modo somente leitura.</p>
+      <div className="flex flex-wrap gap-4">
+        <Link href="/admin/blog/posts">Posts do blog</Link>
+        <Link href="/admin/blog/categories">Categorias do blog</Link>
+        <Link href="/admin/custom-page">Páginas personalizadas</Link>
+      </div>
+    </div>
+  }
+
   const {
     totalOrders,
     faturamentoTotal,

@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { Settings } from "lucide-react"
 import { siteConfig } from '@/client/config/site.config'
+import { isPublicLinkEnabled } from "@/core/lib/store"
 
 export default function Footer() {
   const whatsappHref = `https://wa.me/${siteConfig.whatsapp}`
@@ -38,7 +39,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-lg">Navegação</h4>
             <ul className="space-y-2 text-sm" style={{ color: 'var(--color-text-tertiary)' }}>
-              {siteConfig.footerNavLinks.map((link) => (
+              {siteConfig.footerNavLinks.filter(link => isPublicLinkEnabled(link.href)).map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}

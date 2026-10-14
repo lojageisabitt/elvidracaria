@@ -9,7 +9,9 @@
     "lint": "eslint src --ignore-pattern src/generated/**",
     "seed": "tsx prisma/seed.ts",
     "seedb": "tsx prisma/seedblog.ts",
-    "seedp": "tsx prisma/seedProdutos.ts"
+    "seedp": "tsx prisma/seedProdutos.ts",
+    "test:store": "tsx --test tests/store-config.test.ts",
+    "test:store:http": "node --test tests/store-disabled.test.mjs tests/seo-orders.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

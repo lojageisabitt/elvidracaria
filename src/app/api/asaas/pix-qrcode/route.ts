@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 /**
  * Get Pix QR Code for a payment
  * GET /api/asaas/pix-qrcode?paymentId={paymentId}
@@ -17,6 +18,9 @@ import { asaasFetch, AsaasPixQrCode } from '@/core/lib/asaas';
 export const runtime = 'nodejs';
 
 export async function GET(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const searchParams = req.nextUrl.searchParams;
     const paymentId = searchParams.get('paymentId');

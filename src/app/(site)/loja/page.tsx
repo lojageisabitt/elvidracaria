@@ -1,5 +1,7 @@
+import { siteConfig } from '@/client/config/site.config'
+import { requireStoreEnabled } from '@/core/lib/store-server'
 import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
-export const metadata = generatePageMetadata({ title: 'Loja', pathname: '/loja' })
+export const metadata = siteConfig.store.enabled ? generatePageMetadata({ title: 'Loja', pathname: '/loja' }) : { robots: { index: false, follow: false } }
 import Link from 'next/link'
 import { prisma } from '@/core/lib/prisma'
 import Image from 'next/image'
@@ -18,6 +20,8 @@ async function getProducts() {
 } 
 
 export default async function LojaPage() {
+  requireStoreEnabled()
+
   const products = await getProducts()
 
   if (!products.length) {

@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 // src/app/api/clients/route.ts
 // Cria o DONO DA LOJA como subconta no Asaas e salva no banco (model Client)
 // ℹ️ /api/asaas/create-customer é outra rota — para cliente final que compra na loja
@@ -15,6 +16,9 @@ type CreateClientBody = {
 
 // 📥 GET — lista todos os clientes (donos de loja) cadastrados
 export async function GET() {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const clients = await prisma.client.findMany({
       orderBy: { createdAt: 'desc' },
@@ -37,6 +41,9 @@ export async function GET() {
 
 // 📤 POST — cria dono da loja como subconta no Asaas
 export async function POST(req: Request) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   try {
     const body = (await req.json()) as CreateClientBody
     const name = body.name?.trim()

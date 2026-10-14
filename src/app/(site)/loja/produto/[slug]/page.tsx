@@ -1,3 +1,4 @@
+import { requireStoreEnabled } from '@/core/lib/store-server'
 import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
@@ -9,6 +10,8 @@ type ProdutoPageProps = {
 }
 
 export default async function ProdutoPage({ params }: ProdutoPageProps) {
+  requireStoreEnabled()
+
   const { slug } = await params
 
   const product = await prisma.product.findUnique({
@@ -63,6 +66,8 @@ export default async function ProdutoPage({ params }: ProdutoPageProps) {
   )
 }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  requireStoreEnabled()
+
   const { slug } = await params
 
   const record = await prisma.product.findUnique({ where: { slug } })

@@ -1,3 +1,4 @@
+import { requireStoreEnabled } from '@/core/lib/store-server'
 import { generatePageMetadata } from '@/core/lib/seo/generate-metadata'
 // app/loja/categoria/[slug]/page.tsx
 import Link from 'next/link'
@@ -62,6 +63,8 @@ async function getProdutosByCategoriaSlug(
 }
 
 export default async function CategoriaPage({ params }: CategoriaPageProps) {
+  requireStoreEnabled()
+
   const { slug } = await params
 
   const { produtos, categoriaNome } = await getProdutosByCategoriaSlug(slug)
@@ -154,6 +157,8 @@ export default async function CategoriaPage({ params }: CategoriaPageProps) {
   )
 }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  requireStoreEnabled()
+
   const { slug } = await params
   if (slug === 'todos') return generatePageMetadata({ title: 'Todos os produtos', pathname: '/loja' })
   const record = await prisma.category.findUnique({ where: { slug } })

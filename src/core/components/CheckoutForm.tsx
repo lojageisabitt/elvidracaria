@@ -1,5 +1,7 @@
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { checkoutSchema } from '@/core/lib/validators/checkoutSchema'
@@ -12,7 +14,7 @@ import { Loader2 } from 'lucide-react'
 
 type CheckoutFormData = yup.InferType<typeof checkoutSchema>
 
-export default function CheckoutForm() {
+function CheckoutFormEnabled() {
   const { items, clearCart } = useCart()
   const router = useRouter()
   const [frete, setFrete] = useState<number | null>(null)
@@ -303,4 +305,8 @@ export default function CheckoutForm() {
       </div>
     </div>
   )
+}
+
+export default function CheckoutForm() {
+  return isStoreEnabled() ? <CheckoutFormEnabled /> : null
 }

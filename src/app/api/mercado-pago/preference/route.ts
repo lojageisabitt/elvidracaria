@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 // src/app/api/mercado-pago/preference/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -13,6 +14,9 @@ const accessToken = process.env.MERCADO_PAGO_ACCESS_TOKEN;
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 export async function POST(req: NextRequest) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const body: PreferenceRequestBody = await req.json();
 
   if (!accessToken) {

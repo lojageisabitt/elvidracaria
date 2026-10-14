@@ -1,5 +1,7 @@
 'use client'
 
+
+import { isStoreEnabled } from '@/core/lib/store'
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
@@ -17,7 +19,7 @@ const schema = yup.object({
   cpf: yup.string().required('CPF obrigatório'),
 })
 
-export default function MeusPedidosPage() {
+function MeusPedidosPageEnabled() {
   const {
     register,
     handleSubmit,
@@ -154,4 +156,7 @@ export default function MeusPedidosPage() {
       </div>
     </div>
   )
+}
+export default function MeusPedidosPage() {
+  return isStoreEnabled() ? <MeusPedidosPageEnabled /> : null
 }

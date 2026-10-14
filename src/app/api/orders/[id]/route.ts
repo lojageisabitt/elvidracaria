@@ -1,3 +1,4 @@
+import { disabledStoreResponse } from '@/core/lib/store-server'
 import { canAccessOrder, isOrderAdmin } from '@/core/lib/order-access'
 import { NextResponse } from 'next/server'
 import { prisma } from '@/core/lib/prisma'
@@ -6,6 +7,9 @@ export async function GET(
   req: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { id } = await params
 
   if (!await canAccessOrder(id)) return NextResponse.json({ error: 'Pedido não encontrado' }, { status: 404 })
@@ -30,6 +34,9 @@ export async function PATCH(
   req: Request,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const disabled = disabledStoreResponse()
+  if (disabled) return disabled
+
   const { id } = await params
 
   if (!await canAccessOrder(id)) return NextResponse.json({ error: 'Pedido não encontrado' }, { status: 404 })

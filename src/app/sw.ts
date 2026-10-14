@@ -1,6 +1,8 @@
 /// <reference lib="esnext" />
 /// <reference lib="webworker" />
 
+import { isStoreEnabled, isStorefrontPath } from '@/core/lib/store';
+
 import { defaultCache } from "@serwist/turbopack/worker";
 import type {
   PrecacheEntry,
@@ -36,7 +38,7 @@ const privateRoutePrefixes = [
 ];
 
 function isPrivatePath(pathname: string): boolean {
-  return privateRoutePrefixes.some(
+  return (!isStoreEnabled() && isStorefrontPath(pathname)) || privateRoutePrefixes.some(
     (prefix) =>
       pathname === prefix ||
       pathname.startsWith(`${prefix}/`),
@@ -63,7 +65,10 @@ function requestComesFromPrivatePage(
 }
 
 const serwist = new Serwist({
-  precacheEntries: self.__SW_MANIFEST,
+  precacheEntries: self.__SW_MANIFEST?.filter(entry => {
+    const url = new URL(typeof entry === 'string' ? entry : entry.url, self.location.origin);
+    return isStoreEnabled() || !isStorefrontPath(url.pathname);
+  }),
 
   precacheOptions: {
     cleanupOutdatedCaches: true,
@@ -101,7 +106,7 @@ const serwist = new Serwist({
         url: "/offline",
 
         matcher({ request }) {
-          return request.destination === "document";
+          return request.destination === "document" && (isStoreEnabled() || !isStorefrontPath(new URL(request.url).pathname));
         },
       },
     ],
@@ -109,3 +114,16 @@ const serwist = new Serwist({
 });
 
 serwist.addEventListeners();
+// Remove only cached commercial responses, preserving images and institutional content.
+self.addEventListener('activate', event => {
+  if (isStoreEnabled()) return;
+  event.waitUntil((async () => {
+    for (const name of await caches.keys()) {
+      const cache = await caches.open(name);
+      for (const request of await cache.keys()) {
+        const url = new URL(request.url);
+        if (url.origin === self.location.origin && isStorefrontPath(url.pathname)) await cache.delete(request);
+      }
+    }
+  })());
+});
