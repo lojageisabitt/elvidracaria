@@ -1,3 +1,4 @@
+import { canAccessOrder, isOrderAdmin } from '@/core/lib/order-access'
 import { NextResponse } from 'next/server'
 import { prisma } from '@/core/lib/prisma'
 
@@ -6,6 +7,8 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
+
+  if (!await canAccessOrder(id)) return NextResponse.json({ error: 'Pedido não encontrado' }, { status: 404 })
 
   if (!id) {
     return NextResponse.json({ error: 'ID não enviado' }, { status: 400 })
@@ -20,7 +23,7 @@ export async function GET(
     return NextResponse.json({ error: 'Pedido não encontrado' }, { status: 404 })
   }
 
-  return NextResponse.json(order)
+  return NextResponse.json(order, { headers: { 'Cache-Control': 'private, no-store' } })
 }
 
 export async function PATCH(
@@ -28,6 +31,8 @@ export async function PATCH(
   { params }: { params: Promise<{ id: string }> }
 ) {
   const { id } = await params
+
+  if (!await canAccessOrder(id)) return NextResponse.json({ error: 'Pedido não encontrado' }, { status: 404 })
 
   if (!id) {
     return NextResponse.json({ error: 'ID não enviado' }, { status: 400 })
@@ -38,11 +43,11 @@ export async function PATCH(
 
     const order = await prisma.order.update({
       where: { id },
-      data: body,
+      data: await isOrderAdmin() ? body : { customerId: typeof body.customerId === 'string' ? body.customerId : undefined },
       include: { items: true },
     })
 
-    return NextResponse.json(order)
+    return NextResponse.json(order, { headers: { 'Cache-Control': 'private, no-store' } })
   } catch (error: any) {
     console.error('Erro ao atualizar pedido:', error)
     return NextResponse.json({ error: 'Erro ao atualizar pedido' }, { status: 500 })

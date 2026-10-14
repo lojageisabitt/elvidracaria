@@ -49,7 +49,7 @@ const topics = [
     title: "Espelhos sob medida",
     description:
       "Dicas para escolher espelhos para banheiros, salas, quartos, academias e lojas.",
-    href: "/servicos/espelho-com-iluminacao",
+    href: "/servicos/espelhos-sob-medida",
   },
   {
     icon: ShieldCheck,
@@ -70,7 +70,7 @@ const topics = [
     title: "Fachadas comerciais",
     description:
       "Ideias e orientações para fachadas, vitrines, portas e projetos comerciais em vidro.",
-    href: "/servicos/fachada-de-loja-com-vidro",
+    href: "/servicos/fachadas-de-vidro",
   },
   {
     icon: MapPin,

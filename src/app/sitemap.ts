@@ -1,47 +1,33 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next'
+import { siteConfig } from '@/client/config/site.config'
+import { projects } from '@/client/projects/projects.data'
+import { prisma } from '@/core/lib/prisma'
 
-import { siteConfig } from "@/client/config/site.config";
+export const dynamic = 'force-dynamic'
 
-function createUrl(pathname: string): string {
-  const baseUrl = siteConfig.seo.url.replace(/\/+$/, "");
-
-  if (pathname === "/") {
-    return baseUrl;
-  }
-
-  const normalizedPathname = pathname.startsWith("/")
-    ? pathname
-    : `/${pathname}`;
-
-  return `${baseUrl}${normalizedPathname}`;
-}
-
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: createUrl("/"),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: createUrl("/loja"),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
-    {
-      url: createUrl("/personalizado"),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: createUrl("/blog"),
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: createUrl("/sobre"),
-      changeFrequency: "yearly",
-      priority: 0.6,
-    },
-  ];
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const base = siteConfig.seo.url.replace(/\/+$/, '')
+  const paths = ['/', '/loja', '/blog', '/sobre', '/servicos', '/onde-atendemos', '/projetos', '/duvidas-frequentes', '/avaliacoes',
+    ...['box-de-vidro', 'espelhos-sob-medida', 'guarda-corpo-e-corrimao', 'fechamento-de-sacadas', 'portas-de-vidro', 'fachadas-de-vidro'].map(slug => '/servicos/' + slug),
+    ...projects.map(project => '/projetos/' + project.slug)]
+  const entries: MetadataRoute.Sitemap = paths.map(path => ({ url: base + (path === '/' ? '' : path) }))
+  // Keep static public URLs available when the content database is unavailable.
+  const results = await Promise.allSettled([
+    prisma.post.findMany({ where: { published: true }, select: { slug: true, updatedAt: true } }),
+    prisma.blogCategory.findMany({ select: { slug: true } }),
+    prisma.product.findMany({ select: { slug: true, updatedAt: true } }),
+    prisma.category.findMany({ select: { slug: true } }),
+    prisma.customPage.findUnique({ where: { slug: 'personalizado' }, select: { updatedAt: true } }),
+  ])
+  const prefixes = ['/blog/', '/blog/categoria/', '/loja/produto/', '/loja/categoria/']
+  results.slice(0, 4).forEach((result, index) => {
+    if (result.status === 'fulfilled' && Array.isArray(result.value)) {
+      for (const record of result.value) {
+        if ('slug' in record && !(index === 3 && record.slug === 'todos')) entries.push({ url: base + prefixes[index] + encodeURIComponent(record.slug), ...('updatedAt' in record ? { lastModified: record.updatedAt } : {}) })
+      }
+    } else if (result.status === 'rejected') console.error('Sitemap: fonte de conteúdo indisponível', prefixes[index])
+  })
+  const custom = results[4]
+  if (custom.status === 'fulfilled' && custom.value && !Array.isArray(custom.value)) entries.push({ url: base + '/personalizado', lastModified: custom.value.updatedAt })
+  return [...new Map(entries.map(entry => [entry.url, entry])).values()]
 }

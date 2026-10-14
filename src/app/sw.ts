@@ -22,6 +22,10 @@ declare global {
 declare const self: ServiceWorkerGlobalScope;
 
 const privateRoutePrefixes = [
+  "/loja/pedido",
+  "/loja/carrinho",
+  "/loja/checkout",
+  "/loja/meus-pedidos",
   "/admin",
   "/api",
   "/pedido",

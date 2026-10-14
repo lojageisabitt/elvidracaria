@@ -1,3 +1,4 @@
+import { siteConfig } from '@/client/config/site.config'
 // src/app/(site)/blog/[slug]/page.tsx
 
 import type { Metadata } from "next";
@@ -81,6 +82,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `${siteConfig.seo.url}/blog/${slug}` },
 
     keywords: post.seo?.keywords
       ? post.seo.keywords

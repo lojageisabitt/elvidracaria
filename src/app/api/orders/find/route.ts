@@ -1,3 +1,4 @@
+import { canAccessOrder, grantOrderAccess } from '@/core/lib/order-access'
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/core/lib/prisma'
 
@@ -8,6 +9,8 @@ export async function GET(req: NextRequest) {
   if (!orderId) {
     return NextResponse.json({ message: 'orderId é obrigatório' }, { status: 400 })
   }
+
+  if (!await canAccessOrder(orderId)) return NextResponse.json({ message: 'Pedido não encontrado' }, { status: 404 })
 
   try {
     const order = await prisma.order.findUnique({
@@ -21,9 +24,9 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ message: 'Pedido não encontrado' }, { status: 404 })
     }
 
-    return NextResponse.json(order)
-  } catch (error) {
-    return NextResponse.json({ message: 'Erro ao buscar pedido', error }, { status: 500 })
+    return NextResponse.json(order, { headers: { 'Cache-Control': 'private, no-store' } })
+  } catch {
+    return NextResponse.json({ message: 'Erro ao buscar pedido' }, { status: 500 })
   }
 }
 
@@ -51,8 +54,8 @@ export async function POST(req: Request) {
       },
     })
 
-    return NextResponse.json(pedidos)
-  } catch (error) {
-    return NextResponse.json({ message: 'Erro ao buscar pedidos', error }, { status: 500 })
+    return grantOrderAccess(NextResponse.json(pedidos), pedidos.map(pedido => pedido.id), true)
+  } catch {
+    return NextResponse.json({ message: 'Erro ao buscar pedidos' }, { status: 500 })
   }
 }

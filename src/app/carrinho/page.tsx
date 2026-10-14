@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
-export default function CarrinhoRedirect() {
+export default function CartPage() {
   redirect('/loja/carrinho')
 }

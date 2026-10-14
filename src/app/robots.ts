@@ -13,12 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           "/admin/",
           "/api/",
-          "/login/",
-          "/cadastro/",
-          "/carrinho/",
-          "/checkout/",
-          "/pedido/",
-          "/minha-conta/",
         ],
       },
     ],

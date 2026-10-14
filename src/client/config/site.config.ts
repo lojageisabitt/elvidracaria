@@ -30,7 +30,7 @@ navLinks: [
   { label: "Projetos", href: "/projetos" },
   { label: "Sobre", href: "/sobre" },
   { label: "Blog", href: "/blog" },
-  { label: "Contato", href: "/contato" },
+  { label: "Contato", href: "/#contato" },
 ],
 
 // Navegação mobile
@@ -42,7 +42,7 @@ mobileNavLinks: [
   { label: "Onde atendemos", href: "/onde-atendemos" },
   { label: "Dúvidas frequentes", href: "/duvidas-frequentes" },
   { label: "Blog", href: "/blog" },
-  { label: "Contato", href: "/contato" },
+  { label: "Contato", href: "/#contato" },
 ],
 
 // Footer — navegação mais completa
@@ -54,7 +54,7 @@ footerNavLinks: [
   { label: "Onde atendemos", href: "/onde-atendemos" },
   { label: "Dúvidas frequentes", href: "/duvidas-frequentes" },
   { label: "Blog", href: "/blog" },
-  { label: "Contato", href: "/contato" },
+  { label: "Contato", href: "/#contato" },
 ],
 
   // Footer — benefícios (baseados nos serviços destacados)
