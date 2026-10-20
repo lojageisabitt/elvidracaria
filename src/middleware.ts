@@ -1,3 +1,4 @@
+import { verifyAdminToken } from '@/core/lib/auth-token'
 import { isStoreEnabled, isStorefrontPath, isDisabledStoreApi } from '@/core/lib/store'
 import { jwtVerify } from 'jose'
 // src/middleware.ts
@@ -22,6 +23,10 @@ function redirectToLogin(req: NextRequest) {
 
 export async function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname
+  if ((pathname.startsWith('/admin') || pathname.startsWith('/api/admin')) && !['/admin/login','/admin/setup-admin'].includes(pathname)) {
+    const session = await verifyAdminToken(req.cookies.get('auth_token')?.value ?? '')
+    if (!session || session.role !== 'admin') return pathname.startsWith('/api/') ? NextResponse.json({ error: 'Acesso negado' }, { status: 401 }) : NextResponse.redirect(new URL('/admin/login', req.url))
+  }
 
   if (!isStoreEnabled() && isStorefrontPath(pathname)) {
     return NextResponse.rewrite(new URL('/_not-found', req.url), {
