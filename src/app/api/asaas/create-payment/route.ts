@@ -1,3 +1,7 @@
+import { prisma } from '@/core/lib/prisma'
+import { canAccessOrder } from '@/core/lib/order-access'
+import { payableTotal } from '@/core/lib/commerce-security'
+import { mutationGuard, privateJson } from '@/core/lib/request-security'
 import { disabledStoreResponse } from '@/core/lib/store-server'
 import { NextRequest, NextResponse } from 'next/server';
 import { asaasFetch, AsaasPayment } from '@/core/lib/asaas';
@@ -55,7 +59,15 @@ export async function POST(req: NextRequest) {
   if (disabled) return disabled
 
   try {
+    const guard = mutationGuard(req, 'asaas-payment')
+    if (guard) return guard
     const body = await req.json();
+    if (typeof body?.orderId !== 'string' || !await canAccessOrder(body.orderId)) return privateJson({ error: 'Pedido não encontrado.' }, 404)
+    const order = await prisma.order.findUnique({ where: { id: body.orderId } })
+    if (!order || order.paymentProvider !== 'asaas' || !order.customerId) return privateJson({ error: 'Provedor ou pagador divergente.' }, 409)
+    if (['approved','CONFIRMED','RECEIVED','refunded','refund_pending','disputed'].includes(order.statusPagamento ?? '')) return privateJson({ error: 'Pedido já liquidado.' }, 409)
+    body.customerId = order.customerId
+    body.total = payableTotal(order)
 
     let validatedData: CreatePaymentRequest;
     try {

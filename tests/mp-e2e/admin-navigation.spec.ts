@@ -1,0 +1,25 @@
+import { test, expect } from '@playwright/test'
+for (const width of [320,390,768,1280]) test(`Painel institucional preserva loja desativada em ${width}px`, async ({page}) => {
+ await page.setViewportSize({width,height:844})
+ expect((await page.request.post('/api/auth/login',{data:{email:'admin@synthetic.invalid',password:'synthetic-test-password'}})).status()).toBe(200)
+ await page.goto('/admin')
+ const nav=page.getByRole('navigation',{name:width<1024?'Navegação administrativa mobile':'Navegação administrativa desktop'})
+ await expect(nav).toBeVisible()
+ await expect(nav.getByRole('link',{name:'Início',exact:true})).toHaveAttribute('aria-current','page')
+ await expect(page.getByRole('link',{name:'Cadastrar produto',exact:true})).toHaveCount(0)
+ await expect(nav.getByRole('link',{name:'Pedidos',exact:true})).toHaveCount(0)
+ await expect(nav.getByRole('link',{name:'Produtos',exact:true})).toHaveCount(0)
+ if(width<1024)await nav.getByRole('button',{name:'Mais',exact:true}).click()
+ const menu=width<1024?page.getByRole('dialog'):nav
+ await expect(menu.getByRole('link',{name:'Páginas personalizadas',exact:true})).toBeVisible()
+ await expect(menu.getByRole('link',{name:'Pagamentos',exact:true})).toHaveCount(0)
+ await expect(menu.getByRole('link',{name:'Ver loja',exact:true})).toHaveCount(0)
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true)
+ for(const path of ['payment','oauth/start','webhook'])expect((await page.request.post('/api/mercado-pago/'+path,{data:{}})).status()).toBe(404)
+ await page.screenshot({path:`.mp-validation/admin-nav-${width}.png`,fullPage:true})
+})
+test('Admin exige sessão e login fica fora da navegação',async ({page})=>{
+ await page.goto('/admin');await expect(page).toHaveURL(/\/admin\/login$/)
+ await expect(page.getByRole('navigation')).toHaveCount(0)
+ expect((await page.request.get('/api/admin/orders')).status()).not.toBe(200)
+})

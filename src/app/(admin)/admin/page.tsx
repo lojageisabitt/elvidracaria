@@ -1,3 +1,4 @@
+import CreateProductLink from '@/core/components/admin/CreateProductLink'
 import Link from 'next/link'
 import { siteConfig } from '@/client/config/site.config'
 // src/app/(admin)/admin/page.tsx
@@ -70,6 +71,7 @@ async function getDashboardData() {
 export default async function AdminPage() {
   if (!siteConfig.store.enabled) {
     return <div className="space-y-6">
+        <CreateProductLink />
       <h2 className="text-2xl font-bold">Administração do site</h2>
       <p>Gerencie o conteúdo institucional e o blog. Os registros da loja estão preservados em modo somente leitura.</p>
       <div className="flex flex-wrap gap-4">
@@ -92,7 +94,7 @@ export default async function AdminPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-2xl font-bold">Dashboard</h2>
+        <h2 className="text-2xl font-bold">Início</h2>
         <p className="text-[var(--color-text-secondary)]">
           Visão geral dos últimos 30 dias
         </p>
